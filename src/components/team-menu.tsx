@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { Dictionary } from "@/i18n/get-dictionary";
 
 const profiles: Record<
@@ -72,11 +71,12 @@ export function TeamMenu({ dict }: Props) {
             key={person.id}
             className="flex gap-4 border-b border-navy/8 py-5 last:border-b-0 md:border-navy/8 md:px-0 md:py-6 md:odd:pr-8 md:even:border-l md:even:pl-8 md:[&:nth-last-child(-n+2)]:border-b-0"
           >
-            <Image
+            <img
               src={profile.photo}
               alt={person.name}
               width={224}
               height={224}
+              draggable={false}
               className="h-20 w-20 shrink-0 object-cover md:h-28 md:w-28"
             />
             <div className="min-w-0">

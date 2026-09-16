@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 type Props = {
   src: string;
   alt: string;
@@ -7,8 +5,6 @@ type Props = {
   className?: string;
   imageClassName?: string;
   priority?: boolean;
-  sizes?: string;
-  zoom?: boolean;
 };
 
 export function EditorialFrame({
@@ -18,22 +14,30 @@ export function EditorialFrame({
   className,
   imageClassName,
   priority,
-  sizes,
-  zoom = false,
 }: Props) {
   return (
-    <figure className={`relative overflow-hidden bg-navy ${className ?? ""}`}>
-      <Image
+    <figure
+      className={`relative overflow-hidden bg-navy ${className ?? ""}`}
+      style={{
+        backgroundColor: "#101722",
+        backgroundImage: `url(${src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Photo also sits as CSS background so the frame never flashes empty. */}
+      <img
         src={src}
         alt={alt}
-        fill
-        priority={priority}
-        sizes={sizes ?? "(min-width: 1024px) 50vw, 100vw"}
-        className={`object-cover ${
-          zoom
-            ? "transition-transform duration-700 ease-out group-hover:scale-[1.05]"
-            : ""
-        } ${imageClassName ?? ""}`}
+        width={1600}
+        height={1200}
+        fetchPriority={priority ? "high" : "low"}
+        decoding={priority ? "sync" : "async"}
+        draggable={false}
+        className={`absolute inset-0 h-full w-full object-cover ${imageClassName ?? ""}`}
+        onError={(event) => {
+          event.currentTarget.style.opacity = "0";
+        }}
       />
       <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-navy/10" />
       {caption ? (

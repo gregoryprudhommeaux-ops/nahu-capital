@@ -35,7 +35,7 @@ export function HomePage({ locale, dict }: Props) {
 function Hero({ dict }: { dict: Dictionary }) {
   return (
     <section id="inicio">
-      <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:min-h-[min(82svh,740px)]">
+      <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-stretch lg:min-h-[min(82svh,740px)]">
         <div className="wrap flex flex-col justify-between py-10 md:py-12 lg:w-auto lg:max-w-none lg:pr-10 lg:pl-[max(2.5rem,calc((100vw-1220px)/2))]">
           <div className="max-w-2xl">
             <p className="kicker mb-3.5 md:mb-4">{dict.hero.kicker}</p>
@@ -63,10 +63,9 @@ function Hero({ dict }: { dict: Dictionary }) {
           src="/editorial/hero-cdmx.jpg"
           alt={dict.media.heroAlt}
           caption={dict.media.heroCaption}
-          className="min-h-[42vh] lg:min-h-full"
+          className="h-[min(58vw,22rem)] w-full md:h-[28rem] lg:h-auto lg:min-h-full"
           imageClassName="object-[center_35%]"
           priority
-          sizes="(min-width: 1024px) 48vw, 100vw"
         />
       </div>
     </section>
@@ -81,7 +80,6 @@ function Principle({ dict }: { dict: Dictionary }) {
           src="/editorial/mixed-use.jpg"
           alt={dict.media.principleAlt}
           className="h-full w-full"
-          sizes="100vw"
         />
       </div>
       <div className="absolute inset-0 bg-navy/78" />
@@ -136,8 +134,6 @@ function Projects({ dict }: { dict: Dictionary }) {
                 alt={site.alt}
                 caption={site.caption}
                 className="aspect-[4/3]"
-                sizes="(min-width: 640px) 33vw, 100vw"
-                zoom
               />
             </div>
           ))}
@@ -182,14 +178,13 @@ function Thesis({ dict }: { dict: Dictionary }) {
 function About({ dict }: { dict: Dictionary }) {
   return (
     <section id="nosotros" className="border-t border-navy/8">
-      <div className="grid lg:grid-cols-[0.92fr_1.08fr]">
+      <div className="grid lg:grid-cols-[0.92fr_1.08fr] lg:items-stretch">
         <EditorialFrame
           src="/editorial/paris.jpg"
           alt={dict.media.parisAlt}
           caption={dict.media.parisCaption}
-          className="min-h-[280px] lg:min-h-full"
+          className="h-[18rem] w-full md:h-[24rem] lg:h-auto lg:min-h-full"
           imageClassName="object-[center_40%]"
-          sizes="(min-width: 1024px) 46vw, 100vw"
         />
         <div className="wrap py-12 md:py-16 lg:w-auto lg:max-w-none lg:pr-[max(2.5rem,calc((100vw-1220px)/2))] lg:pl-12">
           <p className="kicker mb-3">{dict.about.kicker}</p>
@@ -307,8 +302,6 @@ function Portfolio({ dict }: { dict: Dictionary }) {
                 alt={item.alt}
                 caption={item.caption}
                 className={item.frame}
-                sizes="(min-width: 768px) 50vw, 100vw"
-                zoom
               />
             </div>
           ))}
@@ -332,15 +325,14 @@ function Portfolio({ dict }: { dict: Dictionary }) {
 function Contact({ dict }: { dict: Dictionary }) {
   return (
     <section id="contacto">
-      <div className="grid lg:grid-cols-2">
+      <div className="grid lg:grid-cols-2 lg:items-stretch">
         <ContactPanel dict={dict.contact} />
         <EditorialFrame
           src="/editorial/contact-cdmx.jpg"
           alt={dict.media.contactAlt}
           caption={dict.media.heroCaption}
-          className="min-h-[280px] lg:min-h-full"
+          className="h-[18rem] w-full md:h-[24rem] lg:h-auto lg:min-h-full"
           imageClassName="object-[center_55%]"
-          sizes="(min-width: 1024px) 50vw, 100vw"
         />
       </div>
     </section>

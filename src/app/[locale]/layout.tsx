@@ -94,6 +94,7 @@ export default async function LocaleLayout({
               as="document"
             />
           ))}
+        <link rel="preload" as="image" href="/editorial/hero-cdmx.jpg" />
       </head>
       <body
         className={`min-h-full bg-cream text-navy ${locale === "zh" ? "is-zh" : ""}`}
