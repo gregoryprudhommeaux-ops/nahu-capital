@@ -204,8 +204,8 @@ function About({ dict }: { dict: Dictionary }) {
         </div>
       </div>
 
-      <div className="wrap py-10 md:py-12">
-        <dl className="grid grid-cols-2 gap-x-6 gap-y-8 border-y border-navy/10 py-8 md:grid-cols-3 lg:grid-cols-6 lg:gap-x-5">
+      <div className="wrap pt-8 pb-8 md:pt-10 md:pb-8">
+        <dl className="grid grid-cols-2 gap-x-6 gap-y-8 border-y border-navy/10 py-6 md:grid-cols-3 lg:grid-cols-6 lg:gap-x-5">
           {dict.about.stats.map((stat) => (
             <div key={stat.label}>
               <dt className="sr-only">{stat.label}</dt>
@@ -223,7 +223,7 @@ function About({ dict }: { dict: Dictionary }) {
             </div>
           ))}
         </dl>
-        <p className="mt-4 text-xs leading-relaxed text-navy/40">
+        <p className="mt-3 max-w-2xl text-[0.68rem] leading-relaxed text-navy/38 italic">
           {dict.about.disclaimer}
         </p>
 
