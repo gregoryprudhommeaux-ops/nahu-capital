@@ -355,8 +355,6 @@ function Portfolio({ dict }: { dict: Dictionary }) {
           <SectorsMenu
             title={dict.portfolio.sectorsTitle}
             sectors={dict.portfolio.sectors}
-            openLabel={dict.portfolio.sectorsOpen}
-            closeLabel={dict.portfolio.sectorsClose}
           />
         </div>
 

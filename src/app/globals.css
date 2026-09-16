@@ -60,6 +60,14 @@ body.is-zh h3 {
   margin-inline: auto;
 }
 
+.sectors-menu summary {
+  list-style: none;
+}
+
+.sectors-menu summary::-webkit-details-marker {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .wrap {
     width: min(1220px, calc(100% - 4rem));
