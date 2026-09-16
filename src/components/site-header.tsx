@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { pathForLocale, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { BrandLogo } from "./brand-logo";
 import { LanguageSwitcher } from "./language-switcher";
 
 type Props = {
@@ -31,14 +31,7 @@ export function SiteHeader({ locale, dict }: Props) {
           className="shrink-0"
           onClick={() => setOpen(false)}
         >
-          <Image
-            src="/brand/logo-horizontal.png"
-            alt="NAHU Capital"
-            width={816}
-            height={204}
-            className="brand-logo h-8 w-auto md:h-9"
-            priority
-          />
+          <BrandLogo className="brand-logo h-8 w-auto md:h-9" />
         </Link>
 
         <nav className="site-nav hidden items-center gap-9 lg:flex">

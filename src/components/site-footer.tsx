@@ -1,6 +1,6 @@
-import Image from "next/image";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { BrandLogo } from "./brand-logo";
 import { LanguageSwitcher } from "./language-switcher";
 
 type Props = {
@@ -12,13 +12,7 @@ export function SiteFooter({ locale, dict }: Props) {
   return (
     <footer className="border-t border-navy/10 bg-cream">
       <div className="wrap flex flex-col gap-8 py-8 md:flex-row md:items-center md:justify-between">
-        <Image
-          src="/brand/logo-horizontal.png"
-          alt="NAHU Capital"
-          width={816}
-          height={204}
-          className="brand-logo-footer h-10 w-auto md:h-11"
-        />
+        <BrandLogo className="brand-logo-footer h-10 w-auto md:h-11" />
 
         <p className="text-sm text-navy/50">{dict.footer.group}</p>
 
