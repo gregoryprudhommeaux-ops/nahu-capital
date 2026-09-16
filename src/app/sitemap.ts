@@ -1,7 +1,7 @@
-import { locales } from "@/i18n/config";
+import { locales } from "@/lib/copy";
 
 export default function sitemap() {
-  const base = "https://nahucapital.com";
+  const base = "https://nahu-capital.vercel.app";
   return [
     {
       url: base,

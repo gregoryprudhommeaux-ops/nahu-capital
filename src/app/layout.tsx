@@ -1,15 +1,55 @@
 import type { Metadata } from "next";
+import { Libre_Bodoni, Montserrat } from "next/font/google";
+import { getDictionary } from "@/lib/copy";
 import "./globals.css";
 
+const libreBodoni = Libre_Bodoni({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-libre-bodoni",
+  display: "swap",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
+const es = getDictionary("es");
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nahucapital.com"),
-  title: "NAHU Capital",
-  description:
-    "Plataforma empresarial franco-mexicana. Capital, estrategia y ejecución a través de fronteras.",
+  metadataBase: new URL("https://nahu-capital.vercel.app"),
+  title: es.meta.title,
+  description: es.meta.description,
+  alternates: {
+    canonical: "/",
+    languages: {
+      "es-MX": "/",
+      es: "/",
+      en: "/en",
+      fr: "/fr",
+      pt: "/pt",
+      zh: "/zh",
+      "x-default": "/",
+    },
+  },
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  return children;
+  return (
+    <html
+      lang="es-MX"
+      className={`${libreBodoni.variable} ${montserrat.variable} h-full antialiased`}
+    >
+      <body
+        className="min-h-full bg-cream text-navy"
+        style={{ background: "#F3F0EA", color: "#101722" }}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }

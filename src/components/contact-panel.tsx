@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-import type { Dictionary } from "@/i18n/get-dictionary";
+import type { Dictionary } from "@/lib/copy";
 
 type Status = "idle" | "sending" | "sent" | "error";
 

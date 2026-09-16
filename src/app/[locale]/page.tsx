@@ -1,9 +1,19 @@
-import { notFound } from "next/navigation";
-import { HomePage } from "@/components/home-page";
-import { isLocale } from "@/i18n/config";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { notFound, redirect } from "next/navigation";
+import { Site } from "@/components/site";
+import {
+  defaultLocale,
+  getDictionary,
+  isLocale,
+  locales,
+} from "@/lib/copy";
 
 export const dynamic = "force-static";
+
+export function generateStaticParams() {
+  return locales.filter((locale) => locale !== defaultLocale).map((locale) => ({
+    locale,
+  }));
+}
 
 export default async function Page({
   params,
@@ -12,6 +22,6 @@ export default async function Page({
 }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
-  const dict = getDictionary(locale);
-  return <HomePage locale={locale} dict={dict} />;
+  if (locale === defaultLocale) redirect("/");
+  return <Site locale={locale} dict={getDictionary(locale)} />;
 }
