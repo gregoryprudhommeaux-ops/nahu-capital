@@ -19,9 +19,16 @@ const montserrat = Montserrat({
 const es = getDictionary("es");
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nahu-capital.vercel.app"),
+  metadataBase: new URL("https://www.nahucapital.com"),
   title: es.meta.title,
   description: es.meta.description,
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon.png" }],
+  },
   alternates: {
     canonical: "/",
     languages: {
