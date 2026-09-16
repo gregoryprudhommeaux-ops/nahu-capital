@@ -11,15 +11,10 @@ type Props = {
 export function SiteFooter({ locale, dict }: Props) {
   return (
     <footer className="border-t border-navy/10 bg-cream">
-      <div className="wrap flex flex-col gap-8 py-8 md:flex-row md:items-center md:justify-between">
+      <div className="wrap flex flex-col gap-6 py-8 sm:flex-row sm:items-center sm:justify-between">
         <BrandLogo className="brand-logo-footer h-10 w-auto md:h-11" />
-
-        <p className="text-sm text-navy/50">{dict.footer.group}</p>
-
-        <div className="flex flex-col gap-3 md:items-end">
-          <LanguageSwitcher locale={locale} align="up" />
-          <p className="text-xs text-navy/40">{dict.footer.rights}</p>
-        </div>
+        <p className="text-xs text-navy/40">{dict.footer.rights}</p>
+        <LanguageSwitcher locale={locale} align="up" />
       </div>
     </footer>
   );
