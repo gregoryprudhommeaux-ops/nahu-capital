@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #f3f0ea;
+  --color-navy: #101722;
+  --color-gold: #b08a57;
+  --color-gold-soft: #c4a574;
+  --font-sans: var(--font-montserrat);
+  --font-serif: var(--font-libre-bodoni);
+  --font-zh: var(--font-noto-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-navy);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+body.is-zh {
+  font-family: var(--font-zh), var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-gold) 35%, transparent);
+  color: var(--color-navy);
+}
+
+h1,
+h2,
+h3,
+.font-serif {
+  font-family: var(--font-serif), "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+body.is-zh h1,
+body.is-zh h2,
+body.is-zh h3 {
+  font-family: var(--font-zh), var(--font-serif), serif;
+  font-weight: 500;
+}
+
+.kicker {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}

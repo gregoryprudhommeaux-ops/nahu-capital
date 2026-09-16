@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "title": "NAHU Capital",
+    "description": "Plataforma empresarial franco-mexicana com vocação internacional. Capital, estratégia e execução através de fronteiras."
+  },
+  "nav": {
+    "thesis": "Tese",
+    "about": "Sobre",
+    "team": "Equipa",
+    "portfolio": "Portefólio",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "kicker": "Grupo empresarial",
+    "title": "Capital, estratégia e execução através de fronteiras.",
+    "lead": "Plataforma empresarial franco-mexicana com vocação internacional para a identificação, análise, estruturação, desenvolvimento e execução de oportunidades de negócio, investimento, financiamento e expansão corporativa."
+  },
+  "pillars": [
+    {
+      "label": "Capital",
+      "text": "Estruturação financeira, M&A, investimento e financiamento."
+    },
+    {
+      "label": "Assets",
+      "text": "Minas, indústria, energia, infraestruturas e imobiliário."
+    },
+    {
+      "label": "Cross-border",
+      "text": "Entrada em mercados, alianças estratégicas e execução internacional."
+    }
+  ],
+  "thesis": {
+    "kicker": "Tese",
+    "title": "Da oportunidade a uma operação estruturada e executável.",
+    "intro": "O modelo integra disciplinas que normalmente participam de forma separada. A estratégia liga-se à análise; a análise à valorização; a valorização à estrutura; a estrutura ao capital; e o capital à negociação e à execução.",
+    "principleLabel": "Princípio de trabalho",
+    "principle": "Não apenas identificar boas oportunidades, mas determinar que operação faz sentido, como financiá-la, como estruturá-la, como executá-la e como proteger o capital durante o processo.",
+    "capabilities": [
+      {
+        "num": "01",
+        "title": "Originação",
+        "text": "Identificação de empresas, ativos, projetos, oportunidades de aquisição, necessidades de capital, investidores, financiadores, compradores e sócios estratégicos."
+      },
+      {
+        "num": "02",
+        "title": "Análise e due diligence",
+        "text": "Avaliação financeira, estratégica, setorial, operacional e documental; identificação de riscos, contingências e condições de viabilidade."
+      },
+      {
+        "num": "03",
+        "title": "Valorização e modelização",
+        "text": "Valorização de empresas e ativos, modelos financeiros, análise de sensibilidade, estruturas de capital, retorno e impacto de transações."
+      },
+      {
+        "num": "04",
+        "title": "Estruturação de capital",
+        "text": "Desenho e análise de alternativas de dívida, equity, coinvestimento, private capital, financiamento de aquisições e associações estratégicas."
+      },
+      {
+        "num": "05",
+        "title": "M&A e transações",
+        "text": "Aquisições, desinvestimentos, procura de compradores ou alvos, análise financeira, negociação, due diligence e acompanhamento da execução."
+      },
+      {
+        "num": "06",
+        "title": "Captação de capital",
+        "text": "Preparação de oportunidades e ligação a investidores privados, family offices, fundos e outras fontes de capital, no quadro regulatório aplicável."
+      },
+      {
+        "num": "07",
+        "title": "Ativos industriais e reais",
+        "text": "Estruturação e desenvolvimento de projetos mineiros, industriais, energéticos, de infraestrutura e imobiliários, com visão financeira e operacional."
+      },
+      {
+        "num": "08",
+        "title": "Desenvolvimento transfronteiriço",
+        "text": "Entrada em mercados, joint ventures, estabelecimento local, sócios, distribuidores, representação comercial, roadshows e execução internacional."
+      }
+    ]
+  },
+  "about": {
+    "kicker": "Sobre",
+    "title": "Quem somos",
+    "subtitle": "Experiência acumulada. Capacidade institucional desde a origem.",
+    "body": "A NAHU Capital consolida a experiência profissional dos seus fundadores numa nova estrutura corporativa concebida para operar com disciplina financeira, capacidade transacional, conhecimento setorial e alcance internacional. Em conjunto, reúne mais de 75 anos de percurso em finanças corporativas, auditoria, banca, M&A, minas, energia, infraestruturas, desenvolvimento industrial e imobiliário, investimento privado e expansão internacional.",
+    "differentialTitle": "Uma combinação distintiva",
+    "differential": "A capacidade do grupo não reside apenas em identificar oportunidades, mas em determinar quais fazem sentido, como devem ser estruturadas, que capital exigem, quais são os seus riscos e em que condições podem ser levadas a execução.",
+    "axes": [
+      {
+        "title": "Análise e estrutura",
+        "text": "Finanças corporativas, auditoria, risco, valorização, due diligence e estruturas de capital."
+      },
+      {
+        "title": "Setores e ativos",
+        "text": "Minas, energia, infraestruturas, indústria, imobiliário, banca e tecnologia."
+      },
+      {
+        "title": "Execução global",
+        "text": "Originação, captação de capital, entrada em mercados, alianças, negociação e execução transfronteiriça."
+      }
+    ],
+    "stats": [
+      {
+        "value": "75+",
+        "label": "Anos de experiência",
+        "detail": "Percurso profissional acumulado."
+      },
+      {
+        "value": "US$5B",
+        "label": "Maior operação",
+        "detail": "Experiência transacional individual em M&A e valorização."
+      },
+      {
+        "value": "US$3.5B",
+        "label": "Minas",
+        "detail": "Experiência acumulada em projetos e ativos mineiros."
+      },
+      {
+        "value": "US$900M",
+        "label": "Desenvolvimento industrial",
+        "detail": "Projetos e operações industriais relacionados."
+      },
+      {
+        "value": "US$50M",
+        "label": "Imobiliário",
+        "detail": "Desenvolvimento integral de um projeto individual, de A a Z."
+      },
+      {
+        "value": "15+",
+        "label": "Mercados",
+        "detail": "Experiência e execução na América, Europa, Ásia, África e Médio Oriente."
+      }
+    ],
+    "disclaimer": "As cifras refletem a experiência profissional acumulada dos sócios fundadores do grupo."
+  },
+  "team": {
+    "kicker": "Equipa",
+    "title": "Capacidade institucional desde a origem",
+    "body": "A NAHU Capital reúne o percurso dos seus sócios fundadores numa plataforma mexicana com vocação internacional. A equipa cobre finanças corporativas, auditoria, banca, M&A e ativos reais — minas, energia, infraestruturas, indústria e imobiliário.",
+    "note": "As cifras publicadas neste sítio correspondem à experiência profissional acumulada dos sócios fundadores.",
+    "contactLabel": "Contacto institucional",
+    "person": {
+      "name": "Juan Balbontin",
+      "role": "Contacto institucional",
+      "location": "México"
+    }
+  },
+  "portfolio": {
+    "kicker": "Portefólio",
+    "title": "Setores e alcance",
+    "subtitle": "Capacidade setorial profunda com perspetiva internacional.",
+    "intro": "A experiência do grupo cobre os seguintes setores e geografias. Esta versão do sítio não apresenta operações nominativas.",
+    "sectorsTitle": "Setores de experiência",
+    "sectors": [
+      "Minas e recursos naturais",
+      "Energia, petróleo e gás",
+      "Infraestruturas",
+      "Desenvolvimento industrial e manufactura",
+      "Imobiliário e construção",
+      "Banca e serviços financeiros",
+      "Private equity e capital privado",
+      "M&A e corporate finance",
+      "Technology, media & telecom",
+      "Comércio B2B e distribuição",
+      "Hotelaria e turismo"
+    ],
+    "reachTitle": "Alcance internacional",
+    "reachIntro": "Experiência profissional e execução de projetos em:",
+    "regions": [
+      {
+        "name": "América do Norte",
+        "places": "México · Estados Unidos · Canadá"
+      },
+      {
+        "name": "América Latina",
+        "places": "Chile"
+      },
+      {
+        "name": "Europa",
+        "places": "França · Reino Unido · Espanha · Portugal · Alemanha"
+      },
+      {
+        "name": "Ásia",
+        "places": "China · Hong Kong · Singapura"
+      },
+      {
+        "name": "África e Médio Oriente",
+        "places": "Moçambique · Emirados Árabes Unidos · Egito"
+      }
+    ],
+    "modelTitle": "Modelo institucional",
+    "model": "A NAHU Capital projeta-se como uma plataforma mexicana com vocação internacional para articular capital, empresas, ativos, projetos, mercados e oportunidades. O seu objetivo é construir operações financeiramente viáveis, estrategicamente coerentes e executáveis, desenvolvendo progressivamente os veículos e estruturas permitidos pelo seu objeto social e pela regulação aplicável."
+  },
+  "contact": {
+    "kicker": "Contacto",
+    "title": "Contacto institucional",
+    "name": "Juan Balbontin",
+    "phone": "+52 81 1024 2050",
+    "phoneHref": "tel:+528110242050",
+    "email": "jbmtradingmx@gmail.com",
+    "location": "México",
+    "cta": "Escrever"
+  },
+  "footer": {
+    "group": "Grupo empresarial NAHU Capital",
+    "rights": "© 2026 NAHU Capital"
+  }
+}
