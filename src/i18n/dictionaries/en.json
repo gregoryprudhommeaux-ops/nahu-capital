@@ -151,6 +151,8 @@
     "subtitle": "Deep sector capability with an international view.",
     "intro": "The group’s experience covers the following sectors and geographies. Named transactions are not presented in this version of the site.",
     "sectorsTitle": "Sectors of experience",
+    "sectorsOpen": "Open the sectors list",
+    "sectorsClose": "Close the sectors list",
     "sectors": [
       "Mining and natural resources",
       "Energy, oil and gas",

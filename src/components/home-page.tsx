@@ -1,6 +1,7 @@
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { EditorialFrame } from "./editorial-frame";
+import { SectorsMenu } from "./sectors-menu";
 import { SiteFooter } from "./site-footer";
 import { SiteHeader } from "./site-header";
 
@@ -349,20 +350,13 @@ function Portfolio({ dict }: { dict: Dictionary }) {
           ))}
         </div>
 
-        <div className="mt-12 grid gap-12 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <h3 className="kicker mb-5">{dict.portfolio.sectorsTitle}</h3>
-            <ul>
-              {dict.portfolio.sectors.map((sector) => (
-                <li
-                  key={sector}
-                  className="border-b border-navy/8 py-2.5 text-[0.92rem] text-navy/80"
-                >
-                  {sector}
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="mt-12 grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
+          <SectorsMenu
+            title={dict.portfolio.sectorsTitle}
+            sectors={dict.portfolio.sectors}
+            openLabel={dict.portfolio.sectorsOpen}
+            closeLabel={dict.portfolio.sectorsClose}
+          />
 
           <div>
             <h3 className="kicker mb-2">{dict.portfolio.reachTitle}</h3>

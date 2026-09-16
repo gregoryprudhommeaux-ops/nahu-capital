@@ -151,6 +151,8 @@
     "subtitle": "Capacidad sectorial profunda con perspectiva internacional.",
     "intro": "La experiencia del grupo cubre los siguientes sectores y geografías. No se presentan operaciones nominativas en esta versión del sitio.",
     "sectorsTitle": "Sectores de experiencia",
+    "sectorsOpen": "Abrir la lista de sectores",
+    "sectorsClose": "Cerrar la lista de sectores",
     "sectors": [
       "Minería y recursos naturales",
       "Energía, petróleo y gas",

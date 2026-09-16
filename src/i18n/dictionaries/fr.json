@@ -151,6 +151,8 @@
     "subtitle": "Une capacité sectorielle profonde, une lecture internationale.",
     "intro": "L’expérience du groupe couvre les secteurs et géographies suivants. Cette version du site ne présente pas d’opérations nominatives.",
     "sectorsTitle": "Secteurs d’expérience",
+    "sectorsOpen": "Ouvrir la liste des secteurs",
+    "sectorsClose": "Fermer la liste des secteurs",
     "sectors": [
       "Mines et ressources naturelles",
       "Énergie, pétrole et gaz",
