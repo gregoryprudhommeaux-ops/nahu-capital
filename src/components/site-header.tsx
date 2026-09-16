@@ -24,8 +24,8 @@ export function SiteHeader({ locale, dict }: Props) {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm">
-      <div className="wrap flex items-center justify-between gap-4 py-3.5">
+    <header className="sticky top-0 z-50 overflow-visible bg-cream">
+      <div className="wrap flex items-center justify-between gap-4 overflow-visible py-3.5">
         <Link
           href={pathForLocale(locale)}
           className="shrink-0"
@@ -53,7 +53,7 @@ export function SiteHeader({ locale, dict }: Props) {
           ))}
         </nav>
 
-        <div className="flex items-center gap-1">
+        <div className="relative z-[60] flex items-center gap-2">
           <LanguageSwitcher locale={locale} />
           <button
             type="button"

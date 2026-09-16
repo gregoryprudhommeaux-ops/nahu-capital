@@ -60,12 +60,17 @@ body.is-zh h3 {
   margin-inline: auto;
 }
 
-.sectors-menu summary {
+.sectors-menu summary,
+.lang-switcher summary {
   list-style: none;
 }
 
-.sectors-menu summary::-webkit-details-marker {
+.sectors-menu summary::-webkit-details-marker,
+.lang-switcher summary::-webkit-details-marker,
+.sectors-menu summary::marker,
+.lang-switcher summary::marker {
   display: none;
+  content: "";
 }
 
 @media (min-width: 768px) {

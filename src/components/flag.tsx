@@ -3,12 +3,15 @@ import type { Locale } from "@/i18n/config";
 type FlagProps = {
   locale: Locale;
   title: string;
+  size?: "sm" | "md";
 };
 
-export function Flag({ locale, title }: FlagProps) {
+export function Flag({ locale, title, size = "md" }: FlagProps) {
   return (
     <span
-      className="inline-flex h-4 w-[1.55rem] overflow-hidden rounded-[2px] ring-1 ring-navy/15"
+      className={`inline-flex overflow-hidden rounded-[1px] ring-1 ring-navy/10 ${
+        size === "sm" ? "h-3 w-[1.15rem]" : "h-3.5 w-[1.35rem]"
+      }`}
       title={title}
     >
       <svg

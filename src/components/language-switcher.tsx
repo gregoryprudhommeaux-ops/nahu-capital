@@ -1,89 +1,45 @@
-"use client";
-
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
 import { localeNames, locales, pathForLocale, type Locale } from "@/i18n/config";
 import { Flag } from "./flag";
 
 type Props = {
   locale: Locale;
   align?: "down" | "up";
-  tone?: "light" | "dark";
 };
 
-export function LanguageSwitcher({
-  locale,
-  align = "down",
-  tone = "light",
-}: Props) {
-  const [open, setOpen] = useState(false);
-  const rootRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!open) return;
-
-    const onPointer = (event: MouseEvent) => {
-      if (!rootRef.current?.contains(event.target as Node)) {
-        setOpen(false);
-      }
-    };
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
-    };
-
-    document.addEventListener("mousedown", onPointer);
-    document.addEventListener("keydown", onKey);
-    return () => {
-      document.removeEventListener("mousedown", onPointer);
-      document.removeEventListener("keydown", onKey);
-    };
-  }, [open]);
-
+export function LanguageSwitcher({ locale, align = "down" }: Props) {
   return (
-    <div ref={rootRef} className="relative">
-      <button
-        type="button"
-        className="flex h-9 items-center gap-1.5 px-1"
-        aria-haspopup="listbox"
-        aria-expanded={open}
+    <details className="lang-switcher group relative z-[60]">
+      <summary
+        className="flex cursor-pointer items-center gap-1 rounded-sm py-1 pr-0.5 opacity-55 transition-opacity hover:opacity-100"
         aria-label={localeNames[locale]}
-        onClick={() => setOpen((value) => !value)}
       >
-        <Flag locale={locale} title={localeNames[locale]} />
-        <span
-          className={`text-[0.6rem] transition-transform ${
-            open ? "rotate-180" : ""
-          } ${tone === "dark" ? "text-cream/50" : "text-navy/40"}`}
-          aria-hidden
-        >
+        <Flag locale={locale} title={localeNames[locale]} size="sm" />
+        <span className="text-[0.5rem] leading-none text-navy/45" aria-hidden>
           ▾
         </span>
-      </button>
+      </summary>
 
-      {open ? (
-        <ul
-          role="listbox"
-          className={`absolute right-0 z-50 min-w-[11.5rem] border border-navy/10 bg-cream py-1.5 shadow-[0_12px_32px_rgba(16,23,34,0.08)] ${
-            align === "up" ? "bottom-full mb-2" : "top-full mt-2"
-          }`}
-        >
-          {locales.map((code) => (
-            <li key={code} role="option" aria-selected={code === locale}>
-              <Link
-                href={pathForLocale(code)}
-                hrefLang={code}
-                className={`flex items-center gap-3 px-3 py-2 text-sm transition-colors hover:bg-navy/5 ${
-                  code === locale ? "text-navy" : "text-navy/70"
-                }`}
-                onClick={() => setOpen(false)}
-              >
-                <Flag locale={code} title={localeNames[code]} />
-                <span>{localeNames[code]}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      ) : null}
-    </div>
+      <ul
+        className={`absolute right-0 z-[60] min-w-[10.5rem] border border-navy/10 bg-cream py-1 shadow-[0_10px_28px_rgba(16,23,34,0.1)] ${
+          align === "up" ? "bottom-full mb-1.5" : "top-full mt-1.5"
+        }`}
+      >
+        {locales.map((code) => (
+          <li key={code}>
+            <Link
+              href={pathForLocale(code)}
+              hrefLang={code}
+              className={`flex items-center gap-2.5 px-2.5 py-1.5 text-[0.8rem] transition-colors hover:bg-navy/5 ${
+                code === locale ? "text-navy" : "text-navy/60"
+              }`}
+            >
+              <Flag locale={code} title={localeNames[code]} size="sm" />
+              <span>{localeNames[code]}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </details>
   );
 }
