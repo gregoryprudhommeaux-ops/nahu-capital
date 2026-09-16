@@ -157,17 +157,15 @@
     "sectorsOpen": "Open the sectors list",
     "sectorsClose": "Close the sectors list",
     "sectors": [
-      "Mining and natural resources",
-      "Energy, oil and gas",
+      "Real estate and urbanization",
+      "Hospitality and tourism",
       "Infrastructure",
+      "Energy sites",
+      "Mining and natural resources",
       "Industrial development and manufacturing",
-      "Real estate and construction",
-      "Banking and financial services",
+      "Sports complexes",
       "Private equity and private capital",
-      "M&A and corporate finance",
-      "Technology, media & telecom",
-      "B2B trade and distribution",
-      "Hospitality and tourism"
+      "M&A and corporate finance"
     ],
     "reachTitle": "Map of work",
     "reachIntro": "Experience and execution in:",

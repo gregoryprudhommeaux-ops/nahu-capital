@@ -157,17 +157,15 @@
     "sectorsOpen": "Ouvrir la liste des métiers",
     "sectorsClose": "Fermer la liste des métiers",
     "sectors": [
-      "Mines et ressources naturelles",
-      "Énergie, pétrole et gaz",
+      "Immobilier et urbanisation",
+      "Hôtellerie et tourisme",
       "Infrastructures",
+      "Sites énergétiques",
+      "Mines et ressources naturelles",
       "Développement industriel et manufacture",
-      "Immobilier et construction",
-      "Banque et services financiers",
+      "Complexes sportifs",
       "Private equity et capital privé",
-      "M&A et corporate finance",
-      "Technology, media & telecom",
-      "Commerce B2B et distribution",
-      "Hôtellerie et tourisme"
+      "M&A et corporate finance"
     ],
     "reachTitle": "Carte de travail",
     "reachIntro": "Expérience et exécution en :",

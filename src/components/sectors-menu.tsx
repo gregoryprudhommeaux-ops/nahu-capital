@@ -18,11 +18,11 @@ export function SectorsMenu({ title, sectors }: Props) {
         </span>
       </summary>
 
-      <ul className="border-b border-navy/10">
+      <ul className="grid border-b border-navy/10 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-10">
         {sectors.map((sector) => (
           <li
             key={sector}
-            className="border-b border-navy/8 py-2.5 text-[0.92rem] text-navy/80 last:border-b-0"
+            className="border-b border-navy/8 py-2.5 text-[0.92rem] text-navy/80"
           >
             {sector}
           </li>

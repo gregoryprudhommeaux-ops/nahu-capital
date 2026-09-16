@@ -157,17 +157,15 @@
     "sectorsOpen": "Abrir a lista de setores",
     "sectorsClose": "Fechar a lista de setores",
     "sectors": [
-      "Minas e recursos naturais",
-      "Energia, petróleo e gás",
+      "Imobiliário e urbanização",
+      "Hotelaria e turismo",
       "Infraestruturas",
+      "Sítios energéticos",
+      "Minas e recursos naturais",
       "Desenvolvimento industrial e manufactura",
-      "Imobiliário e construção",
-      "Banca e serviços financeiros",
+      "Complexos desportivos",
       "Private equity e capital privado",
-      "M&A e corporate finance",
-      "Technology, media & telecom",
-      "Comércio B2B e distribuição",
-      "Hotelaria e turismo"
+      "M&A e corporate finance"
     ],
     "reachTitle": "Mapa de trabalho",
     "reachIntro": "Experiência e execução em:",
