@@ -187,11 +187,12 @@ export function ContactPanel({ dict }: Props) {
                 className="contact-field"
               />
             </Field>
-            <Field id={`${formId}-message`} label={dict.message} hint={dict.optional}>
+            <Field id={`${formId}-message`} label={dict.message} required>
               <textarea
                 id={`${formId}-message`}
                 name="message"
                 rows={5}
+                required
                 maxLength={4000}
                 className="contact-field min-h-[7.5rem] resize-y"
               />

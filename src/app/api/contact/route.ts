@@ -61,7 +61,7 @@ export async function POST(request: Request) {
   const company = clean(body.company, 160);
   const message = typeof body.message === "string" ? body.message.trim().slice(0, 4000) : "";
 
-  if (name.length < 2 || !isWhatsapp(whatsapp) || !isEmail(email)) {
+  if (name.length < 2 || !isWhatsapp(whatsapp) || !isEmail(email) || !message) {
     return Response.json({ ok: false, error: "invalid" }, { status: 400 });
   }
 
@@ -74,7 +74,7 @@ export async function POST(request: Request) {
     `Company / project: ${company || "—"}`,
     "",
     "Message:",
-    message || "—",
+    message,
   ].join("\n");
 
   try {
