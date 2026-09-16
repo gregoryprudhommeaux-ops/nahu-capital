@@ -373,11 +373,8 @@ function Contact({ dict }: { dict: Dictionary }) {
       <div className="grid lg:grid-cols-2">
         <div className="bg-navy text-cream">
           <div className="wrap py-12 md:py-16 lg:w-auto lg:max-w-none lg:pr-12 lg:pl-[max(2.5rem,calc((100vw-1220px)/2))]">
-            <p className="kicker mb-4">{dict.contact.kicker}</p>
-            <h2 className="max-w-md font-serif text-[clamp(1.85rem,3.4vw,2.85rem)] leading-[1.08] text-cream">
-              {dict.contact.title}
-            </h2>
-            <div className="mt-8 max-w-sm space-y-3">
+            <p className="kicker mb-8">{dict.contact.kicker}</p>
+            <div className="max-w-sm space-y-3">
               <p className="font-serif text-2xl text-cream">{dict.contact.name}</p>
               <p>
                 <a
