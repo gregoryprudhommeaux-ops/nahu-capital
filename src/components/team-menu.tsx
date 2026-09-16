@@ -74,10 +74,10 @@ export function TeamMenu({ dict }: Props) {
             <img
               src={profile.photo}
               alt={person.name}
-              width={224}
-              height={224}
+              width={112}
+              height={112}
               draggable={false}
-              className="h-20 w-20 shrink-0 object-cover md:h-28 md:w-28"
+              className="h-20 w-20 shrink-0 bg-navy object-cover md:h-28 md:w-28"
             />
             <div className="min-w-0">
               <div className="flex items-center gap-2.5">

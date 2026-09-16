@@ -63,7 +63,7 @@ function Hero({ dict }: { dict: Dictionary }) {
           src="/editorial/hero-cdmx.jpg"
           alt={dict.media.heroAlt}
           caption={dict.media.heroCaption}
-          className="h-[min(58vw,22rem)] w-full md:h-[28rem] lg:h-auto lg:min-h-full"
+          className="h-[min(58vw,22rem)] w-full md:h-[28rem] lg:h-[min(82svh,740px)]"
           imageClassName="object-[center_35%]"
           priority
         />
@@ -183,7 +183,7 @@ function About({ dict }: { dict: Dictionary }) {
           src="/editorial/paris.jpg"
           alt={dict.media.parisAlt}
           caption={dict.media.parisCaption}
-          className="h-[18rem] w-full md:h-[24rem] lg:h-auto lg:min-h-full"
+          className="h-[18rem] w-full md:h-[24rem] lg:h-[min(36rem,68svh)]"
           imageClassName="object-[center_40%]"
         />
         <div className="wrap py-12 md:py-16 lg:w-auto lg:max-w-none lg:pr-[max(2.5rem,calc((100vw-1220px)/2))] lg:pl-12">
@@ -331,7 +331,7 @@ function Contact({ dict }: { dict: Dictionary }) {
           src="/editorial/contact-cdmx.jpg"
           alt={dict.media.contactAlt}
           caption={dict.media.heroCaption}
-          className="h-[18rem] w-full md:h-[24rem] lg:h-auto lg:min-h-full"
+          className="h-[18rem] w-full md:h-[24rem] lg:h-[min(36rem,68svh)]"
           imageClassName="object-[center_55%]"
         />
       </div>

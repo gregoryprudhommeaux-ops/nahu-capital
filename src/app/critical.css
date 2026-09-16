@@ -53,6 +53,39 @@ body {
   display: flex;
 }
 
+.editorial-frame {
+  position: relative;
+  overflow: hidden;
+  background: #101722;
+  margin: 0;
+}
+
+.editorial-frame > img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.editorial-frame > figcaption {
+  pointer-events: none;
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgb(16 23 34 / 0.75), transparent);
+  padding: 3rem 0.875rem 0.75rem;
+}
+
+.editorial-frame > figcaption span {
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgb(243 240 234 / 0.9);
+}
+
 @media (min-width: 768px) {
   .brand-logo {
     height: 2.25rem;

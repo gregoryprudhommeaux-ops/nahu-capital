@@ -16,34 +16,18 @@ export function EditorialFrame({
   priority,
 }: Props) {
   return (
-    <figure
-      className={`relative overflow-hidden bg-navy ${className ?? ""}`}
-      style={{
-        backgroundColor: "#101722",
-        backgroundImage: `url(${src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <figure className={`editorial-frame ${className ?? ""}`}>
       <img
         src={src}
         alt={alt}
-        width={1600}
-        height={1200}
         fetchPriority={priority ? "high" : "low"}
-        decoding={priority ? "sync" : "async"}
+        decoding="async"
         draggable={false}
-        className={`absolute inset-0 h-full w-full object-cover ${imageClassName ?? ""}`}
-        onError={(event) => {
-          event.currentTarget.style.opacity = "0";
-        }}
+        className={imageClassName}
       />
-      <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-navy/10" />
       {caption ? (
-        <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/75 to-transparent px-3.5 pb-3 pt-12">
-          <span className="text-[0.62rem] font-medium tracking-[0.18em] text-cream/90 uppercase">
-            {caption}
-          </span>
+        <figcaption>
+          <span>{caption}</span>
         </figcaption>
       ) : null}
     </figure>
