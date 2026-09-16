@@ -38,7 +38,7 @@ function Hero({ dict }: { dict: Dictionary }) {
         <div className="wrap flex flex-col justify-between py-10 md:py-12 lg:w-auto lg:max-w-none lg:pr-10 lg:pl-[max(2.5rem,calc((100vw-1220px)/2))]">
           <div className="max-w-xl">
             <p className="kicker mb-2.5">{dict.hero.kicker}</p>
-            <h1 className="font-serif text-[clamp(2.05rem,4.6vw,3.75rem)] leading-[0.98] tracking-[-0.035em] text-navy">
+            <h1 className="font-serif text-[clamp(2.05rem,4.6vw,3.75rem)] leading-none tracking-[-0.035em] text-navy">
               {dict.hero.title}
             </h1>
             <p className="mt-4 max-w-md text-[0.98rem] leading-[1.5] text-navy/65">
