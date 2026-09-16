@@ -98,16 +98,30 @@ body.is-zh .kicker {
   content: "";
 }
 
-.contact-dialog {
-  margin: auto;
-  border: 0;
-  padding: 0;
-  background: transparent;
-  max-width: calc(100vw - 1.5rem);
+.contact-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background: rgb(16 23 34 / 0.62);
 }
 
-.contact-dialog::backdrop {
-  background: rgb(16 23 34 / 0.62);
+.contact-modal-panel {
+  width: min(32rem, calc(100vw - 2rem));
+  max-height: min(90vh, 52rem);
+  overflow: auto;
+  background: #f3f0ea;
+  color: #101722;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact-modal-panel {
+    padding: 2rem;
+  }
 }
 
 .contact-field {

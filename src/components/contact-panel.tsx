@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import type { Dictionary } from "@/i18n/get-dictionary";
 
 type Status = "idle" | "sending" | "sent" | "error";
@@ -10,27 +11,41 @@ type Props = {
 };
 
 export function ContactPanel({ dict }: Props) {
-  const dialogRef = useRef<HTMLDialogElement>(null);
   const formId = useId();
+  const titleId = useId();
+  const firstFieldRef = useRef<HTMLInputElement>(null);
+  const [open, setOpen] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
 
   useEffect(() => {
-    const dialog = dialogRef.current;
-    if (!dialog) return;
-    const onClose = () => {
-      setStatus("idle");
+    if (!open) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    firstFieldRef.current?.focus();
+
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        setOpen(false);
+      }
     };
-    dialog.addEventListener("close", onClose);
-    return () => dialog.removeEventListener("close", onClose);
-  }, []);
+    document.addEventListener("keydown", onKey);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
 
   function openForm() {
     setStatus("idle");
-    dialogRef.current?.showModal();
+    setOpen(true);
   }
 
   function closeForm() {
-    dialogRef.current?.close();
+    setOpen(false);
+    setStatus("idle");
   }
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -93,99 +108,119 @@ export function ContactPanel({ dict }: Props) {
         </button>
       </div>
 
-      <dialog ref={dialogRef} className="contact-dialog">
-        <form
-          onSubmit={onSubmit}
-          className="w-[min(32rem,calc(100vw-2rem))] bg-cream p-6 text-navy md:p-8"
-        >
-          <div className="mb-6 flex items-start justify-between gap-4">
-            <div>
-              <p className="kicker mb-2">{dict.kicker}</p>
-              <p className="font-serif text-2xl leading-tight">{dict.formTitle}</p>
-            </div>
-            <button
-              type="button"
-              onClick={closeForm}
-              className="text-[0.68rem] tracking-[0.16em] text-navy/45 uppercase transition-colors hover:text-navy"
-            >
-              {dict.close}
-            </button>
-          </div>
+      {open
+        ? createPortal(
+            <div className="contact-modal" role="presentation" onClick={closeForm}>
+              <form
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby={titleId}
+                onSubmit={onSubmit}
+                onClick={(event) => event.stopPropagation()}
+                className="contact-modal-panel"
+              >
+                <div className="mb-6 flex items-start justify-between gap-4">
+                  <div>
+                    <p className="kicker mb-2">{dict.kicker}</p>
+                    <p id={titleId} className="font-serif text-2xl leading-tight">
+                      {dict.formTitle}
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={closeForm}
+                    className="text-[0.68rem] tracking-[0.16em] text-navy/45 uppercase transition-colors hover:text-navy"
+                  >
+                    {dict.close}
+                  </button>
+                </div>
 
-          <div className="space-y-4">
-            <Field id={`${formId}-name`} label={dict.fullName} required>
-              <input
-                id={`${formId}-name`}
-                name="name"
-                type="text"
-                autoComplete="name"
-                required
-                minLength={2}
-                maxLength={120}
-                className="contact-field"
-              />
-            </Field>
-            <Field id={`${formId}-whatsapp`} label={dict.whatsapp} required>
-              <input
-                id={`${formId}-whatsapp`}
-                name="whatsapp"
-                type="tel"
-                autoComplete="tel"
-                inputMode="tel"
-                required
-                minLength={8}
-                maxLength={40}
-                className="contact-field"
-              />
-            </Field>
-            <Field id={`${formId}-email`} label={dict.email} required>
-              <input
-                id={`${formId}-email`}
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                maxLength={160}
-                className="contact-field"
-              />
-            </Field>
-            <Field id={`${formId}-company`} label={dict.company} hint={dict.optional}>
-              <input
-                id={`${formId}-company`}
-                name="company"
-                type="text"
-                autoComplete="organization"
-                maxLength={160}
-                className="contact-field"
-              />
-            </Field>
-            <Field id={`${formId}-message`} label={dict.message} hint={dict.optional}>
-              <textarea
-                id={`${formId}-message`}
-                name="message"
-                rows={5}
-                maxLength={4000}
-                className="contact-field min-h-[7.5rem] resize-y"
-              />
-            </Field>
-            <div className="hidden" aria-hidden>
-              <input name="hp" tabIndex={-1} autoComplete="off" />
-            </div>
-          </div>
+                <div className="space-y-4">
+                  <Field id={`${formId}-name`} label={dict.fullName} required>
+                    <input
+                      ref={firstFieldRef}
+                      id={`${formId}-name`}
+                      name="name"
+                      type="text"
+                      autoComplete="name"
+                      required
+                      minLength={2}
+                      maxLength={120}
+                      className="contact-field"
+                    />
+                  </Field>
+                  <Field id={`${formId}-whatsapp`} label={dict.whatsapp} required>
+                    <input
+                      id={`${formId}-whatsapp`}
+                      name="whatsapp"
+                      type="tel"
+                      autoComplete="tel"
+                      inputMode="tel"
+                      required
+                      minLength={8}
+                      maxLength={40}
+                      className="contact-field"
+                    />
+                  </Field>
+                  <Field id={`${formId}-email`} label={dict.email} required>
+                    <input
+                      id={`${formId}-email`}
+                      name="email"
+                      type="email"
+                      autoComplete="email"
+                      required
+                      maxLength={160}
+                      className="contact-field"
+                    />
+                  </Field>
+                  <Field
+                    id={`${formId}-company`}
+                    label={dict.company}
+                    hint={dict.optional}
+                  >
+                    <input
+                      id={`${formId}-company`}
+                      name="company"
+                      type="text"
+                      autoComplete="organization"
+                      maxLength={160}
+                      className="contact-field"
+                    />
+                  </Field>
+                  <Field
+                    id={`${formId}-message`}
+                    label={dict.message}
+                    hint={dict.optional}
+                  >
+                    <textarea
+                      id={`${formId}-message`}
+                      name="message"
+                      rows={5}
+                      maxLength={4000}
+                      className="contact-field min-h-[7.5rem] resize-y"
+                    />
+                  </Field>
+                  <div className="hidden" aria-hidden>
+                    <input name="hp" tabIndex={-1} autoComplete="off" />
+                  </div>
+                </div>
 
-          {status === "error" ? (
-            <p className="mt-4 text-[0.82rem] text-navy/70">{dict.error}</p>
-          ) : null}
+                {status === "error" ? (
+                  <p className="mt-4 text-[0.82rem] text-navy/70">{dict.error}</p>
+                ) : null}
 
-          <button
-            type="submit"
-            disabled={status === "sending" || status === "sent"}
-            className="mt-6 w-full bg-navy px-5 py-3 text-[0.72rem] font-medium tracking-[0.18em] text-cream uppercase transition-colors hover:bg-navy/90 disabled:opacity-80"
-          >
-            {submitLabel}
-          </button>
-        </form>
-      </dialog>
+                <button
+                  type="submit"
+                  disabled={status === "sending" || status === "sent"}
+                  className="mt-6 w-full bg-navy px-5 py-3 text-[0.72rem] font-medium tracking-[0.18em] text-cream uppercase transition-colors hover:bg-navy/90 disabled:opacity-80"
+                >
+                  {submitLabel}
+                </button>
+              </form>
+            </div>,
+            document.body,
+          )
+        : null}
     </div>
   );
 }
