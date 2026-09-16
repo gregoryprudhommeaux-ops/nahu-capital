@@ -410,7 +410,7 @@ function Contact({ dict }: { dict: Dictionary }) {
         <EditorialFrame
           src="/editorial/contact-cdmx.jpg"
           alt={dict.media.contactAlt}
-          caption={dict.media.contactCaption}
+          caption={dict.media.heroCaption}
           className="min-h-[280px] lg:min-h-full"
           imageClassName="object-[center_55%]"
           sizes="(min-width: 1024px) 50vw, 100vw"
