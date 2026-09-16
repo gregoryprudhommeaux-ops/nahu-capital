@@ -196,9 +196,6 @@ function About({ dict }: { dict: Dictionary }) {
           <h2 className="font-serif text-[clamp(1.55rem,2.4vw,2.35rem)] leading-[1.15] text-navy">
             {dict.about.title}
           </h2>
-          <p className="mt-3 font-serif text-lg leading-snug text-navy/50">
-            {dict.about.subtitle}
-          </p>
           <p className="mt-5 max-w-xl text-[0.98rem] leading-[1.7] text-navy/65">
             {dict.about.body}
           </p>
@@ -227,26 +224,6 @@ function About({ dict }: { dict: Dictionary }) {
         <p className="mt-3 max-w-2xl text-[0.68rem] leading-relaxed text-navy/38 italic">
           {dict.about.disclaimer}
         </p>
-
-        <div className="mt-12 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
-          <h3 className="font-serif text-[clamp(1.4rem,2.2vw,1.9rem)] leading-snug text-navy">
-            {dict.about.differentialTitle}
-          </h3>
-          <p className="max-w-xl text-[0.98rem] leading-[1.7] text-navy/65">
-            {dict.about.differential}
-          </p>
-        </div>
-
-        <div className="mt-10 grid gap-8 md:grid-cols-3">
-          {dict.about.axes.map((axis) => (
-            <div key={axis.title} className="border-t border-gold/60 pt-4">
-              <h4 className="font-serif text-lg text-navy">{axis.title}</h4>
-              <p className="mt-3 text-[0.9rem] leading-relaxed text-navy/60">
-                {axis.text}
-              </p>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
@@ -260,15 +237,14 @@ function Team({ dict }: { dict: Dictionary }) {
         <h2 className="font-serif text-[clamp(1.55rem,2.4vw,2.35rem)] leading-[1.15] text-navy">
           {dict.team.title}
         </h2>
-        <p className="mt-3 max-w-xl text-[0.98rem] leading-[1.7] text-navy/65">
-          {dict.team.body}
-        </p>
+        {dict.team.body ? (
+          <p className="mt-3 max-w-xl text-[0.98rem] leading-[1.7] text-navy/65">
+            {dict.team.body}
+          </p>
+        ) : null}
         <div className="mt-8">
           <TeamMenu dict={dict} />
         </div>
-        <p className="mt-3 max-w-2xl text-[0.68rem] leading-relaxed text-navy/38 italic">
-          {dict.team.note}
-        </p>
       </div>
     </section>
   );
@@ -315,13 +291,12 @@ function Portfolio({ dict }: { dict: Dictionary }) {
             <h2 className="font-serif text-[clamp(1.55rem,2.4vw,2.35rem)] leading-[1.15] text-navy">
               {dict.portfolio.title}
             </h2>
-            <p className="mt-3 font-serif text-lg leading-snug text-navy/50">
-              {dict.portfolio.subtitle}
-            </p>
           </div>
-          <p className="max-w-xl self-end text-[0.98rem] leading-[1.7] text-navy/65">
-            {dict.portfolio.intro}
-          </p>
+          {dict.portfolio.intro ? (
+            <p className="max-w-xl self-end text-[0.98rem] leading-[1.7] text-navy/65">
+              {dict.portfolio.intro}
+            </p>
+          ) : null}
         </div>
 
         <div className="mt-10 grid gap-3 md:grid-cols-2">

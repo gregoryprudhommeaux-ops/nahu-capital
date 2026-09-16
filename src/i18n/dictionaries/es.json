@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "NAHU Capital",
-    "description": "Plataforma franco-mexicana de capital y activos reales. Originación, estructura y cierre, también transfronterizo."
+    "description": "Plataforma franco-mexicana de inversión: capital, activos reales y ejecución transfronteriza."
   },
   "nav": {
     "thesis": "Tesis",
@@ -13,7 +13,7 @@
   "hero": {
     "kicker": "Plataforma de inversión franco-mexicana",
     "title": "Capital y activos reales. Ejecución transfronteriza.",
-    "lead": "NAHU Capital origina, estructura y cierra operaciones de inversión, financiamiento y M&A desde México. Un expediente: tesis, valuación, capital y ruta de firma."
+    "lead": "Desde México acompañamos operaciones de inversión, financiamiento y M&A, de la originación al cierre, también cuando cruzan frontera."
   },
   "pillars": [
     {
@@ -26,79 +26,62 @@
     },
     {
       "label": "Transfronterizo",
-      "text": "Market entry, joint ventures y ejecución fuera de plaza."
+      "text": "Entrada de mercado, joint ventures y ejecución fuera de México."
     }
   ],
   "thesis": {
     "kicker": "Tesis",
-    "title": "Un expediente, de la tesis a la firma.",
-    "intro": "Estrategia, análisis, valuación, estructura de capital, negociación y cierre van en el mismo expediente. Cortarlos es dejar la operación a medias.",
+    "title": "De la tesis a la firma, en un solo trabajo.",
+    "intro": "Estrategia, valuación, estructura de capital y negociación se trabajan juntas, con el cliente, hasta poder firmar.",
     "principleLabel": "Criterio",
-    "principle": "Acompañamos al cliente en la tesis, la estructura, el capital y el camino de cierre. Lo que aún no sostiene, se trabaja en el expediente.",
+    "principle": "Acompañamos al cliente para ver si la operación tiene sentido, cómo financiarla y cómo llevarla a firma.",
     "capabilities": [
       {
         "num": "01",
         "title": "Originación",
-        "text": "Compañías, activos, proyectos, compradores, fondeadores y socios. Lo que puede convertirse en expediente."
+        "text": "Identificamos compañías, activos, compradores, fondeadores y socios que pueden convertirse en una operación."
       },
       {
         "num": "02",
         "title": "Due diligence",
-        "text": "Financiera, sectorial, operativa y documental. Riesgos, contingencias, condiciones de viabilidad."
+        "text": "Revisamos lo financiero, sectorial, operativo y documental: riesgos, contingencias y si el proyecto se puede sostener."
       },
       {
         "num": "03",
         "title": "Valuación",
-        "text": "Modelos, sensibilidades, estructuras de capital, retorno e impacto en la transacción."
+        "text": "Valoramos compañías y activos, con modelos, sensibilidades y el efecto sobre la transacción."
       },
       {
         "num": "04",
         "title": "Estructura de capital",
-        "text": "Deuda, equity, coinversión, private capital, financiamiento de adquisiciones, asociaciones."
+        "text": "Diseñamos deuda, equity, coinversión y el financiamiento de una adquisición."
       },
       {
         "num": "05",
         "title": "M&A",
-        "text": "Compras, ventas, targets, negociación y acompañamiento hasta el cierre."
+        "text": "Compras, ventas y búsqueda de targets, con negociación hasta el cierre."
       },
       {
         "num": "06",
         "title": "Fondeo",
-        "text": "Family offices, fondos e inversionistas privados, dentro del marco regulatorio aplicable."
+        "text": "Preparamos el expediente para family offices, fondos e inversionistas privados, dentro de la regulación aplicable."
       },
       {
         "num": "07",
         "title": "Activos reales",
-        "text": "Minería, industria, energía, infraestructura e inmobiliario. Lectura financiera y de piso."
+        "text": "Estructuramos proyectos mineros, industriales, energéticos, de infraestructura e inmobiliarios, con lectura financiera y de piso."
       },
       {
         "num": "08",
         "title": "Cross-border",
-        "text": "Market entry, JVs, socios locales, representación, roadshows. Ejecución donde esté el deal."
+        "text": "Entrada de mercado, joint ventures, socios locales y ejecución donde esté la operación."
       }
     ]
   },
   "about": {
     "kicker": "El grupo",
-    "title": "Socios fundadores, una sola estructura.",
-    "subtitle": "Más de 75 años de trabajo acumulado. Los montos son trayectoria, no AUM del grupo.",
-    "body": "NAHU Capital agrupa la práctica de sus socios en una sociedad mexicana de lectura franco-mexicana. Corporate finance, auditoría, banca, M&A y activos reales: minería, energía, infraestructura, industria, inmobiliario. El expediente se trabaja completo.",
-    "differentialTitle": "Cómo se decide una operación",
-    "differential": "Qué tesis la sostiene, qué estructura la hace viable, qué capital entra, qué riesgos quedan y en qué condiciones se puede firmar.",
-    "axes": [
-      {
-        "title": "Análisis y estructura",
-        "text": "Corporate finance, auditoría, riesgo, valuación, due diligence y capital."
-      },
-      {
-        "title": "Sectores",
-        "text": "Minería, energía, infraestructura, industria, inmobiliario, banca y tecnología."
-      },
-      {
-        "title": "Ejecución",
-        "text": "Originación, fondeo, market entry, alianzas, negociación y cierre transfronterizo."
-      }
-    ],
+    "title": "Los socios fundadores, una sociedad mexicana.",
+    "body": "NAHU Capital reúne la práctica de sus socios. Finanzas corporativas, auditoría, banca, M&A y activos reales, con alcance internacional.",
     "stats": [
       {
         "value": "75+",
@@ -135,43 +118,41 @@
   },
   "team": {
     "kicker": "Equipo",
-    "title": "Quién toma el expediente.",
-    "body": "Cuatro socios. El piso en México, la lectura del activo, la transacción, la originación fuera de plaza.",
+    "title": "Los socios fundadores",
+    "body": "",
     "linkedinLabel": "LinkedIn",
     "emailLabel": "Correo",
-    "note": "Los montos publicados corresponden a la trayectoria de los socios fundadores.",
     "people": [
       {
         "id": "juan",
         "name": "Juan Balbontin",
         "role": "Inmobiliario, infraestructura, capital privado",
-        "bio": "En México, el activo inmobiliario, la infraestructura y el capital privado: inversionistas, desarrolladores y operadores. Desarrollo comercial e inmobiliario en grupos grandes. Economía, University of Georgia."
+        "bio": "En México trabaja el inmobiliario, la infraestructura y el capital privado con inversionistas, desarrolladores y operadores. Vino del desarrollo comercial e inmobiliario en grupos grandes. Estudió economía en la University of Georgia."
       },
       {
         "id": "ana",
         "name": "Ana María Almeida Luján",
         "role": "Due diligence, estructura, minería",
-        "bio": "Due diligence y estructura de capital en minería, industria y energía. Banca, fondos y family offices. Preside la sección de servicios financieros de CANACO Chihuahua."
+        "bio": "Lleva la due diligence y la estructura de capital, sobre todo en minería, industria y energía. Trabaja con bancos, fondos y family offices. Preside la sección de servicios financieros de CANACO Chihuahua."
       },
       {
         "id": "patrick",
         "name": "Patrick Diogo",
         "role": "M&A, valuación, energía",
-        "bio": "Valuación y M&A, también transfronterizos en petróleo y gas. Economía, Universidad de Lyon; máster en finanzas, emlyon. Francés, inglés, español, portugués e italiano."
+        "bio": "Se ocupa de la valuación y del M&A, incluidas operaciones transfronterizas de petróleo y gas. Economía en la Universidad de Lyon; máster en finanzas en emlyon. Habla francés, inglés, español, portugués e italiano."
       },
       {
         "id": "gregory",
         "name": "Gregory Prudhommeaux",
         "role": "Entrada de mercado, alianzas, ejecución transfronteriza",
-        "bio": "Originación, joint ventures y fondeo entre Europa, Asia y las Américas. Diecisiete años en China; en México desde 2023. Conseiller du Commerce Extérieur de la France; CCI France México en Jalisco. Francés, inglés, español y mandarín."
+        "bio": "Origina proyectos, joint ventures y capital entre Europa, Asia y las Américas. Diecisiete años en China; en México desde 2023. Conseiller du Commerce Extérieur de la France y CCI France México en Jalisco. Habla francés, inglés, español y mandarín."
       }
     ]
   },
   "portfolio": {
     "kicker": "Sectores",
-    "title": "Dónde se ha operado.",
-    "subtitle": "Capacidad de piso por sector. Lectura internacional cuando el deal la pide.",
-    "intro": "Sectores y geografías de trabajo. En esta versión del sitio no hay operaciones nominativas.",
+    "title": "Sectores y geografías",
+    "intro": "Donde hay trayectoria de los socios. En esta página no se nombran operaciones.",
     "sectorsTitle": "Sectores",
     "sectorsOpen": "Abrir la lista de sectores",
     "sectorsClose": "Cerrar la lista de sectores",
@@ -240,8 +221,8 @@
     "heroCaption": "Ciudad de México",
     "principleAlt": "Complejo hotelero y residencial visto desde el aire",
     "projectsKicker": "Activos reales",
-    "projectsTitle": "Escala de proyecto",
-    "projectsLead": "Hotelería, barrios, data centers. Ilustración: no son activos nominativos.",
+    "projectsTitle": "La escala del activo",
+    "projectsLead": "Hotelería, barrios y data centers, a título de ilustración.",
     "hospitalityAlt": "Terraza y alberca de un hotel frente al mar",
     "hospitalityCaption": "Hotelería",
     "districtAlt": "Guadalajara: plaza y torres de un barrio planeado",

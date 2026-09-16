@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "NAHU Capital",
-    "description": "Plataforma franco-mexicana de capital e ativos reais. Originação, estrutura e fecho, também transfronteiriço."
+    "description": "Plataforma franco-mexicana de investimento: capital, ativos reais e execução transfronteiriça."
   },
   "nav": {
     "thesis": "Tese",
@@ -13,7 +13,7 @@
   "hero": {
     "kicker": "Plataforma de investimento franco-mexicana",
     "title": "Capital e ativos reais. Execução transfronteiriça.",
-    "lead": "A partir do México, a NAHU Capital origina, estrutura e fecha operações de investimento, financiamento e M&A. Um dossier: tese, valorização, capital e caminho até à assinatura."
+    "lead": "A partir do México acompanhamos operações de investimento, financiamento e M&A, da originação ao fecho, também quando atravessam fronteira."
   },
   "pillars": [
     {
@@ -26,79 +26,62 @@
     },
     {
       "label": "Transfronteiriço",
-      "text": "Entrada em mercado, joint ventures e execução fora da praça."
+      "text": "Entrada em mercado, joint ventures e execução fora do México."
     }
   ],
   "thesis": {
     "kicker": "Tese",
-    "title": "Um dossier, da tese ao fecho.",
-    "intro": "Estratégia, análise, valorização, estrutura de capital, negociação e fecho ficam no mesmo dossier. Separá-los é deixar a operação a meio.",
+    "title": "Da tese à assinatura, num só trabalho.",
+    "intro": "Estratégia, valorização, estrutura de capital e negociação trabalham-se juntas, com o cliente, até se poder assinar.",
     "principleLabel": "Critério",
-    "principle": "Acompanhamos o cliente na tese, na estrutura, no capital e no caminho de fecho. O que ainda não sustenta, trabalha-se no dossier.",
+    "principle": "Acompanhamos o cliente para ver se a operação faz sentido, como financiá-la e como levá-la à assinatura.",
     "capabilities": [
       {
         "num": "01",
         "title": "Originação",
-        "text": "Sociedades, ativos, projetos, compradores, financiadores, sócios. O que pode tornar-se um dossier."
+        "text": "Identificamos sociedades, ativos, compradores, financiadores e sócios que podem tornar-se uma operação."
       },
       {
         "num": "02",
         "title": "Due diligence",
-        "text": "Financeira, setorial, operacional e documental. Riscos, contingências, condições de viabilidade."
+        "text": "Revisamos o financeiro, setorial, operacional e documental: riscos, contingências e se o projeto se sustenta."
       },
       {
         "num": "03",
         "title": "Valorização",
-        "text": "Modelos, sensibilidades, estruturas de capital, retorno e impacto na transação."
+        "text": "Valorizamos sociedades e ativos, com modelos, sensibilidades e o efeito sobre a transação."
       },
       {
         "num": "04",
         "title": "Estrutura de capital",
-        "text": "Dívida, equity, coinvestimento, private capital, financiamento de aquisições, associações."
+        "text": "Desenhamos dívida, equity, coinvestimento e financiamento de aquisições."
       },
       {
         "num": "05",
         "title": "M&A",
-        "text": "Compras, vendas, alvos, negociação até ao fecho."
+        "text": "Compras, vendas e procura de alvos, com negociação até ao fecho."
       },
       {
         "num": "06",
         "title": "Captação",
-        "text": "Family offices, fundos e investidores privados, no quadro regulamentar aplicável."
+        "text": "Preparamos o dossier para family offices, fundos e investidores privados, no quadro regulamentar aplicável."
       },
       {
         "num": "07",
         "title": "Ativos reais",
-        "text": "Minas, indústria, energia, infraestruturas, imobiliário. Leitura financeira e de terreno."
+        "text": "Estruturamos projetos mineiros, industriais, energéticos, de infraestruturas e imobiliários, nos números e no terreno."
       },
       {
         "num": "08",
         "title": "Transfronteiriço",
-        "text": "Entrada em mercado, JVs, sócios locais, representação, roadshows. Execução onde estiver o deal."
+        "text": "Entrada em mercado, joint ventures, sócios locais e execução onde estiver a operação."
       }
     ]
   },
   "about": {
     "kicker": "O grupo",
-    "title": "Sócios fundadores, uma só estrutura.",
-    "subtitle": "Mais de 75 anos de prática acumulada. Os montantes são percurso, não AUM do grupo.",
-    "body": "A NAHU Capital reúne a prática dos sócios numa sociedade mexicana de leitura franco-mexicana. Corporate finance, auditoria, banca, M&A e ativos reais: minas, energia, infraestruturas, indústria, imobiliário. O dossier trabalha-se inteiro.",
-    "differentialTitle": "Como entra uma operação",
-    "differential": "Que tese a sustenta, que estrutura a torna viável, que capital entra, que riscos ficam e em que condições se pode assinar.",
-    "axes": [
-      {
-        "title": "Análise e estrutura",
-        "text": "Corporate finance, auditoria, risco, valorização, due diligence e capital."
-      },
-      {
-        "title": "Setores",
-        "text": "Minas, energia, infraestruturas, indústria, imobiliário, banca e tecnologia."
-      },
-      {
-        "title": "Execução",
-        "text": "Originação, captação, entrada em mercado, alianças, negociação e fecho transfronteiriço."
-      }
-    ],
+    "title": "Os sócios fundadores, uma sociedade mexicana.",
+    "body": "A NAHU Capital reúne a prática dos sócios. Finanças corporativas, auditoria, banca, M&A e ativos reais, com alcance internacional.",
     "stats": [
       {
         "value": "75+",
@@ -135,43 +118,41 @@
   },
   "team": {
     "kicker": "Equipa",
-    "title": "Quem toma o dossier.",
-    "body": "Quatro sócios. O piso no México, a leitura do ativo, a transação, a originação fora de praça.",
+    "title": "Os sócios fundadores",
+    "body": "",
     "linkedinLabel": "LinkedIn",
     "emailLabel": "Correio",
-    "note": "Os montantes publicados correspondem ao percurso dos sócios fundadores.",
     "people": [
       {
         "id": "juan",
         "name": "Juan Balbontin",
         "role": "Imobiliário, infraestruturas, capital privado",
-        "bio": "No México, o ativo imobiliário, as infraestruturas e o capital privado: investidores, promotores e operadores. Desenvolvimento comercial e imobiliário em grandes grupos. Economia, University of Georgia."
+        "bio": "No México trabalha o imobiliário, as infraestruturas e o capital privado com investidores, promotores e operadores. Vem do desenvolvimento comercial e imobiliário em grandes grupos. Economia na University of Georgia."
       },
       {
         "id": "ana",
         "name": "Ana María Almeida Luján",
         "role": "Due diligence, estrutura, minas",
-        "bio": "Due diligence e estrutura de capital em minas, indústria e energia. Bancos, fundos, family offices. Preside a secção de serviços financeiros da CANACO Chihuahua."
+        "bio": "Leva a due diligence e a estrutura de capital, sobretudo em minas, indústria e energia. Trabalha com bancos, fundos e family offices. Preside a secção de serviços financeiros da CANACO Chihuahua."
       },
       {
         "id": "patrick",
         "name": "Patrick Diogo",
         "role": "M&A, valorização, energia",
-        "bio": "Valorização e M&A, incluindo transfronteiriços em petróleo e gás. Economia, Universidade de Lyon; mestrado especializado em finanças, emlyon. Francês, inglês, espanhol, português e italiano."
+        "bio": "Trata da valorização e do M&A, incluindo operações transfronteiriças de petróleo e gás. Economia na Universidade de Lyon; mestrado especializado em finanças na emlyon. Trabalha em francês, inglês, espanhol, português e italiano."
       },
       {
         "id": "gregory",
         "name": "Gregory Prudhommeaux",
         "role": "Entrada em mercado, alianças, execução transfronteiriça",
-        "bio": "Originação, joint ventures e captação entre Europa, Ásia e Américas. Dezassete anos na China; México desde 2023. Conseiller du Commerce Extérieur de la France; CCI France México em Jalisco. Francês, inglês, espanhol e mandarim."
+        "bio": "Origina projetos, joint ventures e capital entre Europa, Ásia e Américas. Dezassete anos na China; no México desde 2023. Conseiller du Commerce Extérieur de la France e CCI France México em Jalisco. Trabalha em francês, inglês, espanhol e mandarim."
       }
     ]
   },
   "portfolio": {
     "kicker": "Setores",
-    "title": "Onde se operou.",
-    "subtitle": "Capacidade de terreno por setor. Leitura internacional quando o deal a pede.",
-    "intro": "Setores e geografias de trabalho. Nesta versão do sítio não há operações nominativas.",
+    "title": "Setores e geografias",
+    "intro": "Onde há percurso dos sócios. Nesta página não se nomeiam operações.",
     "sectorsTitle": "Setores",
     "sectorsOpen": "Abrir a lista de setores",
     "sectorsClose": "Fechar a lista de setores",
@@ -240,8 +221,8 @@
     "heroCaption": "Cidade do México",
     "principleAlt": "Complexo hoteleiro e residencial visto do ar",
     "projectsKicker": "Ativos reais",
-    "projectsTitle": "Escala de projeto",
-    "projectsLead": "Hotelaria, bairros, data centers. Ilustração: não são ativos nominativos.",
+    "projectsTitle": "A escala do ativo",
+    "projectsLead": "Hotelaria, bairros e data centers, a título de ilustração.",
     "hospitalityAlt": "Terraço e piscina de um hotel frente ao mar",
     "hospitalityCaption": "Hotelaria",
     "districtAlt": "Guadalajara: praça e torres de um bairro planeado",

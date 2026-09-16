@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "NAHU Capital",
-    "description": "Plateforme franco-mexicaine de capital et d’actifs réels. Origination, structure et closing, y compris hors frontière."
+    "description": "Plateforme d’investissement franco-mexicaine : capital, actifs réels et exécution transfrontalière."
   },
   "nav": {
-    "thesis": "Doctrine",
+    "thesis": "Travail",
     "about": "Le groupe",
     "team": "Équipe",
     "portfolio": "Métiers",
@@ -12,8 +12,8 @@
   },
   "hero": {
     "kicker": "Plateforme d’investissement franco-mexicaine",
-    "title": "Capital et actifs réels. Exécution hors frontière.",
-    "lead": "Depuis le Mexique, NAHU Capital origine, structure et mène au closing des dossiers d’investissement, de financement et de M&A. Un seul dossier : thèse, valorisation, capital, chemin de signature."
+    "title": "Capital et actifs réels. Exécution transfrontalière.",
+    "lead": "Depuis le Mexique, nous accompagnons des opérations d’investissement, de financement et de M&A, de l’origination au closing, y compris lorsqu’elles passent une frontière."
   },
   "pillars": [
     {
@@ -25,80 +25,63 @@
       "text": "Mines, énergie, industrie, infrastructures, immobilier."
     },
     {
-      "label": "Hors frontière",
-      "text": "Entrée de marché, joint-ventures, exécution à l’étranger."
+      "label": "Transfrontalier",
+      "text": "Entrée de marché, joint-ventures et exécution hors du Mexique."
     }
   ],
   "thesis": {
-    "kicker": "Doctrine",
-    "title": "Un dossier, de la thèse au closing.",
-    "intro": "Stratégie, analyse, valorisation, structure de capital, négociation et closing tiennent dans le même dossier. Les couper, c’est laisser l’opération inachevée.",
+    "kicker": "Travail",
+    "title": "De la thèse à la signature, un seul travail.",
+    "intro": "Stratégie, valorisation, structure de capital et négociation se travaillent ensemble, avec le client, jusqu’à pouvoir signer.",
     "principleLabel": "Critère",
-    "principle": "Nous accompagnons le client sur la thèse, la structure, le capital et le chemin de signature. Ce qui ne tient pas encore, se travaille dans le dossier.",
+    "principle": "Nous accompagnons le client pour établir si l’opération a du sens, comment la financer et comment la mener à la signature.",
     "capabilities": [
       {
         "num": "01",
         "title": "Origination",
-        "text": "Sociétés, actifs, projets, acheteurs, financeurs, partenaires. Ce qui peut devenir un dossier."
+        "text": "Nous identifions sociétés, actifs, acheteurs, financeurs et partenaires qui peuvent devenir une opération."
       },
       {
         "num": "02",
         "title": "Due diligence",
-        "text": "Financière, sectorielle, opérationnelle, documentaire. Risques, contingences, conditions de viabilité."
+        "text": "Nous relisons le financier, le sectoriel, l’opérationnel et le documentaire : risques, contingences, et si le projet tient."
       },
       {
         "num": "03",
         "title": "Valorisation",
-        "text": "Modèles, sensibilités, structures de capital, rendement, impact sur la transaction."
+        "text": "Nous valorisons sociétés et actifs, avec des modèles, des sensibilités et l’effet sur la transaction."
       },
       {
         "num": "04",
         "title": "Structure de capital",
-        "text": "Dette, equity, co-investissement, private capital, financement d’acquisitions, associations."
+        "text": "Nous concevons dette, equity, co-investissement et financement d’acquisition."
       },
       {
         "num": "05",
         "title": "M&A",
-        "text": "Achats, cessions, cibles, négociation jusqu’au closing."
+        "text": "Achats, cessions et recherche de cibles, avec négociation jusqu’au closing."
       },
       {
         "num": "06",
         "title": "Levée",
-        "text": "Family offices, fonds, investisseurs privés, dans le cadre réglementaire applicable."
+        "text": "Nous préparons le dossier pour family offices, fonds et investisseurs privés, dans le cadre réglementaire applicable."
       },
       {
         "num": "07",
         "title": "Actifs réels",
-        "text": "Mines, industrie, énergie, infrastructures, immobilier. Lecture financière et lecture de terrain."
+        "text": "Nous structurons des projets miniers, industriels, énergétiques, d’infrastructures et immobiliers, sur les chiffres et sur le terrain."
       },
       {
         "num": "08",
-        "title": "Hors frontière",
-        "text": "Entrée de marché, JV, partenaires locaux, représentation, roadshows. L’exécution là où est le deal."
+        "title": "Transfrontalier",
+        "text": "Entrée de marché, joint-ventures, partenaires locaux et exécution là où se trouve l’opération."
       }
     ]
   },
   "about": {
     "kicker": "Le groupe",
-    "title": "Les associés fondateurs, une seule structure.",
-    "subtitle": "Plus de 75 ans de pratique cumulée. Les montants sont un track record, pas un AUM de groupe.",
-    "body": "NAHU Capital est une société mexicaine, de lecture franco-mexicaine. Finance d’entreprise, audit, banque, M&A et actifs réels : mines, énergie, infrastructures, industrie, immobilier. Le dossier se travaille entier.",
-    "differentialTitle": "Comment un dossier entre",
-    "differential": "Quelle thèse le porte, quelle structure le rend tenable, quel capital entre, quels risques restent, à quelles conditions on signe.",
-    "axes": [
-      {
-        "title": "Analyse et structure",
-        "text": "Finance d’entreprise, audit, risque, valorisation, due diligence, capital."
-      },
-      {
-        "title": "Métiers",
-        "text": "Mines, énergie, infrastructures, industrie, immobilier, banque, technologie."
-      },
-      {
-        "title": "Exécution",
-        "text": "Origination, levée, entrée de marché, alliances, négociation, closing transfrontalier."
-      }
-    ],
+    "title": "Les associés fondateurs, une société mexicaine.",
+    "body": "NAHU Capital réunit la pratique de ses associés. Finance d’entreprise, audit, banque, M&A et actifs réels, avec une portée internationale.",
     "stats": [
       {
         "value": "75+",
@@ -135,43 +118,41 @@
   },
   "team": {
     "kicker": "Équipe",
-    "title": "Qui tient le dossier.",
-    "body": "Quatre associés. Le terrain au Mexique, la lecture de l’actif, la transaction, l’origination hors place.",
+    "title": "Les associés fondateurs",
+    "body": "",
     "linkedinLabel": "LinkedIn",
     "emailLabel": "Courriel",
-    "note": "Les montants publiés correspondent au parcours des associés fondateurs.",
     "people": [
       {
         "id": "juan",
         "name": "Juan Balbontin",
         "role": "Immobilier, infrastructures, private capital",
-        "bio": "Au Mexique, l’actif immobilier, les infrastructures, le private capital : investisseurs, promoteurs, opérateurs. Développement commercial et immobilier dans de grands groupes. Économie, University of Georgia."
+        "bio": "Au Mexique, il travaille l’immobilier, les infrastructures et le private capital avec investisseurs, promoteurs et opérateurs. Il vient du développement commercial et immobilier dans de grands groupes. Économie à l’University of Georgia."
       },
       {
         "id": "ana",
         "name": "Ana María Almeida Luján",
         "role": "Due diligence, structure, mines",
-        "bio": "Due diligence et structure de capital en mines, industrie et énergie. Banques, fonds, family offices. Préside la section services financiers de la CANACO Chihuahua."
+        "bio": "Elle porte la due diligence et la structure de capital, surtout en mines, industrie et énergie. Elle travaille avec banques, fonds et family offices. Elle préside la section services financiers de la CANACO Chihuahua."
       },
       {
         "id": "patrick",
         "name": "Patrick Diogo",
         "role": "M&A, valorisation, énergie",
-        "bio": "Valorisation et M&A, y compris transfrontaliers dans le pétrole et le gaz. Économie, Université de Lyon ; mastère spécialisé finance, emlyon. Français, anglais, espagnol, portugais, italien."
+        "bio": "Il tient la valorisation et le M&A, y compris des opérations transfrontalières de pétrole et de gaz. Économie à l’Université de Lyon ; mastère spécialisé finance à emlyon. Il travaille en français, anglais, espagnol, portugais et italien."
       },
       {
         "id": "gregory",
         "name": "Gregory Prudhommeaux",
         "role": "Entrée de marché, alliances, exécution hors frontière",
-        "bio": "Origination, joint-ventures et levée entre Europe, Asie et Amériques. Dix-sept ans en Chine ; au Mexique depuis 2023. Conseiller du Commerce Extérieur de la France ; CCI France México au Jalisco. Français, anglais, espagnol, mandarin."
+        "bio": "Il origine projets, joint-ventures et capital entre Europe, Asie et Amériques. Dix-sept ans en Chine ; au Mexique depuis 2023. Conseiller du Commerce Extérieur de la France et CCI France México au Jalisco. Il travaille en français, anglais, espagnol et mandarin."
       }
     ]
   },
   "portfolio": {
     "kicker": "Métiers",
-    "title": "Où le travail a eu lieu.",
-    "subtitle": "Une lecture de terrain par métier. Une lecture internationale quand le dossier la demande.",
-    "intro": "Métiers et géographies de travail. Cette version du site ne nomme pas d’opérations.",
+    "title": "Métiers et géographies",
+    "intro": "Là où les associés ont un parcours. Cette page ne nomme pas d’opérations.",
     "sectorsTitle": "Métiers",
     "sectorsOpen": "Ouvrir la liste des métiers",
     "sectorsClose": "Fermer la liste des métiers",
@@ -240,8 +221,8 @@
     "heroCaption": "Mexico",
     "principleAlt": "Complexe hôtelier et résidentiel vu du ciel",
     "projectsKicker": "Actifs réels",
-    "projectsTitle": "Échelle de projet",
-    "projectsLead": "Hôtellerie, quartiers, data centers. Illustration : pas d’actifs nominatifs.",
+    "projectsTitle": "L’échelle de l’actif",
+    "projectsLead": "Hôtellerie, quartiers et data centers, à titre d’illustration.",
     "hospitalityAlt": "Terrasse et piscine d’un hôtel face à la mer",
     "hospitalityCaption": "Hôtellerie",
     "districtAlt": "Guadalajara : plaza et tours d’un quartier planifié",

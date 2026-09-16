@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "NAHU Capital",
-    "description": "Franco-Mexican platform for capital and real assets. Origination, structure and close, including cross-border."
+    "description": "Franco-Mexican investment platform: capital, real assets and cross-border execution."
   },
   "nav": {
     "thesis": "Thesis",
@@ -13,7 +13,7 @@
   "hero": {
     "kicker": "Franco-Mexican investment platform",
     "title": "Capital and real assets. Cross-border execution.",
-    "lead": "From Mexico, NAHU Capital originates, structures and closes investment, financing and M&A work. One file: thesis, valuation, capital and a path to signing."
+    "lead": "From Mexico we accompany investment, financing and M&A work, from origination to close, including when the deal crosses a border."
   },
   "pillars": [
     {
@@ -26,79 +26,62 @@
     },
     {
       "label": "Cross-border",
-      "text": "Market entry, joint ventures and execution outside the home market."
+      "text": "Market entry, joint ventures and execution outside Mexico."
     }
   ],
   "thesis": {
     "kicker": "Thesis",
-    "title": "One file, from thesis to signing.",
-    "intro": "Strategy, analysis, valuation, capital structure, negotiation and close sit in the same file. Split them and the deal stalls.",
+    "title": "From thesis to signing, as one piece of work.",
+    "intro": "Strategy, valuation, capital structure and negotiation are worked together, with the client, until the file is ready to sign.",
     "principleLabel": "Standard",
-    "principle": "We stay with the client through thesis, structure, capital and a path to close. What still has to hold, we work on the file.",
+    "principle": "We stay with the client to see whether the deal makes sense, how to fund it and how to take it to signing.",
     "capabilities": [
       {
         "num": "01",
         "title": "Origination",
-        "text": "Companies, assets, projects, buyers, lenders, partners. What can become a live file."
+        "text": "We identify companies, assets, buyers, lenders and partners that can become an operation."
       },
       {
         "num": "02",
         "title": "Due diligence",
-        "text": "Financial, sector, operating and documentary. Risks, contingencies, conditions of viability."
+        "text": "We review the financial, sector, operating and documentary side: risks, contingencies, and whether the project can hold."
       },
       {
         "num": "03",
         "title": "Valuation",
-        "text": "Models, sensitivities, capital structure, returns and deal impact."
+        "text": "We value companies and assets, with models, sensitivities and the effect on the transaction."
       },
       {
         "num": "04",
         "title": "Capital structure",
-        "text": "Debt, equity, co-investment, private capital, acquisition finance, partnerships."
+        "text": "We design debt, equity, co-investment and acquisition finance."
       },
       {
         "num": "05",
         "title": "M&A",
-        "text": "Buys, sells, targets, negotiation and support through close."
+        "text": "Buys, sells and target search, with negotiation through close."
       },
       {
         "num": "06",
         "title": "Fundraising",
-        "text": "Family offices, funds and private investors, inside the applicable rules."
+        "text": "We prepare the file for family offices, funds and private investors, inside the applicable rules."
       },
       {
         "num": "07",
         "title": "Real assets",
-        "text": "Mining, industry, energy, infrastructure, real estate. Numbers and site."
+        "text": "We structure mining, industrial, energy, infrastructure and real-estate projects, on the numbers and on the ground."
       },
       {
         "num": "08",
         "title": "Cross-border",
-        "text": "Market entry, JVs, local partners, representation, roadshows. Execution where the deal sits."
+        "text": "Market entry, joint ventures, local partners and execution where the operation sits."
       }
     ]
   },
   "about": {
     "kicker": "The group",
-    "title": "Founding partners, one structure.",
-    "subtitle": "More than 75 years of combined practice. The figures are track record, not group AUM.",
-    "body": "NAHU Capital is a Mexican company with a Franco-Mexican reading of the work. Corporate finance, audit, banking, M&A and real assets: mining, energy, infrastructure, industry, real estate. The file is worked as a whole.",
-    "differentialTitle": "How a deal gets in",
-    "differential": "What thesis holds it, what structure makes it viable, what capital comes in, what risk remains, and on what terms it can sign.",
-    "axes": [
-      {
-        "title": "Analysis and structure",
-        "text": "Corporate finance, audit, risk, valuation, due diligence and capital."
-      },
-      {
-        "title": "Sectors",
-        "text": "Mining, energy, infrastructure, industry, real estate, banking and technology."
-      },
-      {
-        "title": "Execution",
-        "text": "Origination, fundraising, market entry, alliances, negotiation and cross-border close."
-      }
-    ],
+    "title": "The founding partners, a Mexican company.",
+    "body": "NAHU Capital brings together the partners’ practice. Corporate finance, audit, banking, M&A and real assets, with international reach.",
     "stats": [
       {
         "value": "75+",
@@ -135,43 +118,41 @@
   },
   "team": {
     "kicker": "Team",
-    "title": "Who runs the file.",
-    "body": "Four partners. Mexico on the ground, the asset reading, the transaction, origination across the border.",
+    "title": "The founding partners",
+    "body": "",
     "linkedinLabel": "LinkedIn",
     "emailLabel": "Email",
-    "note": "Published amounts refer to the founding partners’ track record.",
     "people": [
       {
         "id": "juan",
         "name": "Juan Balbontin",
         "role": "Real estate, infrastructure, private capital",
-        "bio": "In Mexico, the real-asset file: real estate, infrastructure, private capital with investors, developers and operators. Commercial and real-estate development inside large groups. Economics, University of Georgia."
+        "bio": "In Mexico he works in real estate, infrastructure and private capital with investors, developers and operators. He comes from commercial and real-estate development inside large groups. Economics, University of Georgia."
       },
       {
         "id": "ana",
         "name": "Ana María Almeida Luján",
         "role": "Due diligence, capital structure, mining",
-        "bio": "Due diligence and capital structure in mining, industry and energy. Banks, funds, family offices. Chairs the financial-services section of CANACO Chihuahua."
+        "bio": "She leads due diligence and capital structure, above all in mining, industry and energy. She works with banks, funds and family offices. She chairs the financial-services section of CANACO Chihuahua."
       },
       {
         "id": "patrick",
         "name": "Patrick Diogo",
         "role": "M&A, valuation, energy",
-        "bio": "Valuation and M&A, including cross-border oil and gas. Economics, University of Lyon; specialized master’s in finance, emlyon. French, English, Spanish, Portuguese and Italian."
+        "bio": "He handles valuation and M&A, including cross-border oil and gas. Economics at the University of Lyon; specialized master’s in finance at emlyon. He works in French, English, Spanish, Portuguese and Italian."
       },
       {
         "id": "gregory",
         "name": "Gregory Prudhommeaux",
         "role": "Market entry, alliances, cross-border execution",
-        "bio": "Origination, joint ventures and fundraising across Europe, Asia and the Americas. Seventeen years in China; Mexico since 2023. Conseiller du Commerce Extérieur de la France; CCI France México in Jalisco. French, English, Spanish and Mandarin."
+        "bio": "He originates projects, joint ventures and capital across Europe, Asia and the Americas. Seventeen years in China; in Mexico since 2023. Conseiller du Commerce Extérieur de la France and CCI France México in Jalisco. He works in French, English, Spanish and Mandarin."
       }
     ]
   },
   "portfolio": {
     "kicker": "Sectors",
-    "title": "Where the work has been.",
-    "subtitle": "On-the-ground sector experience. An international reading when the deal needs one.",
-    "intro": "Sectors and geographies of work. This version of the site does not name transactions.",
+    "title": "Sectors and geographies",
+    "intro": "Where the partners have a track record. This page does not name transactions.",
     "sectorsTitle": "Sectors",
     "sectorsOpen": "Open the sectors list",
     "sectorsClose": "Close the sectors list",
@@ -240,8 +221,8 @@
     "heroCaption": "Mexico City",
     "principleAlt": "Hotel and residential complex seen from above",
     "projectsKicker": "Real assets",
-    "projectsTitle": "Project scale",
-    "projectsLead": "Hospitality, districts, data centers. Illustration: not named assets.",
+    "projectsTitle": "The scale of the asset",
+    "projectsLead": "Hospitality, districts and data centers, by way of illustration.",
     "hospitalityAlt": "Hotel terrace and pool overlooking the sea",
     "hospitalityCaption": "Hospitality",
     "districtAlt": "Guadalajara: plaza and towers of a planned district",
