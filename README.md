@@ -34,6 +34,8 @@ Les photographies sont des illustrations éditoriales. Elles ne représentent pa
 
 Sujets : hôtellerie, quartiers (dont Santa Fe, Mexico), data centers, grands axes urbains (Reforma, La Défense). Sources : Pexels ; Wikimedia Commons (Santa Fe, CC0 ; La Défense, CC BY 4.0 Gugalcrom123 ; campus data center, CC BY-SA 4.0 Choinowski).
 
+La carte du monde reprend un fond Wikimedia (*World map — low resolution*). Les pays en or sont uniquement ceux cités dans le profil : pas d’autres géographies ajoutées.
+
 ## Agents
 
 Les skills personnelles sont dans `.cursor/skills/` (Sofia, Lucy, Charles, Mike, Jerry, anti-slop). Dis « Utilise Sofia » (ou Lucy / Charles / Mike / Jerry) pour les invoquer. Toute copie marketing passe par `/anti-linkedin-slop`.

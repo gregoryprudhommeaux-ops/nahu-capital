@@ -4,6 +4,7 @@ import { EditorialFrame } from "./editorial-frame";
 import { SectorsMenu } from "./sectors-menu";
 import { SiteFooter } from "./site-footer";
 import { SiteHeader } from "./site-header";
+import { WorldReach } from "./world-reach";
 
 type Props = {
   locale: Locale;
@@ -350,26 +351,17 @@ function Portfolio({ dict }: { dict: Dictionary }) {
           ))}
         </div>
 
-        <div className="mt-12 grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="mt-12">
           <SectorsMenu
             title={dict.portfolio.sectorsTitle}
             sectors={dict.portfolio.sectors}
             openLabel={dict.portfolio.sectorsOpen}
             closeLabel={dict.portfolio.sectorsClose}
           />
+        </div>
 
-          <div>
-            <h3 className="kicker mb-2">{dict.portfolio.reachTitle}</h3>
-            <p className="mb-6 text-sm text-navy/50">{dict.portfolio.reachIntro}</p>
-            <ul className="space-y-5">
-              {dict.portfolio.regions.map((region) => (
-                <li key={region.name}>
-                  <p className="font-serif text-xl text-navy">{region.name}</p>
-                  <p className="mt-1 text-[0.9rem] text-navy/55">{region.places}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="mt-10">
+          <WorldReach dict={dict} />
         </div>
 
         <div className="mt-12 max-w-3xl border-t border-navy/10 pt-8">
