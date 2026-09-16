@@ -44,7 +44,7 @@ Pour l’envoi réel, copier `.env.example` vers `.env.local` et renseigner `RES
 
 Identité : fond `#F3F0EA`, marine `#101722`, or `#B08A57`. Titres : Libre Bodoni. Corps : Montserrat.
 
-La photographie d’ouverture est une vue de Mexico au soleil couchant. Les autres images sont des illustrations éditoriales, pas des actifs nominatifs.
+La photographie d’ouverture est Mexico au soleil couchant (Bellas Artes, cathédrale, volcans). Les autres images sont des illustrations éditoriales, pas des actifs nominatifs.
 
 ## Agents
 
