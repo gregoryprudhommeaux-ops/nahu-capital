@@ -43,12 +43,6 @@ function Hero({ dict }: { dict: Dictionary }) {
             <p className="mt-6 max-w-md text-[0.98rem] leading-[1.7] text-navy/65">
               {dict.hero.lead}
             </p>
-            <a
-              href="#contacto"
-              className="mt-8 inline-flex items-center border border-navy/20 px-5 py-2.5 text-[0.72rem] font-medium tracking-[0.16em] text-navy uppercase transition-colors hover:border-gold hover:text-gold"
-            >
-              {dict.contact.cta}
-            </a>
           </div>
 
           <div className="mt-10 grid gap-6 border-t border-navy/10 pt-7 sm:grid-cols-3 sm:gap-8">
