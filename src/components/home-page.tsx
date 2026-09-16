@@ -349,13 +349,6 @@ function Portfolio({ dict }: { dict: Dictionary }) {
         <div className="mt-10">
           <WorldReach dict={dict} />
         </div>
-
-        <div className="mt-12 max-w-3xl border-t border-navy/10 pt-8">
-          <h3 className="kicker mb-4">{dict.portfolio.modelTitle}</h3>
-          <p className="text-[0.98rem] leading-[1.7] text-navy/65">
-            {dict.portfolio.model}
-          </p>
-        </div>
       </div>
     </section>
   );
