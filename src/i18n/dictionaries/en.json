@@ -136,7 +136,7 @@
   "team": {
     "kicker": "Team",
     "title": "Who runs the file.",
-    "body": "Four partners. Each one comes in on the work that holds the deal.",
+    "body": "Four partners. Mexico on the ground, the asset reading, the transaction, origination across the border.",
     "linkedinLabel": "LinkedIn",
     "emailLabel": "Email",
     "note": "Published amounts refer to the founding partners’ track record.",
@@ -145,25 +145,25 @@
         "id": "juan",
         "name": "Juan Balbontin",
         "role": "Real estate, infrastructure, private capital",
-        "bio": "Works with investors, developers and operators in Mexico. Commercial and real-estate development inside large groups. Economics, University of Georgia."
+        "bio": "In Mexico, the real-asset file: real estate, infrastructure, private capital with investors, developers and operators. Commercial and real-estate development inside large groups. Economics, University of Georgia."
       },
       {
         "id": "ana",
         "name": "Ana María Almeida Luján",
-        "role": "Corporate finance, audit, mining",
-        "bio": "Capital structure, due diligence and real-asset reading: mining, industry, energy, real estate. Banks, funds, family offices. Chairs the financial-services section of CANACO Chihuahua."
+        "role": "Due diligence, capital structure, mining",
+        "bio": "Due diligence and capital structure in mining, industry and energy. Banks, funds, family offices. Chairs the financial-services section of CANACO Chihuahua."
       },
       {
         "id": "patrick",
         "name": "Patrick Diogo",
         "role": "M&A, valuation, energy",
-        "bio": "Corporate finance, audit and transactions, including cross-border oil and gas. Economics, University of Lyon; specialized master’s in finance, emlyon. French, English, Spanish, Portuguese and Italian."
+        "bio": "Valuation and M&A, including cross-border oil and gas. Economics, University of Lyon; specialized master’s in finance, emlyon. French, English, Spanish, Portuguese and Italian."
       },
       {
         "id": "gregory",
         "name": "Gregory Prudhommeaux",
         "role": "Market entry, alliances, cross-border execution",
-        "bio": "Europe, Asia, the Americas. Seventeen years in China; Mexico since 2023. International origination, JVs and fundraising. Conseiller du Commerce Extérieur de la France; CCI France México in Jalisco. French, English, Spanish and Mandarin."
+        "bio": "Origination, joint ventures and fundraising across Europe, Asia and the Americas. Seventeen years in China; Mexico since 2023. Conseiller du Commerce Extérieur de la France; CCI France México in Jalisco. French, English, Spanish and Mandarin."
       }
     ]
   },

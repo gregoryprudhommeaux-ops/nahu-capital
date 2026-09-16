@@ -136,7 +136,7 @@
   "team": {
     "kicker": "Équipe",
     "title": "Qui tient le dossier.",
-    "body": "Quatre associés. Chacun entre par le métier qui porte l’opération.",
+    "body": "Quatre associés. Le terrain au Mexique, la lecture de l’actif, la transaction, l’origination hors place.",
     "linkedinLabel": "LinkedIn",
     "emailLabel": "Courriel",
     "note": "Les montants publiés correspondent au parcours des associés fondateurs.",
@@ -145,25 +145,25 @@
         "id": "juan",
         "name": "Juan Balbontin",
         "role": "Immobilier, infrastructures, private capital",
-        "bio": "Investisseurs, promoteurs, opérateurs au Mexique. Développement commercial et immobilier dans de grands groupes. Économie, University of Georgia."
+        "bio": "Au Mexique, l’actif immobilier, les infrastructures, le private capital : investisseurs, promoteurs, opérateurs. Développement commercial et immobilier dans de grands groupes. Économie, University of Georgia."
       },
       {
         "id": "ana",
         "name": "Ana María Almeida Luján",
-        "role": "Finance d’entreprise, audit, mines",
-        "bio": "Structure de capital, due diligence, lecture d’actifs réels : mines, industrie, énergie, immobilier. Banques, fonds, family offices. Préside la section services financiers de la CANACO Chihuahua."
+        "role": "Due diligence, structure, mines",
+        "bio": "Due diligence et structure de capital en mines, industrie et énergie. Banques, fonds, family offices. Préside la section services financiers de la CANACO Chihuahua."
       },
       {
         "id": "patrick",
         "name": "Patrick Diogo",
         "role": "M&A, valorisation, énergie",
-        "bio": "Finance d’entreprise, audit et transactions, y compris transfrontalières dans le pétrole et le gaz. Économie, Université de Lyon ; mastère spécialisé finance, emlyon. Français, anglais, espagnol, portugais, italien."
+        "bio": "Valorisation et M&A, y compris transfrontaliers dans le pétrole et le gaz. Économie, Université de Lyon ; mastère spécialisé finance, emlyon. Français, anglais, espagnol, portugais, italien."
       },
       {
         "id": "gregory",
         "name": "Gregory Prudhommeaux",
         "role": "Entrée de marché, alliances, exécution hors frontière",
-        "bio": "Europe, Asie, Amériques. Dix-sept ans en Chine ; au Mexique depuis 2023. Origination internationale, JV, levée. Conseiller du Commerce Extérieur de la France ; CCI France México au Jalisco. Français, anglais, espagnol, mandarin."
+        "bio": "Origination, joint-ventures et levée entre Europe, Asie et Amériques. Dix-sept ans en Chine ; au Mexique depuis 2023. Conseiller du Commerce Extérieur de la France ; CCI France México au Jalisco. Français, anglais, espagnol, mandarin."
       }
     ]
   },
