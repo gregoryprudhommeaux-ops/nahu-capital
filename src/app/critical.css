@@ -1,0 +1,76 @@
+html,
+body {
+  background: #f3f0ea;
+  color: #101722;
+  margin: 0;
+}
+
+.brand-logo {
+  display: block;
+  height: 2rem;
+  width: auto;
+}
+
+.brand-logo-footer {
+  display: block;
+  height: 2.5rem;
+  width: auto;
+}
+
+.flag-mark {
+  display: inline-flex;
+  width: 18px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.flag-svg {
+  display: block;
+  width: 18px;
+  height: 12px;
+}
+
+.lang-switcher summary {
+  list-style: none;
+}
+
+.lang-switcher summary::-webkit-details-marker,
+.lang-switcher summary::marker {
+  display: none;
+  content: "";
+}
+
+.site-nav {
+  display: none;
+}
+
+.site-nav a {
+  color: #101722;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .brand-logo {
+    height: 2.25rem;
+  }
+
+  .brand-logo-footer {
+    height: 2.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}

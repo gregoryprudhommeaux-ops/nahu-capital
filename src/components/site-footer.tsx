@@ -17,7 +17,7 @@ export function SiteFooter({ locale, dict }: Props) {
           alt="NAHU Capital"
           width={816}
           height={204}
-          className="h-10 w-auto md:h-11"
+          className="brand-logo-footer h-10 w-auto md:h-11"
         />
 
         <p className="text-sm text-navy/50">{dict.footer.group}</p>

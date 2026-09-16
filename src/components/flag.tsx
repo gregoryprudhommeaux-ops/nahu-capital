@@ -7,16 +7,20 @@ type FlagProps = {
 };
 
 export function Flag({ locale, title, size = "md" }: FlagProps) {
+  const sm = size === "sm";
   return (
     <span
-      className={`inline-flex overflow-hidden rounded-[1px] ring-1 ring-navy/10 ${
-        size === "sm" ? "h-3 w-[1.15rem]" : "h-3.5 w-[1.35rem]"
+      className={`flag-mark inline-flex overflow-hidden rounded-[1px] ring-1 ring-navy/10 ${
+        sm ? "h-3 w-[1.15rem]" : "h-3.5 w-[1.35rem]"
       }`}
       title={title}
+      style={{ width: sm ? 18 : 22, height: sm ? 12 : 14 }}
     >
       <svg
         viewBox="0 0 21 15"
-        className="h-full w-full"
+        width={sm ? 18 : 22}
+        height={sm ? 12 : 14}
+        className="flag-svg h-full w-full"
         aria-hidden="true"
         focusable="false"
       >

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Libre_Bodoni, Montserrat, Noto_Sans_SC } from "next/font/google";
 import { notFound } from "next/navigation";
+import { criticalCss } from "@/app/critical";
 import { getDictionary } from "@/i18n/get-dictionary";
 import {
   defaultLocale,
@@ -86,8 +87,12 @@ export default async function LocaleLayout({
       lang={htmlLang[locale]}
       className={`${libreBodoni.variable} ${montserrat.variable} ${notoSans.variable} h-full antialiased`}
     >
+      <head>
+        <style dangerouslySetInnerHTML={{ __html: criticalCss }} />
+      </head>
       <body
         className={`min-h-full bg-cream text-navy ${locale === "zh" ? "is-zh" : ""}`}
+        style={{ background: "#F3F0EA", color: "#101722" }}
       >
         {children}
       </body>

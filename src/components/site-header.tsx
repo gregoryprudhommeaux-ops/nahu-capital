@@ -36,12 +36,12 @@ export function SiteHeader({ locale, dict }: Props) {
             alt="NAHU Capital"
             width={816}
             height={204}
-            className="h-8 w-auto md:h-9"
+            className="brand-logo h-8 w-auto md:h-9"
             priority
           />
         </Link>
 
-        <nav className="hidden items-center gap-9 lg:flex">
+        <nav className="site-nav hidden items-center gap-9 lg:flex">
           {sections.map(([id, key]) => (
             <a
               key={id}
@@ -57,7 +57,7 @@ export function SiteHeader({ locale, dict }: Props) {
           <LanguageSwitcher locale={locale} />
           <button
             type="button"
-            className="relative flex h-11 w-11 shrink-0 items-center justify-center lg:hidden"
+            className="menu-toggle relative flex h-11 w-11 shrink-0 items-center justify-center lg:hidden"
             aria-expanded={open}
             aria-controls="mobile-nav"
             aria-label="Menu"
