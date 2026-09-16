@@ -254,7 +254,7 @@ function About({ dict }: { dict: Dictionary }) {
 function Team({ dict }: { dict: Dictionary }) {
   return (
     <section id="equipo" className="border-t border-navy/8">
-      <div className="wrap py-12 md:py-14">
+      <div className="wrap py-12 pb-6 md:py-14 md:pb-7">
         <p className="kicker mb-3">{dict.team.kicker}</p>
         <h2 className="font-serif text-[clamp(1.55rem,2.4vw,2.35rem)] leading-[1.15] text-navy">
           {dict.team.title}
@@ -265,7 +265,7 @@ function Team({ dict }: { dict: Dictionary }) {
         <div className="mt-8">
           <TeamMenu dict={dict} />
         </div>
-        <p className="mt-6 max-w-xl text-sm leading-relaxed text-navy/40">
+        <p className="mt-3 max-w-2xl text-[0.68rem] leading-relaxed text-navy/38 italic">
           {dict.team.note}
         </p>
       </div>
