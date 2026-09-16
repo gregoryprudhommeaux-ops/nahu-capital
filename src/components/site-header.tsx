@@ -3,13 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import {
-  localeLabels,
-  locales,
-  pathForLocale,
-  type Locale,
-} from "@/i18n/config";
+import { pathForLocale, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { LanguageSwitcher } from "./language-switcher";
 
 type Props = {
   locale: Locale;
@@ -57,24 +53,8 @@ export function SiteHeader({ locale, dict }: Props) {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3 sm:gap-4">
-          <ul className="flex items-center gap-2 sm:gap-2.5" aria-label="Idioma">
-            {locales.map((code) => (
-              <li key={code}>
-                <Link
-                  href={pathForLocale(code)}
-                  hrefLang={code}
-                  className={`text-[0.65rem] tracking-[0.16em] transition-colors ${
-                    code === locale
-                      ? "font-semibold text-gold"
-                      : "text-navy/45 hover:text-navy"
-                  }`}
-                >
-                  {localeLabels[code]}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div className="flex items-center gap-1 sm:gap-2">
+          <LanguageSwitcher locale={locale} />
 
           <button
             type="button"

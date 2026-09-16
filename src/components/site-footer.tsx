@@ -1,12 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
-import {
-  localeLabels,
-  locales,
-  pathForLocale,
-  type Locale,
-} from "@/i18n/config";
+import { type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { LanguageSwitcher } from "./language-switcher";
 
 type Props = {
   locale: Locale;
@@ -36,20 +31,7 @@ export function SiteFooter({ locale, dict }: Props) {
         <p className="text-sm text-navy/55">{dict.footer.group}</p>
 
         <div className="flex flex-col items-start gap-3 md:items-end">
-          <ul className="flex gap-3">
-            {locales.map((code) => (
-              <li key={code}>
-                <Link
-                  href={pathForLocale(code)}
-                  className={`text-[0.65rem] tracking-[0.16em] ${
-                    code === locale ? "text-gold" : "text-navy/40 hover:text-navy"
-                  }`}
-                >
-                  {localeLabels[code]}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <LanguageSwitcher locale={locale} align="up" />
           <p className="text-xs text-navy/40">{dict.footer.rights}</p>
         </div>
       </div>
