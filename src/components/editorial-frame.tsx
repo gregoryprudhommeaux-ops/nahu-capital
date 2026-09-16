@@ -25,7 +25,6 @@ export function EditorialFrame({
         backgroundPosition: "center",
       }}
     >
-      {/* Photo also sits as CSS background so the frame never flashes empty. */}
       <img
         src={src}
         alt={alt}
