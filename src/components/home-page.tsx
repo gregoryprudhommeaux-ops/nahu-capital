@@ -37,12 +37,12 @@ function Hero({ dict }: { dict: Dictionary }) {
     <section id="inicio">
       <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:min-h-[min(82svh,740px)]">
         <div className="wrap flex flex-col justify-between py-10 md:py-12 lg:w-auto lg:max-w-none lg:pr-10 lg:pl-[max(2.5rem,calc((100vw-1220px)/2))]">
-          <div className="max-w-xl">
-            <p className="kicker mb-2.5">{dict.hero.kicker}</p>
-            <h1 className="font-serif text-[clamp(2.05rem,4.6vw,3.75rem)] leading-none tracking-[-0.035em] text-navy">
+          <div className="max-w-2xl">
+            <p className="kicker mb-3.5 md:mb-4">{dict.hero.kicker}</p>
+            <h1 className="max-w-[16.5em] font-serif text-[clamp(2.2rem,8.4vw,3.45rem)] leading-[1.2] tracking-[-0.018em] text-pretty text-navy md:leading-[1.14] md:tracking-[-0.022em]">
               {dict.hero.title}
             </h1>
-            <p className="mt-4 max-w-md text-[0.98rem] leading-[1.5] text-navy/65">
+            <p className="mt-5 max-w-md text-[0.98rem] leading-[1.6] text-navy/65">
               {dict.hero.lead}
             </p>
           </div>
