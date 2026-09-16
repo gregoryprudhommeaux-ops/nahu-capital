@@ -95,7 +95,7 @@ export function ContactPanel({ dict }: Props) {
         type="checkbox"
         className="contact-toggle"
       />
-      <div className="wrap py-8 md:py-9 lg:flex lg:h-full lg:flex-col lg:justify-center lg:w-auto lg:max-w-none lg:pr-10 lg:pl-[max(2.5rem,calc((100vw-1220px)/2))]">
+      <div className="wrap py-8 md:py-9 lg:flex lg:h-full lg:flex-col lg:items-start lg:justify-center lg:w-auto lg:max-w-none lg:pr-10 lg:pl-[max(2.5rem,calc((100vw-1220px)/2))]">
         <p className="kicker mb-2.5">{dict.kicker}</p>
         <h2 className="max-w-[11.5em] font-serif text-[clamp(1.45rem,2.2vw,2.05rem)] leading-[1.14] text-cream">
           {dict.title}
@@ -130,7 +130,7 @@ export function ContactPanel({ dict }: Props) {
           <div className="mb-6 flex items-start justify-between gap-4">
             <div>
               <p className="kicker mb-2">{dict.kicker}</p>
-              <p id={titleId} className="font-serif text-2xl leading-tight">
+              <p id={titleId} className="max-w-[22em] font-serif text-[1.35rem] leading-snug md:text-[1.5rem]">
                 {dict.formTitle}
               </p>
             </div>
