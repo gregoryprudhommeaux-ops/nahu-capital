@@ -95,9 +95,9 @@ export function ContactPanel({ dict }: Props) {
         type="checkbox"
         className="contact-toggle"
       />
-      <div className="wrap py-12 md:py-16 lg:w-auto lg:max-w-none lg:pr-12 lg:pl-[max(2.5rem,calc((100vw-1220px)/2))]">
-        <p className="kicker mb-4">{dict.kicker}</p>
-        <h2 className="max-w-xl font-serif text-[clamp(1.85rem,3.4vw,2.85rem)] leading-[1.08] text-cream">
+      <div className="wrap py-8 md:py-9 lg:flex lg:h-full lg:flex-col lg:justify-center lg:w-auto lg:max-w-none lg:pr-10 lg:pl-[max(2.5rem,calc((100vw-1220px)/2))]">
+        <p className="kicker mb-2.5">{dict.kicker}</p>
+        <h2 className="max-w-[11.5em] font-serif text-[clamp(1.45rem,2.2vw,2.05rem)] leading-[1.14] text-cream">
           {dict.title}
         </h2>
         {dict.lead ? (

@@ -112,7 +112,7 @@ body.is-zh .kicker {
 
 .contact-open {
   display: inline-flex;
-  margin-top: 2rem;
+  margin-top: 1.15rem;
   cursor: pointer;
   border: 1px solid color-mix(in srgb, var(--color-gold) 70%, transparent);
   padding: 0.625rem 1.25rem;

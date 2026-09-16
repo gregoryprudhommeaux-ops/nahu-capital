@@ -325,13 +325,13 @@ function Portfolio({ dict }: { dict: Dictionary }) {
 function Contact({ dict }: { dict: Dictionary }) {
   return (
     <section id="contacto">
-      <div className="grid lg:grid-cols-2 lg:items-stretch">
+      <div className="grid lg:grid-cols-[minmax(0,22.5rem)_minmax(0,1fr)] xl:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] lg:items-stretch">
         <ContactPanel dict={dict.contact} />
         <EditorialFrame
           src="/editorial/contact-cdmx.jpg"
           alt={dict.media.contactAlt}
           caption={dict.media.heroCaption}
-          className="h-[18rem] w-full md:h-[24rem] lg:h-[min(36rem,68svh)]"
+          className="h-[13.5rem] w-full md:h-[15.5rem] lg:h-[17.5rem]"
           imageClassName="object-[center_55%]"
         />
       </div>
