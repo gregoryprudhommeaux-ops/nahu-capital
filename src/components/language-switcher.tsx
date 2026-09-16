@@ -30,6 +30,7 @@ export function LanguageSwitcher({ locale, align = "down" }: Props) {
             <Link
               href={pathForLocale(code)}
               hrefLang={code}
+              prefetch
               className={`flex items-center gap-2.5 px-2.5 py-1.5 text-[0.8rem] transition-colors hover:bg-navy/5 ${
                 code === locale ? "text-navy" : "text-navy/60"
               }`}

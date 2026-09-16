@@ -7,7 +7,6 @@
   --color-gold: #b08a57;
   --font-sans: var(--font-montserrat);
   --font-serif: var(--font-libre-bodoni);
-  --font-zh: var(--font-noto-sans);
 }
 
 html {
@@ -23,7 +22,14 @@ body {
 }
 
 body.is-zh {
-  font-family: var(--font-zh), var(--font-sans), system-ui, sans-serif;
+  font-family:
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    "Noto Sans SC",
+    "Source Han Sans SC",
+    sans-serif;
 }
 
 ::selection {
@@ -43,7 +49,14 @@ h3,
 body.is-zh h1,
 body.is-zh h2,
 body.is-zh h3 {
-  font-family: var(--font-zh), var(--font-serif), serif;
+  font-family:
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    "Noto Sans SC",
+    "Source Han Sans SC",
+    sans-serif;
   letter-spacing: 0;
 }
 
@@ -54,6 +67,17 @@ body.is-zh h3 {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-gold);
+}
+
+body.is-zh .kicker {
+  font-family:
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    "Noto Sans SC",
+    sans-serif;
+  letter-spacing: 0.12em;
 }
 
 .wrap {
