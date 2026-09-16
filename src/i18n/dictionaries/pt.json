@@ -138,6 +138,8 @@
     "title": "Quem toma o dossier.",
     "body": "Quatro sócios. Cada um entra pelo ofício que sustenta a operação.",
     "listTitle": "Sócios",
+    "linkedinLabel": "LinkedIn",
+    "emailLabel": "Correio",
     "note": "Os montantes publicados correspondem ao percurso dos sócios fundadores.",
     "people": [
       {

@@ -138,6 +138,8 @@
     "title": "Quién toma el expediente.",
     "body": "Cuatro socios. Cada uno entra por el oficio que sostiene la operación.",
     "listTitle": "Socios",
+    "linkedinLabel": "LinkedIn",
+    "emailLabel": "Correo",
     "note": "Los montos publicados corresponden a la trayectoria de los socios fundadores.",
     "people": [
       {
