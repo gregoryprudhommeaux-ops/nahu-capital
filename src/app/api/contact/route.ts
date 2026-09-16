@@ -25,11 +25,29 @@ function isWhatsapp(value: string) {
 
 export const dynamic = "force-dynamic";
 
-export async function POST(request: Request) {
-  let body: Payload;
+async function readPayload(request: Request): Promise<Payload | null> {
+  const contentType = request.headers.get("content-type") ?? "";
   try {
-    body = (await request.json()) as Payload;
+    if (contentType.includes("application/json")) {
+      return (await request.json()) as Payload;
+    }
+    const form = await request.formData();
+    return {
+      name: String(form.get("name") ?? ""),
+      whatsapp: String(form.get("whatsapp") ?? ""),
+      email: String(form.get("email") ?? ""),
+      company: String(form.get("company") ?? ""),
+      message: String(form.get("message") ?? ""),
+      hp: String(form.get("hp") ?? ""),
+    };
   } catch {
+    return null;
+  }
+}
+
+export async function POST(request: Request) {
+  const body = await readPayload(request);
+  if (!body) {
     return Response.json({ ok: false, error: "invalid" }, { status: 400 });
   }
 

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-import { createPortal } from "react-dom";
 import type { Dictionary } from "@/i18n/get-dictionary";
 
 type Status = "idle" | "sending" | "sent" | "error";
@@ -12,41 +11,42 @@ type Props = {
 
 export function ContactPanel({ dict }: Props) {
   const formId = useId();
+  const toggleId = useId();
   const titleId = useId();
+  const toggleRef = useRef<HTMLInputElement>(null);
   const firstFieldRef = useRef<HTMLInputElement>(null);
-  const [open, setOpen] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
 
+  function closeForm() {
+    if (toggleRef.current) toggleRef.current.checked = false;
+    setStatus("idle");
+  }
+
   useEffect(() => {
-    if (!open) return;
+    const toggle = toggleRef.current;
+    if (!toggle) return;
 
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    firstFieldRef.current?.focus();
-
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        event.preventDefault();
-        setOpen(false);
+    const onChange = () => {
+      if (toggle.checked) {
+        setStatus("idle");
+        firstFieldRef.current?.focus();
       }
     };
-    document.addEventListener("keydown", onKey);
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && toggle.checked) {
+        event.preventDefault();
+        toggle.checked = false;
+        setStatus("idle");
+      }
+    };
 
+    toggle.addEventListener("change", onChange);
+    document.addEventListener("keydown", onKey);
     return () => {
-      document.body.style.overflow = previousOverflow;
+      toggle.removeEventListener("change", onChange);
       document.removeEventListener("keydown", onKey);
     };
-  }, [open]);
-
-  function openForm() {
-    setStatus("idle");
-    setOpen(true);
-  }
-
-  function closeForm() {
-    setOpen(false);
-    setStatus("idle");
-  }
+  }, []);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -88,7 +88,13 @@ export function ContactPanel({ dict }: Props) {
         : dict.submit;
 
   return (
-    <div className="bg-navy text-cream">
+    <div className="contact-panel bg-navy text-cream">
+      <input
+        ref={toggleRef}
+        id={toggleId}
+        type="checkbox"
+        className="contact-toggle"
+      />
       <div className="wrap py-12 md:py-16 lg:w-auto lg:max-w-none lg:pr-12 lg:pl-[max(2.5rem,calc((100vw-1220px)/2))]">
         <p className="kicker mb-4">{dict.kicker}</p>
         <h2 className="max-w-xl font-serif text-[clamp(1.85rem,3.4vw,2.85rem)] leading-[1.08] text-cream">
@@ -99,128 +105,115 @@ export function ContactPanel({ dict }: Props) {
             {dict.lead}
           </p>
         ) : null}
-        <button
-          type="button"
-          onClick={openForm}
-          className="mt-8 border border-gold/70 px-5 py-2.5 text-[0.72rem] font-medium tracking-[0.18em] text-gold uppercase transition-colors hover:bg-gold hover:text-navy"
-        >
+        <label htmlFor={toggleId} className="contact-open">
           {dict.open}
-        </button>
+        </label>
       </div>
 
-      {open
-        ? createPortal(
-            <div className="contact-modal" role="presentation" onClick={closeForm}>
-              <form
-                role="dialog"
-                aria-modal="true"
-                aria-labelledby={titleId}
-                onSubmit={onSubmit}
-                onClick={(event) => event.stopPropagation()}
-                className="contact-modal-panel"
-              >
-                <div className="mb-6 flex items-start justify-between gap-4">
-                  <div>
-                    <p className="kicker mb-2">{dict.kicker}</p>
-                    <p id={titleId} className="font-serif text-2xl leading-tight">
-                      {dict.formTitle}
-                    </p>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={closeForm}
-                    className="text-[0.68rem] tracking-[0.16em] text-navy/45 uppercase transition-colors hover:text-navy"
-                  >
-                    {dict.close}
-                  </button>
-                </div>
+      <div
+        className="contact-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+      >
+        <label
+          htmlFor={toggleId}
+          className="contact-modal-backdrop"
+          aria-hidden="true"
+        />
+        <form
+          action="/api/contact"
+          method="post"
+          onSubmit={onSubmit}
+          className="contact-modal-panel"
+        >
+          <div className="mb-6 flex items-start justify-between gap-4">
+            <div>
+              <p className="kicker mb-2">{dict.kicker}</p>
+              <p id={titleId} className="font-serif text-2xl leading-tight">
+                {dict.formTitle}
+              </p>
+            </div>
+            <label htmlFor={toggleId} className="contact-close">
+              {dict.close}
+            </label>
+          </div>
 
-                <div className="space-y-4">
-                  <Field id={`${formId}-name`} label={dict.fullName} required>
-                    <input
-                      ref={firstFieldRef}
-                      id={`${formId}-name`}
-                      name="name"
-                      type="text"
-                      autoComplete="name"
-                      required
-                      minLength={2}
-                      maxLength={120}
-                      className="contact-field"
-                    />
-                  </Field>
-                  <Field id={`${formId}-whatsapp`} label={dict.whatsapp} required>
-                    <input
-                      id={`${formId}-whatsapp`}
-                      name="whatsapp"
-                      type="tel"
-                      autoComplete="tel"
-                      inputMode="tel"
-                      required
-                      minLength={8}
-                      maxLength={40}
-                      className="contact-field"
-                    />
-                  </Field>
-                  <Field id={`${formId}-email`} label={dict.email} required>
-                    <input
-                      id={`${formId}-email`}
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      required
-                      maxLength={160}
-                      className="contact-field"
-                    />
-                  </Field>
-                  <Field
-                    id={`${formId}-company`}
-                    label={dict.company}
-                    hint={dict.optional}
-                  >
-                    <input
-                      id={`${formId}-company`}
-                      name="company"
-                      type="text"
-                      autoComplete="organization"
-                      maxLength={160}
-                      className="contact-field"
-                    />
-                  </Field>
-                  <Field
-                    id={`${formId}-message`}
-                    label={dict.message}
-                    hint={dict.optional}
-                  >
-                    <textarea
-                      id={`${formId}-message`}
-                      name="message"
-                      rows={5}
-                      maxLength={4000}
-                      className="contact-field min-h-[7.5rem] resize-y"
-                    />
-                  </Field>
-                  <div className="hidden" aria-hidden>
-                    <input name="hp" tabIndex={-1} autoComplete="off" />
-                  </div>
-                </div>
+          <div className="space-y-4">
+            <Field id={`${formId}-name`} label={dict.fullName} required>
+              <input
+                ref={firstFieldRef}
+                id={`${formId}-name`}
+                name="name"
+                type="text"
+                autoComplete="name"
+                required
+                minLength={2}
+                maxLength={120}
+                className="contact-field"
+              />
+            </Field>
+            <Field id={`${formId}-whatsapp`} label={dict.whatsapp} required>
+              <input
+                id={`${formId}-whatsapp`}
+                name="whatsapp"
+                type="tel"
+                autoComplete="tel"
+                inputMode="tel"
+                required
+                minLength={8}
+                maxLength={40}
+                className="contact-field"
+              />
+            </Field>
+            <Field id={`${formId}-email`} label={dict.email} required>
+              <input
+                id={`${formId}-email`}
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                maxLength={160}
+                className="contact-field"
+              />
+            </Field>
+            <Field id={`${formId}-company`} label={dict.company} hint={dict.optional}>
+              <input
+                id={`${formId}-company`}
+                name="company"
+                type="text"
+                autoComplete="organization"
+                maxLength={160}
+                className="contact-field"
+              />
+            </Field>
+            <Field id={`${formId}-message`} label={dict.message} hint={dict.optional}>
+              <textarea
+                id={`${formId}-message`}
+                name="message"
+                rows={5}
+                maxLength={4000}
+                className="contact-field min-h-[7.5rem] resize-y"
+              />
+            </Field>
+            <div className="hidden" aria-hidden>
+              <input name="hp" tabIndex={-1} autoComplete="off" />
+            </div>
+          </div>
 
-                {status === "error" ? (
-                  <p className="mt-4 text-[0.82rem] text-navy/70">{dict.error}</p>
-                ) : null}
+          {status === "error" ? (
+            <p className="mt-4 text-[0.82rem] text-navy/70">{dict.error}</p>
+          ) : null}
 
-                <button
-                  type="submit"
-                  disabled={status === "sending" || status === "sent"}
-                  className="mt-6 w-full bg-navy px-5 py-3 text-[0.72rem] font-medium tracking-[0.18em] text-cream uppercase transition-colors hover:bg-navy/90 disabled:opacity-80"
-                >
-                  {submitLabel}
-                </button>
-              </form>
-            </div>,
-            document.body,
-          )
-        : null}
+          <button
+            type="submit"
+            disabled={status === "sending" || status === "sent"}
+            className="mt-6 w-full bg-navy px-5 py-3 text-[0.72rem] font-medium tracking-[0.18em] text-cream uppercase transition-colors hover:bg-navy/90 disabled:opacity-80"
+          >
+            {submitLabel}
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
