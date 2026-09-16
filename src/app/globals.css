@@ -86,16 +86,13 @@ body.is-zh .kicker {
 }
 
 .sectors-menu summary,
-.team-menu summary,
 .lang-switcher summary {
   list-style: none;
 }
 
 .sectors-menu summary::-webkit-details-marker,
-.team-menu summary::-webkit-details-marker,
 .lang-switcher summary::-webkit-details-marker,
 .sectors-menu summary::marker,
-.team-menu summary::marker,
 .lang-switcher summary::marker {
   display: none;
   content: "";
