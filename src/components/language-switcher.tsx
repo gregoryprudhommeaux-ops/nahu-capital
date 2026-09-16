@@ -8,9 +8,14 @@ import { Flag } from "./flag";
 type Props = {
   locale: Locale;
   align?: "down" | "up";
+  tone?: "light" | "dark";
 };
 
-export function LanguageSwitcher({ locale, align = "down" }: Props) {
+export function LanguageSwitcher({
+  locale,
+  align = "down",
+  tone = "light",
+}: Props) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
 
@@ -46,7 +51,9 @@ export function LanguageSwitcher({ locale, align = "down" }: Props) {
       >
         <Flag locale={locale} title={localeNames[locale]} />
         <span
-          className={`text-[0.6rem] text-navy/40 transition-transform ${open ? "rotate-180" : ""}`}
+          className={`text-[0.6rem] transition-transform ${
+            open ? "rotate-180" : ""
+          } ${tone === "dark" ? "text-cream/50" : "text-navy/40"}`}
           aria-hidden
         >
           ▾

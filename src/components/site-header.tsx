@@ -24,8 +24,8 @@ export function SiteHeader({ locale, dict }: Props) {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-navy/8 bg-cream">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3.5 md:px-8">
+    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm">
+      <div className="wrap flex items-center justify-between gap-4 py-5">
         <Link
           href={pathForLocale(locale)}
           className="shrink-0"
@@ -36,26 +36,25 @@ export function SiteHeader({ locale, dict }: Props) {
             alt="NAHU Capital"
             width={784}
             height={172}
-            className="h-8 w-auto md:h-9"
+            className="h-9 w-auto md:h-10"
             priority
           />
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-9 lg:flex">
           {sections.map(([id, key]) => (
             <a
               key={id}
               href={`#${id}`}
-              className="text-[0.7rem] font-medium tracking-[0.18em] uppercase text-navy/70 transition-colors hover:text-navy"
+              className="text-[0.95rem] font-medium text-navy/80 transition-colors hover:text-navy"
             >
               {dict.nav[key]}
             </a>
           ))}
         </nav>
 
-        <div className="flex items-center gap-1 sm:gap-2">
+        <div className="flex items-center gap-1">
           <LanguageSwitcher locale={locale} />
-
           <button
             type="button"
             className="relative flex h-11 w-11 shrink-0 items-center justify-center lg:hidden"
@@ -88,14 +87,14 @@ export function SiteHeader({ locale, dict }: Props) {
       <div
         id="mobile-nav"
         hidden={!open}
-        className="border-t border-navy/10 bg-cream px-5 py-6 lg:hidden"
+        className="border-t border-navy/10 bg-cream lg:hidden"
       >
-        <nav className="flex flex-col gap-4">
+        <nav className="wrap flex flex-col gap-5 py-8">
           {sections.map(([id, key]) => (
             <a
               key={id}
               href={`#${id}`}
-              className="text-sm tracking-[0.12em] uppercase text-navy"
+              className="text-lg text-navy"
               onClick={() => setOpen(false)}
             >
               {dict.nav[key]}
