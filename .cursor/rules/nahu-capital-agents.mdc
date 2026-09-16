@@ -1,0 +1,25 @@
+---
+description: Roster of Gregory’s Cursor agents on NAHU Capital. Load the matching skill when Sofia, Lucy, Charles, Mike, Jerry, or anti-slop is invoked.
+alwaysApply: true
+---
+
+# Agents NAHU Capital
+
+This repo vendors Gregory’s personal agent skills in `.cursor/skills/` so Cloud Agents can load them (same pack as UCM / LA MESA / Idea OS).
+
+When the user says **« Utilise X »**, **« Demande à X »**, or `/skill-name`, **read that skill’s `SKILL.md` first** and follow it before answering.
+
+| Agent | Skill | On this site |
+|-------|--------|----------------|
+| **Sofia** | `sofia-chen-expert-ux-branding` | UX, UI, branding, hierarchy, mobile, trust |
+| **Charles** | `charles-linkedin-strategist` | LinkedIn Gregory / NextStep / NAHU |
+| **Lucy** | `lucy-community-marketing` | Community / member / partnership copy |
+| **Mike** | `mike-strategic-coach` | Offre, GTM lean, packaging, critique |
+| **Jerry** | `jerry-ai-saas-expert` | Product / pricing / ICP if NAHU ships a tool |
+| **Mr. ANTI-AI-SLOP** | `anti-linkedin-slop` | ANALYZE → HUMANIZE → EVOLVE on FR/EN/ES copy |
+
+**Copy gate (non-negotiable):** Charles, Lucy, and any LinkedIn / email / WhatsApp / marketing copy must run `anti-linkedin-slop` ANALYZE (then HUMANIZE if needed) before delivery. Never name these personas in customer-facing output.
+
+**NAHU copy:** Spanish Mexican is the site default. For ES, enforce ES-MX (no vosotros / vale / ordenador).
+
+Do not invent other named agents. If the user asks for **Chris** or **Steven**, say they are not in this repo’s skill pack (Steven lives in NextStep Idea OS; Chris is not in the synced skills).

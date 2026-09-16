@@ -29,3 +29,7 @@ npm start
 Les textes viennent du profil institutionnel 2026. Les chiffres d’expérience sont ceux des associés fondateurs, pas des AUM du groupe. Un seul nom de contact est publié : Juan Balbontin.
 
 Identité : fond `#F3F0EA`, marine `#101722`, or `#B08A57`. Titres : Libre Bodoni. Corps : Montserrat.
+
+## Agents
+
+Les skills personnelles sont dans `.cursor/skills/` (Sofia, Lucy, Charles, Mike, Jerry, anti-slop). Dis « Utilise Sofia » (ou Lucy / Charles / Mike / Jerry) pour les invoquer. Toute copie marketing passe par `/anti-linkedin-slop`.
