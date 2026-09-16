@@ -15,9 +15,9 @@ export function SiteFooter({ locale, dict }: Props) {
         <Image
           src="/brand/logo-horizontal.png"
           alt="NAHU Capital"
-          width={784}
-          height={172}
-          className="h-10 w-auto md:h-11"
+          width={816}
+          height={204}
+          className="h-12 w-auto md:h-14"
         />
 
         <p className="text-sm text-navy/50">{dict.footer.group}</p>

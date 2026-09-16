@@ -34,8 +34,8 @@ export function SiteHeader({ locale, dict }: Props) {
           <Image
             src="/brand/logo-horizontal.png"
             alt="NAHU Capital"
-            width={784}
-            height={172}
+            width={816}
+            height={204}
             className="h-9 w-auto md:h-10"
             priority
           />
@@ -85,10 +85,7 @@ export function SiteHeader({ locale, dict }: Props) {
       </div>
 
       {open ? (
-        <div
-          id="mobile-nav"
-          className="max-lg:!block !flex hidden border-t border-navy/10 bg-cream lg:hidden"
-        >
+        <div id="mobile-nav" className="border-t border-navy/10 bg-cream lg:hidden">
           <nav className="wrap flex w-full flex-col py-2">
             {sections.map(([id, key]) => (
               <a
