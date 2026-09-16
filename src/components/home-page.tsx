@@ -101,7 +101,7 @@ function Projects({ dict }: { dict: Dictionary }) {
       caption: dict.media.hospitalityCaption,
     },
     {
-      src: "/editorial/district.jpg",
+      src: "/editorial/district-city.jpg",
       alt: dict.media.districtAlt,
       caption: dict.media.districtCaption,
     },
