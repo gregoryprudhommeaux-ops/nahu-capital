@@ -33,8 +33,8 @@
     "kicker": "Doctrine",
     "title": "Un dossier, de la thèse au closing.",
     "intro": "Stratégie, analyse, valorisation, structure de capital, négociation et closing tiennent dans le même dossier. Les couper, c’est laisser l’opération inachevée.",
-    "principleLabel": "Filtre",
-    "principle": "Le dossier entre si la thèse, la structure, le capital et un chemin de signature tiennent. Le reste attend ou sort.",
+    "principleLabel": "Critère",
+    "principle": "Nous accompagnons le client sur la thèse, la structure, le capital et le chemin de signature. Ce qui ne tient pas encore, se travaille dans le dossier.",
     "capabilities": [
       {
         "num": "01",
