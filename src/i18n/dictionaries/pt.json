@@ -1,156 +1,156 @@
 {
   "meta": {
     "title": "NAHU Capital",
-    "description": "Plataforma empresarial franco-mexicana com vocação internacional. Capital, estratégia e execução através de fronteiras."
+    "description": "Plataforma franco-mexicana de capital e ativos reais. Originação, estrutura e fecho, também transfronteiriço."
   },
   "nav": {
     "thesis": "Tese",
-    "about": "Sobre",
+    "about": "O grupo",
     "team": "Equipa",
-    "portfolio": "Portefólio",
+    "portfolio": "Setores",
     "contact": "Contacto"
   },
   "hero": {
-    "kicker": "Grupo empresarial",
-    "title": "Capital, estratégia e execução através de fronteiras.",
-    "lead": "Plataforma empresarial franco-mexicana com vocação internacional para a identificação, análise, estruturação, desenvolvimento e execução de oportunidades de negócio, investimento, financiamento e expansão corporativa."
+    "kicker": "Franco-mexicana · México",
+    "title": "Capital e ativos reais. Execução transfronteiriça.",
+    "lead": "A partir do México, a NAHU Capital origina, estrutura e fecha operações de investimento, financiamento e M&A. Um dossier: tese, valorização, capital e caminho até à assinatura."
   },
   "pillars": [
     {
       "label": "Capital",
-      "text": "Estruturação financeira, M&A, investimento e financiamento."
+      "text": "M&A, captação, dívida, equity e coinvestimento."
     },
     {
-      "label": "Assets",
-      "text": "Minas, indústria, energia, infraestruturas e imobiliário."
+      "label": "Ativos reais",
+      "text": "Minas, energia, indústria, infraestruturas e imobiliário."
     },
     {
-      "label": "Cross-border",
-      "text": "Entrada em mercados, alianças estratégicas e execução internacional."
+      "label": "Transfronteiriço",
+      "text": "Entrada em mercado, joint ventures e execução fora da praça."
     }
   ],
   "thesis": {
     "kicker": "Tese",
-    "title": "Da oportunidade a uma operação estruturada e executável.",
-    "intro": "O modelo integra disciplinas que normalmente participam de forma separada. A estratégia liga-se à análise; a análise à valorização; a valorização à estrutura; a estrutura ao capital; e o capital à negociação e à execução.",
-    "principleLabel": "Princípio de trabalho",
-    "principle": "Não apenas identificar boas oportunidades, mas determinar que operação faz sentido, como financiá-la, como estruturá-la, como executá-la e como proteger o capital durante o processo.",
+    "title": "Um dossier, da tese ao fecho.",
+    "intro": "Estratégia, análise, valorização, estrutura de capital, negociação e fecho ficam no mesmo dossier. Separá-los é deixar a operação a meio.",
+    "principleLabel": "Filtro",
+    "principle": "Entra o que se sustenta: tese, estrutura, capital e um caminho de fecho. O resto espera ou sai.",
     "capabilities": [
       {
         "num": "01",
         "title": "Originação",
-        "text": "Identificação de empresas, ativos, projetos, oportunidades de aquisição, necessidades de capital, investidores, financiadores, compradores e sócios estratégicos."
+        "text": "Sociedades, ativos, projetos, compradores, financiadores, sócios. O que pode tornar-se um dossier."
       },
       {
         "num": "02",
-        "title": "Análise e due diligence",
-        "text": "Avaliação financeira, estratégica, setorial, operacional e documental; identificação de riscos, contingências e condições de viabilidade."
+        "title": "Due diligence",
+        "text": "Financeira, setorial, operacional e documental. Riscos, contingências, condições de viabilidade."
       },
       {
         "num": "03",
-        "title": "Valorização e modelização",
-        "text": "Valorização de empresas e ativos, modelos financeiros, análise de sensibilidade, estruturas de capital, retorno e impacto de transações."
+        "title": "Valorização",
+        "text": "Modelos, sensibilidades, estruturas de capital, retorno e impacto na transação."
       },
       {
         "num": "04",
-        "title": "Estruturação de capital",
-        "text": "Desenho e análise de alternativas de dívida, equity, coinvestimento, private capital, financiamento de aquisições e associações estratégicas."
+        "title": "Estrutura de capital",
+        "text": "Dívida, equity, coinvestimento, private capital, financiamento de aquisições, associações."
       },
       {
         "num": "05",
-        "title": "M&A e transações",
-        "text": "Aquisições, desinvestimentos, procura de compradores ou alvos, análise financeira, negociação, due diligence e acompanhamento da execução."
+        "title": "M&A",
+        "text": "Compras, vendas, alvos, negociação até ao fecho."
       },
       {
         "num": "06",
-        "title": "Captação de capital",
-        "text": "Preparação de oportunidades e ligação a investidores privados, family offices, fundos e outras fontes de capital, no quadro regulatório aplicável."
+        "title": "Captação",
+        "text": "Family offices, fundos e investidores privados, no quadro regulamentar aplicável."
       },
       {
         "num": "07",
-        "title": "Ativos industriais e reais",
-        "text": "Estruturação e desenvolvimento de projetos mineiros, industriais, energéticos, de infraestrutura e imobiliários, com visão financeira e operacional."
+        "title": "Ativos reais",
+        "text": "Minas, indústria, energia, infraestruturas, imobiliário. Leitura financeira e de terreno."
       },
       {
         "num": "08",
-        "title": "Desenvolvimento transfronteiriço",
-        "text": "Entrada em mercados, joint ventures, estabelecimento local, sócios, distribuidores, representação comercial, roadshows e execução internacional."
+        "title": "Transfronteiriço",
+        "text": "Entrada em mercado, JVs, sócios locais, representação, roadshows. Execução onde estiver o deal."
       }
     ]
   },
   "about": {
-    "kicker": "Sobre",
-    "title": "Quem somos",
-    "subtitle": "Experiência acumulada. Capacidade institucional desde a origem.",
-    "body": "A NAHU Capital consolida a experiência profissional dos seus fundadores numa nova estrutura corporativa concebida para operar com disciplina financeira, capacidade transacional, conhecimento setorial e alcance internacional. Em conjunto, reúne mais de 75 anos de percurso em finanças corporativas, auditoria, banca, M&A, minas, energia, infraestruturas, desenvolvimento industrial e imobiliário, investimento privado e expansão internacional.",
-    "differentialTitle": "Uma combinação distintiva",
-    "differential": "A capacidade do grupo não reside apenas em identificar oportunidades, mas em determinar quais fazem sentido, como devem ser estruturadas, que capital exigem, quais são os seus riscos e em que condições podem ser levadas a execução.",
+    "kicker": "O grupo",
+    "title": "Sócios fundadores, uma só estrutura.",
+    "subtitle": "Mais de 75 anos de prática acumulada. Os montantes são percurso, não AUM do grupo.",
+    "body": "A NAHU Capital reúne a prática dos sócios numa sociedade mexicana de leitura franco-mexicana. Corporate finance, auditoria, banca, M&A e ativos reais: minas, energia, infraestruturas, indústria, imobiliário. O dossier trabalha-se inteiro.",
+    "differentialTitle": "Como entra uma operação",
+    "differential": "Que tese a sustenta, que estrutura a torna viável, que capital entra, que riscos ficam e em que condições se pode assinar.",
     "axes": [
       {
         "title": "Análise e estrutura",
-        "text": "Finanças corporativas, auditoria, risco, valorização, due diligence e estruturas de capital."
+        "text": "Corporate finance, auditoria, risco, valorização, due diligence e capital."
       },
       {
-        "title": "Setores e ativos",
+        "title": "Setores",
         "text": "Minas, energia, infraestruturas, indústria, imobiliário, banca e tecnologia."
       },
       {
-        "title": "Execução global",
-        "text": "Originação, captação de capital, entrada em mercados, alianças, negociação e execução transfronteiriça."
+        "title": "Execução",
+        "text": "Originação, captação, entrada em mercado, alianças, negociação e fecho transfronteiriço."
       }
     ],
     "stats": [
       {
         "value": "75+",
-        "label": "Anos de experiência",
-        "detail": "Percurso profissional acumulado."
+        "label": "Anos acumulados",
+        "detail": "Percurso profissional dos sócios fundadores."
       },
       {
         "value": "US$5B",
         "label": "Maior operação",
-        "detail": "Experiência transacional individual em M&A e valorização."
+        "detail": "Experiência individual em M&A e valorização."
       },
       {
         "value": "US$3.5B",
         "label": "Minas",
-        "detail": "Experiência acumulada em projetos e ativos mineiros."
+        "detail": "Projetos e ativos mineiros, experiência acumulada."
       },
       {
         "value": "US$900M",
-        "label": "Desenvolvimento industrial",
-        "detail": "Projetos e operações industriais relacionados."
+        "label": "Indústria",
+        "detail": "Projetos e operações industriais ligados."
       },
       {
         "value": "US$50M",
         "label": "Imobiliário",
-        "detail": "Desenvolvimento integral de um projeto individual, de A a Z."
+        "detail": "Um desenvolvimento levado de ponta a ponta."
       },
       {
         "value": "15+",
         "label": "Mercados",
-        "detail": "Experiência e execução na América, Europa, Ásia, África e Médio Oriente."
+        "detail": "América, Europa, Ásia, África e Médio Oriente."
       }
     ],
-    "disclaimer": "As cifras refletem a experiência profissional acumulada dos sócios fundadores do grupo."
+    "disclaimer": "Os números são experiência profissional acumulada dos sócios fundadores, não ativos sob gestão do grupo."
   },
   "team": {
     "kicker": "Equipa",
-    "title": "Capacidade institucional desde a origem",
-    "body": "A NAHU Capital reúne o percurso dos seus sócios fundadores numa plataforma mexicana com vocação internacional. A equipa cobre finanças corporativas, auditoria, banca, M&A e ativos reais — minas, energia, infraestruturas, indústria e imobiliário.",
-    "note": "As cifras publicadas neste sítio correspondem à experiência profissional acumulada dos sócios fundadores.",
-    "contactLabel": "Contacto institucional",
+    "title": "Quem toma o dossier.",
+    "body": "Corporate finance, auditoria, banca, M&A e ativos reais — minas, energia, infraestruturas, indústria, imobiliário. Plataforma mexicana; o trabalho, onde estiver a transação.",
+    "note": "Os montantes publicados correspondem ao percurso dos sócios fundadores.",
+    "contactLabel": "Contacto",
     "person": {
       "name": "Juan Balbontin",
-      "role": "Contacto institucional",
+      "role": "Contacto",
       "location": "México"
     }
   },
   "portfolio": {
-    "kicker": "Portefólio",
-    "title": "Setores e alcance",
-    "subtitle": "Capacidade setorial profunda com perspetiva internacional.",
-    "intro": "A experiência do grupo cobre os seguintes setores e geografias. Esta versão do sítio não apresenta operações nominativas.",
-    "sectorsTitle": "Setores de experiência",
+    "kicker": "Setores",
+    "title": "Onde se operou.",
+    "subtitle": "Capacidade de terreno por setor. Leitura internacional quando o deal a pede.",
+    "intro": "Setores e geografias de trabalho. Nesta versão do sítio não há operações nominativas.",
+    "sectorsTitle": "Setores",
     "sectorsOpen": "Abrir a lista de setores",
     "sectorsClose": "Fechar a lista de setores",
     "sectors": [
@@ -166,8 +166,8 @@
       "Comércio B2B e distribuição",
       "Hotelaria e turismo"
     ],
-    "reachTitle": "Alcance internacional",
-    "reachIntro": "Experiência profissional e execução de projetos em:",
+    "reachTitle": "Mapa de trabalho",
+    "reachIntro": "Experiência e execução em:",
     "regions": [
       {
         "name": "América do Norte",
@@ -190,12 +190,12 @@
         "places": "Moçambique · Emirados Árabes Unidos · Egito"
       }
     ],
-    "modelTitle": "Modelo institucional",
-    "model": "A NAHU Capital projeta-se como uma plataforma mexicana com vocação internacional para articular capital, empresas, ativos, projetos, mercados e oportunidades. O seu objetivo é construir operações financeiramente viáveis, estrategicamente coerentes e executáveis, desenvolvendo progressivamente os veículos e estruturas permitidos pelo seu objeto social e pela regulação aplicável."
+    "modelTitle": "Enquadramento",
+    "model": "A NAHU Capital articula capital, empresas, ativos e mercados a partir de uma sociedade mexicana. O trabalho: montar operações viáveis e executáveis, com os veículos que o objeto social e a regulação aplicável permitam."
   },
   "contact": {
     "kicker": "Contacto",
-    "title": "Contacto institucional",
+    "title": "Linha direta.",
     "name": "Juan Balbontin",
     "phone": "+52 81 1024 2050",
     "phoneHref": "tel:+528110242050",
@@ -203,7 +203,7 @@
     "location": "México"
   },
   "footer": {
-    "group": "Grupo empresarial NAHU Capital",
+    "group": "NAHU Capital",
     "rights": "© 2026 NAHU Capital"
   },
   "media": {
@@ -211,8 +211,8 @@
     "heroCaption": "Cidade do México",
     "principleAlt": "Complexo hoteleiro e residencial visto do ar",
     "projectsKicker": "Ativos reais",
-    "projectsTitle": "Grandes projetos",
-    "projectsLead": "Hotelaria, bairros e data centers. Imagens de ilustração, não ativos nominativos.",
+    "projectsTitle": "Escala de projeto",
+    "projectsLead": "Hotelaria, bairros, data centers. Ilustração: não são ativos nominativos.",
     "hospitalityAlt": "Terraço e piscina de um hotel frente ao mar",
     "hospitalityCaption": "Hotelaria",
     "districtAlt": "Santa Fe, Cidade do México: parque e torres de um bairro planeado",
@@ -230,6 +230,6 @@
     "worldAlt": "Mapa dos países onde o grupo tem experiência profissional",
     "parisAlt": "Pont Alexandre III, Paris",
     "parisCaption": "Paris",
-    "contactAlt": "Anjo da Independência no Paseo de la Reforma, Cidade do México"
+    "contactAlt": "O Ángel de la Independencia no Paseo de la Reforma, Cidade do México"
   }
 }

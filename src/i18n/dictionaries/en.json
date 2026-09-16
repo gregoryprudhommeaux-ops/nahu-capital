@@ -1,156 +1,156 @@
 {
   "meta": {
     "title": "NAHU Capital",
-    "description": "A Franco-Mexican business platform with an international mandate. Capital, strategy and execution across borders."
+    "description": "Franco-Mexican platform for capital and real assets. Origination, structure and close, including cross-border."
   },
   "nav": {
     "thesis": "Thesis",
-    "about": "About",
+    "about": "The group",
     "team": "Team",
-    "portfolio": "Portfolio",
+    "portfolio": "Sectors",
     "contact": "Contact"
   },
   "hero": {
-    "kicker": "Business group",
-    "title": "Capital, strategy and execution across borders.",
-    "lead": "A Franco-Mexican business platform with an international mandate for the identification, analysis, structuring, development and execution of business, investment, financing and corporate expansion opportunities."
+    "kicker": "Franco-Mexican · Mexico",
+    "title": "Capital and real assets. Cross-border execution.",
+    "lead": "From Mexico, NAHU Capital originates, structures and closes investment, financing and M&A work. One file: thesis, valuation, capital and a path to signing."
   },
   "pillars": [
     {
       "label": "Capital",
-      "text": "Financial structuring, M&A, investment and financing."
+      "text": "M&A, fundraising, debt, equity and co-investment."
     },
     {
-      "label": "Assets",
-      "text": "Mining, industry, energy, infrastructure and real estate."
+      "label": "Real assets",
+      "text": "Mining, energy, industry, infrastructure and real estate."
     },
     {
       "label": "Cross-border",
-      "text": "Market entry, strategic alliances and international execution."
+      "text": "Market entry, joint ventures and execution outside the home market."
     }
   ],
   "thesis": {
     "kicker": "Thesis",
-    "title": "From opportunity to a structured, executable transaction.",
-    "intro": "The model brings together disciplines that usually sit apart. Strategy connects to analysis; analysis to valuation; valuation to structure; structure to capital; and capital to negotiation and execution.",
-    "principleLabel": "Working principle",
-    "principle": "Not only to identify good opportunities, but to determine which transaction makes sense, how to finance it, how to structure it, how to execute it, and how to protect capital throughout.",
+    "title": "One file, from thesis to signing.",
+    "intro": "Strategy, analysis, valuation, capital structure, negotiation and close sit in the same file. Split them and the deal stalls.",
+    "principleLabel": "Filter",
+    "principle": "A file comes in if the thesis, the structure, the capital and a path to close all hold. The rest waits or drops.",
     "capabilities": [
       {
         "num": "01",
         "title": "Origination",
-        "text": "Identification of companies, assets, projects, acquisition opportunities, capital needs, investors, lenders, buyers and strategic partners."
+        "text": "Companies, assets, projects, buyers, lenders, partners. What can become a live file."
       },
       {
         "num": "02",
-        "title": "Analysis & due diligence",
-        "text": "Financial, strategic, sector, operational and documentary review; identification of risks, contingencies and conditions of viability."
+        "title": "Due diligence",
+        "text": "Financial, sector, operating and documentary. Risks, contingencies, conditions of viability."
       },
       {
         "num": "03",
-        "title": "Valuation & modelling",
-        "text": "Valuation of companies and assets, financial models, sensitivity analysis, capital structures, returns and transaction impact."
+        "title": "Valuation",
+        "text": "Models, sensitivities, capital structure, returns and deal impact."
       },
       {
         "num": "04",
-        "title": "Capital structuring",
-        "text": "Design and analysis of debt, equity, co-investment, private capital, acquisition financing and strategic partnership alternatives."
+        "title": "Capital structure",
+        "text": "Debt, equity, co-investment, private capital, acquisition finance, partnerships."
       },
       {
         "num": "05",
-        "title": "M&A & transactions",
-        "text": "Acquisitions, divestments, buyer or target search, financial analysis, negotiation, due diligence and execution support."
+        "title": "M&A",
+        "text": "Buys, sells, targets, negotiation and support through close."
       },
       {
         "num": "06",
-        "title": "Capital raising",
-        "text": "Preparation of opportunities and introduction to private investors, family offices, funds and other capital sources within the applicable regulatory framework."
+        "title": "Fundraising",
+        "text": "Family offices, funds and private investors, inside the applicable rules."
       },
       {
         "num": "07",
-        "title": "Industrial & real assets",
-        "text": "Structuring and development of mining, industrial, energy, infrastructure and real-estate projects with a financial and operating view."
+        "title": "Real assets",
+        "text": "Mining, industry, energy, infrastructure, real estate. Numbers and site."
       },
       {
         "num": "08",
-        "title": "Cross-border development",
-        "text": "Market entry, joint ventures, local establishment, partners, distributors, commercial representation, roadshows and international execution."
+        "title": "Cross-border",
+        "text": "Market entry, JVs, local partners, representation, roadshows. Execution where the deal sits."
       }
     ]
   },
   "about": {
-    "kicker": "About",
-    "title": "Who we are",
-    "subtitle": "Accumulated experience. Institutional capacity from the outset.",
-    "body": "NAHU Capital consolidates the professional experience of its founders within a new corporate structure designed to operate with financial discipline, transactional capability, sector knowledge and international reach. Together, it brings more than 75 years of work in corporate finance, audit, banking, M&A, mining, energy, infrastructure, industrial and real-estate development, private investment and international expansion.",
-    "differentialTitle": "A distinctive combination",
-    "differential": "The group’s capacity does not rest only on identifying opportunities, but on determining which ones make sense, how they should be structured, what capital they require, what their risks are, and under what conditions they can be executed.",
+    "kicker": "The group",
+    "title": "Founding partners, one structure.",
+    "subtitle": "More than 75 years of combined practice. The figures are track record, not group AUM.",
+    "body": "NAHU Capital is a Mexican company with a Franco-Mexican reading of the work. Corporate finance, audit, banking, M&A and real assets: mining, energy, infrastructure, industry, real estate. The file is worked as a whole.",
+    "differentialTitle": "How a deal gets in",
+    "differential": "What thesis holds it, what structure makes it viable, what capital comes in, what risk remains, and on what terms it can sign.",
     "axes": [
       {
         "title": "Analysis and structure",
-        "text": "Corporate finance, audit, risk, valuation, due diligence and capital structures."
+        "text": "Corporate finance, audit, risk, valuation, due diligence and capital."
       },
       {
-        "title": "Sectors and assets",
+        "title": "Sectors",
         "text": "Mining, energy, infrastructure, industry, real estate, banking and technology."
       },
       {
-        "title": "Global execution",
-        "text": "Origination, capital raising, market entry, alliances, negotiation and cross-border execution."
+        "title": "Execution",
+        "text": "Origination, fundraising, market entry, alliances, negotiation and cross-border close."
       }
     ],
     "stats": [
       {
         "value": "75+",
-        "label": "Years of experience",
-        "detail": "Accumulated professional track record."
+        "label": "Combined years",
+        "detail": "Professional track record of the founding partners."
       },
       {
         "value": "US$5B",
-        "label": "Largest transaction",
-        "detail": "Individual transactional experience in M&A and valuation."
+        "label": "Largest deal",
+        "detail": "Individual experience in M&A and valuation."
       },
       {
         "value": "US$3.5B",
         "label": "Mining",
-        "detail": "Accumulated experience in mining projects and assets."
+        "detail": "Accumulated work on mining projects and assets."
       },
       {
         "value": "US$900M",
-        "label": "Industrial development",
-        "detail": "Related industrial projects and operations."
+        "label": "Industry",
+        "detail": "Linked industrial projects and operations."
       },
       {
         "value": "US$50M",
         "label": "Real estate",
-        "detail": "End-to-end development of an individual project."
+        "detail": "One development taken end to end."
       },
       {
         "value": "15+",
         "label": "Markets",
-        "detail": "Experience and execution in the Americas, Europe, Asia, Africa and the Middle East."
+        "detail": "Americas, Europe, Asia, Africa and the Middle East."
       }
     ],
-    "disclaimer": "Figures reflect the accumulated professional experience of the group’s founding partners."
+    "disclaimer": "Figures are the founding partners’ accumulated professional experience, not assets under management."
   },
   "team": {
     "kicker": "Team",
-    "title": "Institutional capacity from the outset",
-    "body": "NAHU Capital brings together the track record of its founding partners in a Mexican platform with an international mandate. The team covers corporate finance, audit, banking, M&A and real assets — mining, energy, infrastructure, industry and real estate.",
-    "note": "The figures published on this site correspond to the accumulated professional experience of the founding partners.",
-    "contactLabel": "Institutional contact",
+    "title": "Who runs the file.",
+    "body": "Corporate finance, audit, banking, M&A and real assets — mining, energy, infrastructure, industry, real estate. Mexican platform; the work sits where the deal sits.",
+    "note": "Published amounts refer to the founding partners’ track record.",
+    "contactLabel": "Contact",
     "person": {
       "name": "Juan Balbontin",
-      "role": "Institutional contact",
+      "role": "Contact",
       "location": "Mexico"
     }
   },
   "portfolio": {
-    "kicker": "Portfolio",
-    "title": "Sectors and reach",
-    "subtitle": "Deep sector capability with an international view.",
-    "intro": "The group’s experience covers the following sectors and geographies. Named transactions are not presented in this version of the site.",
-    "sectorsTitle": "Sectors of experience",
+    "kicker": "Sectors",
+    "title": "Where the work has been.",
+    "subtitle": "On-the-ground sector experience. An international reading when the deal needs one.",
+    "intro": "Sectors and geographies of work. This version of the site does not name transactions.",
+    "sectorsTitle": "Sectors",
     "sectorsOpen": "Open the sectors list",
     "sectorsClose": "Close the sectors list",
     "sectors": [
@@ -166,8 +166,8 @@
       "B2B trade and distribution",
       "Hospitality and tourism"
     ],
-    "reachTitle": "International reach",
-    "reachIntro": "Professional experience and project execution in:",
+    "reachTitle": "Map of work",
+    "reachIntro": "Experience and execution in:",
     "regions": [
       {
         "name": "North America",
@@ -190,12 +190,12 @@
         "places": "Mozambique · United Arab Emirates · Egypt"
       }
     ],
-    "modelTitle": "Institutional model",
-    "model": "NAHU Capital is built as a Mexican platform with an international mandate to connect capital, companies, assets, projects, markets and opportunities. Its purpose is to assemble transactions that are financially viable, strategically coherent and executable, developing over time the vehicles and structures permitted by its corporate purpose and applicable regulation."
+    "modelTitle": "Mandate",
+    "model": "NAHU Capital connects capital, companies, assets and markets from a Mexican company. The job is to put together work that can close, using vehicles allowed by its corporate purpose and the rules that apply."
   },
   "contact": {
     "kicker": "Contact",
-    "title": "Institutional contact",
+    "title": "Direct line.",
     "name": "Juan Balbontin",
     "phone": "+52 81 1024 2050",
     "phoneHref": "tel:+528110242050",
@@ -203,7 +203,7 @@
     "location": "Mexico"
   },
   "footer": {
-    "group": "NAHU Capital business group",
+    "group": "NAHU Capital",
     "rights": "© 2026 NAHU Capital"
   },
   "media": {
@@ -211,8 +211,8 @@
     "heroCaption": "Mexico City",
     "principleAlt": "Hotel and residential complex seen from above",
     "projectsKicker": "Real assets",
-    "projectsTitle": "Large-scale projects",
-    "projectsLead": "Hospitality, districts and data centers. Illustration only — not named group assets.",
+    "projectsTitle": "Project scale",
+    "projectsLead": "Hospitality, districts, data centers. Illustration: not named assets.",
     "hospitalityAlt": "Hotel terrace and pool overlooking the sea",
     "hospitalityCaption": "Hospitality",
     "districtAlt": "Santa Fe, Mexico City: park and towers of a planned district",

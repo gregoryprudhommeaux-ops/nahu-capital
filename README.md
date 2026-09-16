@@ -11,11 +11,7 @@ npm install
 npm run dev
 ```
 
-Le serveur écoute par défaut sur le port 3000. Pour un port précis :
-
-```bash
-npx next dev -p 4321 -H 0.0.0.0
-```
+Le serveur écoute sur le port 4321 (`npm run dev`).
 
 Build de production :
 

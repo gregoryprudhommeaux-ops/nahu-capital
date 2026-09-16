@@ -1,156 +1,156 @@
 {
   "meta": {
     "title": "NAHU Capital",
-    "description": "Plataforma empresarial franco-mexicana con vocación internacional. Capital, estrategia y ejecución a través de fronteras."
+    "description": "Plataforma franco-mexicana de capital y activos reales. Originación, estructura y cierre, también transfronterizo."
   },
   "nav": {
     "thesis": "Tesis",
-    "about": "Nosotros",
+    "about": "El grupo",
     "team": "Equipo",
-    "portfolio": "Portafolio",
+    "portfolio": "Sectores",
     "contact": "Contacto"
   },
   "hero": {
-    "kicker": "Grupo empresarial",
-    "title": "Capital, estrategia y ejecución a través de fronteras.",
-    "lead": "Plataforma empresarial franco-mexicana con vocación internacional para la identificación, análisis, estructuración, desarrollo y ejecución de oportunidades de negocio, inversión, financiamiento y expansión corporativa."
+    "kicker": "Franco-mexicana · México",
+    "title": "Capital y activos reales. Ejecución transfronteriza.",
+    "lead": "NAHU Capital origina, estructura y cierra operaciones de inversión, financiamiento y M&A desde México. Un expediente: tesis, valuación, capital y ruta de firma."
   },
   "pillars": [
     {
       "label": "Capital",
-      "text": "Estructuración financiera, M&A, inversión y financiamiento."
+      "text": "M&A, fondeo, deuda, equity y coinversión."
     },
     {
-      "label": "Assets",
-      "text": "Minería, industria, energía, infraestructura y real estate."
+      "label": "Activos",
+      "text": "Minería, energía, industria, infraestructura e inmobiliario."
     },
     {
-      "label": "Cross-border",
-      "text": "Market entry, alianzas estratégicas y ejecución internacional."
+      "label": "Transfronterizo",
+      "text": "Market entry, joint ventures y ejecución fuera de plaza."
     }
   ],
   "thesis": {
     "kicker": "Tesis",
-    "title": "De la oportunidad a una operación estructurada y ejecutable.",
-    "intro": "El modelo integra disciplinas que normalmente participan de forma separada. La estrategia se conecta con el análisis; el análisis con la valoración; la valoración con la estructura; la estructura con el capital; y el capital con la negociación y la ejecución.",
-    "principleLabel": "Principio de trabajo",
-    "principle": "No solamente identificar buenas oportunidades, sino determinar qué operación tiene sentido, cómo financiarla, cómo estructurarla, cómo ejecutarla y cómo proteger el capital durante el proceso.",
+    "title": "Un expediente, de la tesis a la firma.",
+    "intro": "Estrategia, análisis, valuación, estructura de capital, negociación y cierre van en el mismo expediente. Cortarlos es dejar la operación a medias.",
+    "principleLabel": "Criterio",
+    "principle": "Entra lo que se sostiene: tesis, estructura, capital y un camino de cierre. Lo demás espera o se deja.",
     "capabilities": [
       {
         "num": "01",
         "title": "Originación",
-        "text": "Identificación de compañías, activos, proyectos, oportunidades de adquisición, necesidades de capital, inversionistas, financiadores, compradores y socios estratégicos."
+        "text": "Compañías, activos, proyectos, compradores, fondeadores y socios. Lo que puede convertirse en expediente."
       },
       {
         "num": "02",
-        "title": "Análisis y due diligence",
-        "text": "Evaluación financiera, estratégica, sectorial, operativa y documental; identificación de riesgos, contingencias y condiciones de viabilidad."
+        "title": "Due diligence",
+        "text": "Financiera, sectorial, operativa y documental. Riesgos, contingencias, condiciones de viabilidad."
       },
       {
         "num": "03",
-        "title": "Valoración y modelización",
-        "text": "Valoración de compañías y activos, modelos financieros, análisis de sensibilidad, estructuras de capital, retorno e impacto de transacciones."
+        "title": "Valuación",
+        "text": "Modelos, sensibilidades, estructuras de capital, retorno e impacto en la transacción."
       },
       {
         "num": "04",
-        "title": "Capital structuring",
-        "text": "Diseño y análisis de alternativas de deuda, equity, coinversión, private capital, financiamiento de adquisiciones y asociaciones estratégicas."
+        "title": "Estructura de capital",
+        "text": "Deuda, equity, coinversión, private capital, financiamiento de adquisiciones, asociaciones."
       },
       {
         "num": "05",
-        "title": "M&A y transacciones",
-        "text": "Adquisiciones, desinversiones, búsqueda de compradores o targets, análisis financiero, negociación, due diligence y acompañamiento de ejecución."
+        "title": "M&A",
+        "text": "Compras, ventas, targets, negociación y acompañamiento hasta el cierre."
       },
       {
         "num": "06",
-        "title": "Capital raising",
-        "text": "Preparación de oportunidades y vinculación con inversionistas privados, family offices, fondos y otras fuentes de capital dentro del marco regulatorio aplicable."
+        "title": "Fondeo",
+        "text": "Family offices, fondos e inversionistas privados, dentro del marco regulatorio aplicable."
       },
       {
         "num": "07",
-        "title": "Industrial y real assets",
-        "text": "Estructuración y desarrollo de proyectos mineros, industriales, energéticos, de infraestructura e inmobiliarios con visión financiera y operativa."
+        "title": "Activos reales",
+        "text": "Minería, industria, energía, infraestructura e inmobiliario. Lectura financiera y de piso."
       },
       {
         "num": "08",
-        "title": "Desarrollo cross-border",
-        "text": "Market entry, joint ventures, establecimiento local, socios, distribuidores, representación comercial, roadshows y ejecución internacional."
+        "title": "Cross-border",
+        "text": "Market entry, JVs, socios locales, representación, roadshows. Ejecución donde esté el deal."
       }
     ]
   },
   "about": {
-    "kicker": "Nosotros",
-    "title": "Quiénes somos",
-    "subtitle": "Experiencia acumulada. Capacidad institucional desde el origen.",
-    "body": "NAHU Capital consolida la experiencia profesional de sus fundadores dentro de una nueva estructura corporativa diseñada para operar con disciplina financiera, capacidad transaccional, conocimiento sectorial y alcance internacional. En conjunto, reúne más de 75 años de trayectoria en finanzas corporativas, auditoría, banca, M&A, minería, energía, infraestructura, desarrollo industrial e inmobiliario, inversión privada y expansión internacional.",
-    "differentialTitle": "Una combinación diferencial",
-    "differential": "La capacidad del grupo no reside únicamente en identificar oportunidades, sino en determinar cuáles tienen sentido, cómo deben estructurarse, qué capital requieren, cuáles son sus riesgos y qué condiciones permiten llevarlas a ejecución.",
+    "kicker": "El grupo",
+    "title": "Socios fundadores, una sola estructura.",
+    "subtitle": "Más de 75 años de trabajo acumulado. Los montos son trayectoria, no AUM del grupo.",
+    "body": "NAHU Capital agrupa la práctica de sus socios en una sociedad mexicana de lectura franco-mexicana. Corporate finance, auditoría, banca, M&A y activos reales: minería, energía, infraestructura, industria, inmobiliario. El expediente se trabaja completo.",
+    "differentialTitle": "Cómo se decide una operación",
+    "differential": "Qué tesis la sostiene, qué estructura la hace viable, qué capital entra, qué riesgos quedan y en qué condiciones se puede firmar.",
     "axes": [
       {
         "title": "Análisis y estructura",
-        "text": "Finanzas corporativas, auditoría, riesgo, valoración, due diligence y estructuras de capital."
+        "text": "Corporate finance, auditoría, riesgo, valuación, due diligence y capital."
       },
       {
-        "title": "Sectores y activos",
-        "text": "Minería, energía, infraestructura, industria, real estate, banca y tecnología."
+        "title": "Sectores",
+        "text": "Minería, energía, infraestructura, industria, inmobiliario, banca y tecnología."
       },
       {
-        "title": "Ejecución global",
-        "text": "Originación, capital raising, market entry, alianzas, negociación y ejecución cross-border."
+        "title": "Ejecución",
+        "text": "Originación, fondeo, market entry, alianzas, negociación y cierre transfronterizo."
       }
     ],
     "stats": [
       {
         "value": "75+",
-        "label": "Años de experiencia",
-        "detail": "Trayectoria profesional acumulada."
+        "label": "Años acumulados",
+        "detail": "Trayectoria profesional de los socios fundadores."
       },
       {
         "value": "US$5B",
-        "label": "Mayor operación",
-        "detail": "Experiencia transaccional individual en M&A y valoración."
+        "label": "Operación más grande",
+        "detail": "Experiencia individual en M&A y valuación."
       },
       {
         "value": "US$3.5B",
         "label": "Minería",
-        "detail": "Experiencia acumulada en proyectos y activos mineros."
+        "detail": "Proyectos y activos mineros, experiencia acumulada."
       },
       {
         "value": "US$900M",
-        "label": "Desarrollo industrial",
+        "label": "Industria",
         "detail": "Proyectos y operaciones industriales vinculados."
       },
       {
         "value": "US$50M",
-        "label": "Real estate",
-        "detail": "Desarrollo integral de un proyecto individual de A a Z."
+        "label": "Inmobiliario",
+        "detail": "Un desarrollo llevado de punta a punta."
       },
       {
         "value": "15+",
         "label": "Mercados",
-        "detail": "Experiencia y ejecución en América, Europa, Asia, África y Medio Oriente."
+        "detail": "América, Europa, Asia, África y Medio Oriente."
       }
     ],
-    "disclaimer": "Las cifras reflejan experiencia profesional acumulada de los socios fundadores del grupo."
+    "disclaimer": "Las cifras son experiencia profesional acumulada de los socios fundadores, no activos bajo gestión del grupo."
   },
   "team": {
     "kicker": "Equipo",
-    "title": "Capacidad institucional desde el origen",
-    "body": "NAHU Capital reúne la trayectoria de sus socios fundadores en una plataforma mexicana con vocación internacional. El equipo cubre finanzas corporativas, auditoría, banca, M&A y activos reales — minería, energía, infraestructura, industria e inmobiliario.",
-    "note": "Las cifras publicadas en este sitio corresponden a la experiencia profesional acumulada de los socios fundadores.",
-    "contactLabel": "Contacto institucional",
+    "title": "Quién toma el expediente.",
+    "body": "Corporate finance, auditoría, banca, M&A y activos reales — minería, energía, infraestructura, industria, inmobiliario. Plataforma mexicana; el trabajo, donde esté la transacción.",
+    "note": "Los montos publicados corresponden a la trayectoria de los socios fundadores.",
+    "contactLabel": "Contacto",
     "person": {
       "name": "Juan Balbontin",
-      "role": "Contacto institucional",
+      "role": "Contacto",
       "location": "México"
     }
   },
   "portfolio": {
-    "kicker": "Portafolio",
-    "title": "Sectores y alcance",
-    "subtitle": "Capacidad sectorial profunda con perspectiva internacional.",
-    "intro": "La experiencia del grupo cubre los siguientes sectores y geografías. No se presentan operaciones nominativas en esta versión del sitio.",
-    "sectorsTitle": "Sectores de experiencia",
+    "kicker": "Sectores",
+    "title": "Dónde se ha operado.",
+    "subtitle": "Capacidad de piso por sector. Lectura internacional cuando el deal la pide.",
+    "intro": "Sectores y geografías de trabajo. En esta versión del sitio no hay operaciones nominativas.",
+    "sectorsTitle": "Sectores",
     "sectorsOpen": "Abrir la lista de sectores",
     "sectorsClose": "Cerrar la lista de sectores",
     "sectors": [
@@ -158,16 +158,16 @@
       "Energía, petróleo y gas",
       "Infraestructura",
       "Desarrollo industrial y manufactura",
-      "Real estate y construcción",
+      "Inmobiliario y construcción",
       "Banca y servicios financieros",
       "Private equity y capital privado",
       "M&A y corporate finance",
       "Technology, media & telecom",
       "Comercio B2B y distribución",
-      "Hospitality y turismo"
+      "Hotelería y turismo"
     ],
-    "reachTitle": "Alcance internacional",
-    "reachIntro": "Experiencia profesional y ejecución de proyectos en:",
+    "reachTitle": "Mapa de trabajo",
+    "reachIntro": "Experiencia y ejecución en:",
     "regions": [
       {
         "name": "Norteamérica",
@@ -190,12 +190,12 @@
         "places": "Mozambique · Emiratos Árabes Unidos · Egipto"
       }
     ],
-    "modelTitle": "Modelo institucional",
-    "model": "NAHU Capital se proyecta como una plataforma mexicana con vocación internacional para articular capital, empresas, activos, proyectos, mercados y oportunidades. Su objetivo es construir operaciones financieramente viables, estratégicamente coherentes y ejecutables, desarrollando progresivamente vehículos y estructuras permitidos por su objeto social y la regulación aplicable."
+    "modelTitle": "Marco",
+    "model": "NAHU Capital articula capital, empresas, activos y mercados desde una sociedad mexicana. El trabajo: armar operaciones viables y ejecutables, con los vehículos que permitan el objeto social y la regulación aplicable."
   },
   "contact": {
     "kicker": "Contacto",
-    "title": "Contacto institucional",
+    "title": "Línea directa.",
     "name": "Juan Balbontin",
     "phone": "+52 81 1024 2050",
     "phoneHref": "tel:+528110242050",
@@ -203,7 +203,7 @@
     "location": "México"
   },
   "footer": {
-    "group": "Grupo empresarial NAHU Capital",
+    "group": "NAHU Capital",
     "rights": "© 2026 NAHU Capital"
   },
   "media": {
@@ -211,9 +211,9 @@
     "heroCaption": "Ciudad de México",
     "principleAlt": "Complejo hotelero y residencial visto desde el aire",
     "projectsKicker": "Activos reales",
-    "projectsTitle": "Grandes proyectos",
-    "projectsLead": "Hotelería, barrios y data centers. Imágenes de ilustración, no activos nominativos.",
-    "hospitalityAlt": "Terraza y piscina de un hotel frente al mar",
+    "projectsTitle": "Escala de proyecto",
+    "projectsLead": "Hotelería, barrios, data centers. Ilustración: no son activos nominativos.",
+    "hospitalityAlt": "Terraza y alberca de un hotel frente al mar",
     "hospitalityCaption": "Hotelería",
     "districtAlt": "Santa Fe, Ciudad de México: parque y torres de un barrio planeado",
     "districtCaption": "Barrio",
@@ -221,13 +221,13 @@
     "datacenterCaption": "Data center",
     "grandprojetAlt": "Eje Trocadéro–La Défense, París",
     "grandprojetCaption": "Gran proyecto",
-    "cityHotelAlt": "Piscina de un hotel urbano al atardecer",
+    "cityHotelAlt": "Alberca de un hotel urbano al atardecer",
     "cityHotelCaption": "Hotelería urbana",
     "datahallAlt": "Sala técnica de un data center",
     "datahallCaption": "Data center",
     "quartierAlt": "Distrito urbano de noche",
     "quartierCaption": "Distrito",
-    "worldAlt": "Mapa de los países donde el grupo tiene experiencia profesional",
+    "worldAlt": "Mapa de los países donde hay experiencia profesional del grupo",
     "parisAlt": "Pont Alexandre III, París",
     "parisCaption": "París",
     "contactAlt": "El Ángel de la Independencia en el Paseo de la Reforma, Ciudad de México"

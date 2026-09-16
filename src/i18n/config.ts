@@ -16,7 +16,7 @@ export const htmlLang: Record<Locale, string> = {
   es: "es-MX",
   en: "en",
   fr: "fr",
-  pt: "pt",
+  pt: "pt-PT",
   zh: "zh-CN",
 };
 
