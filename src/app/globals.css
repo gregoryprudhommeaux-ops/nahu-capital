@@ -101,8 +101,29 @@ body.is-zh .kicker {
   content: "";
 }
 
-@media (min-width: 768px) {
-  .wrap {
-    width: min(1220px, calc(100% - 4rem));
-  }
+.contact-dialog {
+  margin: auto;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  max-width: calc(100vw - 1.5rem);
+}
+
+.contact-dialog::backdrop {
+  background: rgb(16 23 34 / 0.62);
+}
+
+.contact-field {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-navy) 18%, transparent);
+  background: transparent;
+  padding: 0.55rem 0 0.45rem;
+  font-size: 0.95rem;
+  color: var(--color-navy);
+  outline: none;
+}
+
+.contact-field:focus {
+  border-bottom-color: var(--color-gold);
 }

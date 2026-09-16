@@ -22,7 +22,11 @@ npm start
 
 ## Contenu
 
-Les textes viennent du profil institutionnel 2026. Les chiffres d’expérience sont ceux des associés fondateurs, pas des AUM du groupe. Un seul nom de contact est publié : Juan Balbontin.
+Les textes viennent du profil institutionnel 2026. Les chiffres d’expérience sont ceux des associés fondateurs, pas des AUM du groupe.
+
+Le bandeau Contact ouvre un formulaire (nom, WhatsApp, e-mail, entreprise/projet, message). La destination est `gregory.prudhommeaux@gmail.com`.
+
+Pour l’envoi réel, copier `.env.example` vers `.env.local` et renseigner `RESEND_API_KEY` (compte Resend gratuit, inscrit avec cette adresse Gmail). Sans clé, en `next dev` le formulaire valide et affiche « Envoyé » ; le message est loggé côté serveur. En production sans clé, l’envoi échoue.
 
 Identité : fond `#F3F0EA`, marine `#101722`, or `#B08A57`. Titres : Libre Bodoni. Corps : Montserrat. Les logos du header et du footer sont des SVG vectorisés à fond transparent.
 

@@ -1,5 +1,6 @@
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { ContactPanel } from "./contact-panel";
 import { EditorialFrame } from "./editorial-frame";
 import { SectorsMenu } from "./sectors-menu";
 import { TeamMenu } from "./team-menu";
@@ -364,33 +365,7 @@ function Contact({ dict }: { dict: Dictionary }) {
   return (
     <section id="contacto">
       <div className="grid lg:grid-cols-2">
-        <div className="bg-navy text-cream">
-          <div className="wrap py-12 md:py-16 lg:w-auto lg:max-w-none lg:pr-12 lg:pl-[max(2.5rem,calc((100vw-1220px)/2))]">
-            <p className="kicker mb-8">{dict.contact.kicker}</p>
-            <div className="max-w-sm space-y-3">
-              <p className="font-serif text-2xl text-cream">{dict.contact.name}</p>
-              <p>
-                <a
-                  href={dict.contact.phoneHref}
-                  className="text-cream/75 transition-colors hover:text-gold"
-                >
-                  {dict.contact.phone}
-                </a>
-              </p>
-              <p>
-                <a
-                  href={`mailto:${dict.contact.email}`}
-                  className="text-cream/75 transition-colors hover:text-gold"
-                >
-                  {dict.contact.email}
-                </a>
-              </p>
-              <p className="pt-2 text-[0.68rem] tracking-[0.18em] text-gold uppercase">
-                {dict.contact.location}
-              </p>
-            </div>
-          </div>
-        </div>
+        <ContactPanel dict={dict.contact} />
         <EditorialFrame
           src="/editorial/contact-cdmx.jpg"
           alt={dict.media.contactAlt}

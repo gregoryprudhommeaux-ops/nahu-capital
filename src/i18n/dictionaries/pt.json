@@ -218,11 +218,21 @@
   },
   "contact": {
     "kicker": "Contacto",
-    "name": "Juan Balbontin",
-    "phone": "+52 81 1024 2050",
-    "phoneHref": "tel:+528110242050",
-    "email": "jbmtradingmx@gmail.com",
-    "location": "México"
+    "title": "Uma mensagem.",
+    "lead": "Nome, WhatsApp e correio. Empresa ou projeto, se houver.",
+    "open": "Enviar uma mensagem",
+    "close": "Fechar",
+    "formTitle": "Escrever à NAHU.",
+    "fullName": "Nome completo",
+    "whatsapp": "WhatsApp",
+    "email": "Correio",
+    "company": "Empresa ou projeto",
+    "optional": "Opcional",
+    "message": "Mensagem",
+    "submit": "Enviar",
+    "submitting": "A enviar",
+    "sent": "Enviado",
+    "error": "Não foi possível enviar. Tente de novo."
   },
   "footer": {
     "group": "NAHU Capital",
