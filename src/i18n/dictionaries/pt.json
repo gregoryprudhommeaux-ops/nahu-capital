@@ -204,5 +204,31 @@
   "footer": {
     "group": "Grupo empresarial NAHU Capital",
     "rights": "© 2026 NAHU Capital"
+  },
+  "media": {
+    "heroAlt": "Paseo de la Reforma e o Ángel de la Independencia, Cidade do México",
+    "heroCaption": "Cidade do México",
+    "renewablesAlt": "Parque solar e eólico ao amanhecer",
+    "renewablesCaption": "Energia renovável",
+    "energySitesKicker": "Ativos reais",
+    "energySitesTitle": "Sítios energéticos",
+    "energySitesLead": "Imagens de ilustração: refinação, geração térmica e rede. Não são ativos nominativos.",
+    "refineryAlt": "Complexo de refinação junto à água",
+    "refineryCaption": "Petróleo e gás",
+    "thermalAlt": "Central de geração com torres de refrigeração",
+    "thermalCaption": "Geração",
+    "gridAlt": "Rede de transmissão ao entardecer",
+    "gridCaption": "Transmissão",
+    "miningAlt": "Operação mineira a céu aberto",
+    "miningCaption": "Minas",
+    "industryAlt": "Nave industrial",
+    "industryCaption": "Indústria",
+    "infraAlt": "Porto e gruas de contentores",
+    "infraCaption": "Infraestruturas",
+    "realestateAlt": "Torres corporativas",
+    "realestateCaption": "Imobiliário",
+    "parisAlt": "Pont Alexandre III, Paris",
+    "parisCaption": "Paris",
+    "contactAlt": "Amanhecer sobre a Cidade do México"
   }
 }

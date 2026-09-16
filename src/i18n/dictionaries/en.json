@@ -204,5 +204,31 @@
   "footer": {
     "group": "NAHU Capital business group",
     "rights": "© 2026 NAHU Capital"
+  },
+  "media": {
+    "heroAlt": "Paseo de la Reforma and the Angel of Independence, Mexico City",
+    "heroCaption": "Mexico City",
+    "renewablesAlt": "Solar farm and wind turbines at sunrise",
+    "renewablesCaption": "Renewable energy",
+    "energySitesKicker": "Real assets",
+    "energySitesTitle": "Energy sites",
+    "energySitesLead": "Illustration only: refining, thermal generation and the grid. Not named group assets.",
+    "refineryAlt": "Waterfront refining complex",
+    "refineryCaption": "Oil and gas",
+    "thermalAlt": "Power plant with cooling towers",
+    "thermalCaption": "Generation",
+    "gridAlt": "Transmission network at dusk",
+    "gridCaption": "Transmission",
+    "miningAlt": "Open-pit mining operation",
+    "miningCaption": "Mining",
+    "industryAlt": "Industrial hall",
+    "industryCaption": "Industry",
+    "infraAlt": "Container port and cranes",
+    "infraCaption": "Infrastructure",
+    "realestateAlt": "Corporate towers",
+    "realestateCaption": "Real estate",
+    "parisAlt": "Pont Alexandre III, Paris",
+    "parisCaption": "Paris",
+    "contactAlt": "Sunrise over Mexico City"
   }
 }

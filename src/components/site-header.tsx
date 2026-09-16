@@ -25,7 +25,7 @@ export function SiteHeader({ locale, dict }: Props) {
 
   return (
     <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm">
-      <div className="wrap flex items-center justify-between gap-4 py-5">
+      <div className="wrap flex items-center justify-between gap-4 py-3.5">
         <Link
           href={pathForLocale(locale)}
           className="shrink-0"
@@ -36,7 +36,7 @@ export function SiteHeader({ locale, dict }: Props) {
             alt="NAHU Capital"
             width={816}
             height={204}
-            className="h-9 w-auto md:h-10"
+            className="h-8 w-auto md:h-9"
             priority
           />
         </Link>
@@ -46,7 +46,7 @@ export function SiteHeader({ locale, dict }: Props) {
             <a
               key={id}
               href={`#${id}`}
-              className="text-[0.95rem] font-medium text-navy/80 transition-colors hover:text-navy"
+              className="text-[0.88rem] font-medium text-navy/80 transition-colors hover:text-navy"
             >
               {dict.nav[key]}
             </a>

@@ -204,5 +204,31 @@
   "footer": {
     "group": "NAHU Capital 企业集团",
     "rights": "© 2026 NAHU Capital"
+  },
+  "media": {
+    "heroAlt": "墨西哥城改革大道与独立天使纪念碑",
+    "heroCaption": "墨西哥城",
+    "renewablesAlt": "日出时的光伏场与风电场",
+    "renewablesCaption": "可再生能源",
+    "energySitesKicker": "实物资产",
+    "energySitesTitle": "能源场站",
+    "energySitesLead": "仅为配图：炼化、火电与输电网。并非具名资产。",
+    "refineryAlt": "滨水炼化设施",
+    "refineryCaption": "油气",
+    "thermalAlt": "带冷却塔的发电厂",
+    "thermalCaption": "发电",
+    "gridAlt": "黄昏时的输电网络",
+    "gridCaption": "输电",
+    "miningAlt": "露天采矿作业",
+    "miningCaption": "矿业",
+    "industryAlt": "工业厂房",
+    "industryCaption": "工业",
+    "infraAlt": "集装箱港口与岸桥",
+    "infraCaption": "基础设施",
+    "realestateAlt": "企业大厦",
+    "realestateCaption": "不动产",
+    "parisAlt": "巴黎亚历山大三世桥",
+    "parisCaption": "巴黎",
+    "contactAlt": "墨西哥城日出"
   }
 }

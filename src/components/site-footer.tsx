@@ -11,13 +11,13 @@ type Props = {
 export function SiteFooter({ locale, dict }: Props) {
   return (
     <footer className="border-t border-navy/10 bg-cream">
-      <div className="wrap flex flex-col gap-10 py-12 md:flex-row md:items-center md:justify-between">
+      <div className="wrap flex flex-col gap-8 py-8 md:flex-row md:items-center md:justify-between">
         <Image
           src="/brand/logo-horizontal.png"
           alt="NAHU Capital"
           width={816}
           height={204}
-          className="h-12 w-auto md:h-14"
+          className="h-10 w-auto md:h-11"
         />
 
         <p className="text-sm text-navy/50">{dict.footer.group}</p>

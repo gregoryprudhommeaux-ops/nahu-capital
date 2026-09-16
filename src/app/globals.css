@@ -11,7 +11,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 4.25rem;
 }
 
 body {
@@ -56,12 +56,12 @@ body.is-zh h3 {
 }
 
 .wrap {
-  width: min(1180px, calc(100% - 2.5rem));
+  width: min(1220px, calc(100% - 2rem));
   margin-inline: auto;
 }
 
 @media (min-width: 768px) {
   .wrap {
-    width: min(1180px, calc(100% - 5rem));
+    width: min(1220px, calc(100% - 4rem));
   }
 }
