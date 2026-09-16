@@ -28,8 +28,8 @@ export function SiteHeader({ locale, dict }: Props) {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-navy/8 bg-cream/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5 md:px-8">
+    <header className="sticky top-0 z-50 border-b border-navy/8 bg-cream">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3.5 md:px-8">
         <Link
           href={pathForLocale(locale)}
           className="shrink-0"
@@ -57,8 +57,8 @@ export function SiteHeader({ locale, dict }: Props) {
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
-          <ul className="hidden items-center gap-2.5 sm:flex" aria-label="Idioma">
+        <div className="flex items-center gap-3 sm:gap-4">
+          <ul className="flex items-center gap-2 sm:gap-2.5" aria-label="Idioma">
             {locales.map((code) => (
               <li key={code}>
                 <Link
@@ -78,55 +78,51 @@ export function SiteHeader({ locale, dict }: Props) {
 
           <button
             type="button"
-            className="flex h-10 w-10 items-center justify-center lg:hidden"
+            className="relative flex h-11 w-11 shrink-0 items-center justify-center lg:hidden"
             aria-expanded={open}
+            aria-controls="mobile-nav"
             aria-label="Menu"
             onClick={() => setOpen((v) => !v)}
           >
-            <span className="sr-only">Menu</span>
-            <span className="flex w-5 flex-col gap-1.5">
+            <span className="relative block h-3 w-5">
               <span
-                className={`block h-px bg-navy transition ${open ? "translate-y-[4px] rotate-45" : ""}`}
+                className={`absolute top-0 left-0 block h-0.5 w-5 bg-navy transition-transform ${
+                  open ? "translate-y-[5px] rotate-45" : ""
+                }`}
               />
-              <span className={`block h-px bg-navy ${open ? "opacity-0" : ""}`} />
               <span
-                className={`block h-px bg-navy transition ${open ? "-translate-y-[8px] -rotate-45" : ""}`}
+                className={`absolute top-[5px] left-0 block h-0.5 w-5 bg-navy transition-opacity ${
+                  open ? "opacity-0" : ""
+                }`}
+              />
+              <span
+                className={`absolute top-[10px] left-0 block h-0.5 w-5 bg-navy transition-transform ${
+                  open ? "-translate-y-[5px] -rotate-45" : ""
+                }`}
               />
             </span>
           </button>
         </div>
       </div>
 
-      {open ? (
-        <div className="border-t border-navy/8 px-5 py-5 lg:hidden">
-          <nav className="flex flex-col gap-4">
-            {sections.map(([id, key]) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                className="text-sm tracking-[0.12em] uppercase text-navy"
-                onClick={() => setOpen(false)}
-              >
-                {dict.nav[key]}
-              </a>
-            ))}
-          </nav>
-          <ul className="mt-6 flex flex-wrap gap-4 sm:hidden" aria-label="Idioma">
-            {locales.map((code) => (
-              <li key={code}>
-                <Link
-                  href={pathForLocale(code)}
-                  className={`text-xs tracking-[0.16em] ${
-                    code === locale ? "text-gold" : "text-navy/50"
-                  }`}
-                >
-                  {localeLabels[code]}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
+      <div
+        id="mobile-nav"
+        hidden={!open}
+        className="border-t border-navy/10 bg-cream px-5 py-6 lg:hidden"
+      >
+        <nav className="flex flex-col gap-4">
+          {sections.map(([id, key]) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              className="text-sm tracking-[0.12em] uppercase text-navy"
+              onClick={() => setOpen(false)}
+            >
+              {dict.nav[key]}
+            </a>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }
