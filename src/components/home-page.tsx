@@ -307,7 +307,7 @@ function Portfolio({ dict }: { dict: Dictionary }) {
 
   return (
     <section id="portafolio" className="border-t border-navy/8">
-      <div className="wrap py-12 md:py-16">
+      <div className="wrap pt-8 pb-12 md:pt-10 md:pb-16">
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
           <div>
             <p className="kicker mb-3">{dict.portfolio.kicker}</p>
