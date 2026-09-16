@@ -61,7 +61,7 @@ export function SiteHeader({ locale, dict }: Props) {
             aria-expanded={open}
             aria-controls="mobile-nav"
             aria-label="Menu"
-            onClick={() => setOpen((v) => !v)}
+            onClick={() => setOpen((value) => !value)}
           >
             <span className="relative block h-3 w-5">
               <span
@@ -84,24 +84,25 @@ export function SiteHeader({ locale, dict }: Props) {
         </div>
       </div>
 
-      <div
-        id="mobile-nav"
-        hidden={!open}
-        className="border-t border-navy/10 bg-cream lg:hidden"
-      >
-        <nav className="wrap flex flex-col gap-5 py-8">
-          {sections.map(([id, key]) => (
-            <a
-              key={id}
-              href={`#${id}`}
-              className="text-lg text-navy"
-              onClick={() => setOpen(false)}
-            >
-              {dict.nav[key]}
-            </a>
-          ))}
-        </nav>
-      </div>
+      {open ? (
+        <div
+          id="mobile-nav"
+          className="max-lg:!block !flex hidden border-t border-navy/10 bg-cream lg:hidden"
+        >
+          <nav className="wrap flex w-full flex-col py-2">
+            {sections.map(([id, key]) => (
+              <a
+                key={id}
+                href={`#${id}`}
+                className="py-3.5 text-lg text-navy"
+                onClick={() => setOpen(false)}
+              >
+                {dict.nav[key]}
+              </a>
+            ))}
+          </nav>
+        </div>
+      ) : null}
     </header>
   );
 }
