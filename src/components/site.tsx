@@ -328,7 +328,7 @@ function Hero({ dict }: { dict: Dictionary }) {
           alt={dict.media.heroAlt}
           caption={dict.media.heroCaption}
           className="h-[min(58vw,22rem)] w-full md:h-[28rem] lg:h-[min(82svh,740px)]"
-          imageClassName="object-[center_40%]"
+          imageClassName="object-[center_22%]"
           priority
         />
       </div>
@@ -587,7 +587,7 @@ function Contact({ dict }: { dict: Dictionary }) {
           alt={dict.media.contactAlt}
           caption={dict.media.heroCaption}
           className="h-[13.5rem] w-full md:h-[15.5rem] lg:h-[17.5rem]"
-          imageClassName="object-[center_55%]"
+          imageClassName="object-[center_28%]"
         />
       </div>
     </section>
