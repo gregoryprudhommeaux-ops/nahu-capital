@@ -30,7 +30,9 @@ Les textes viennent du profil institutionnel 2026. Les chiffres d’expérience 
 
 Identité : fond `#F3F0EA`, marine `#101722`, or `#B08A57`. Titres : Libre Bodoni. Corps : Montserrat.
 
-Les photographies sont des illustrations éditoriales (Pexels / Unsplash) : Mexico, Paris, sites énergétiques, mines, industrie, ports. Elles ne représentent pas des actifs nominatifs du groupe.
+Les photographies sont des illustrations éditoriales. Elles ne représentent pas des actifs nominatifs du groupe.
+
+Sujets : hôtellerie, quartiers (dont Santa Fe, Mexico), data centers, grands axes urbains (Reforma, La Défense). Sources : Pexels ; Wikimedia Commons (Santa Fe, CC0 ; La Défense, CC BY 4.0 Gugalcrom123 ; campus data center, CC BY-SA 4.0 Choinowski).
 
 ## Agents
 

@@ -16,7 +16,7 @@ export function HomePage({ locale, dict }: Props) {
       <main>
         <Hero dict={dict} />
         <Principle dict={dict} />
-        <EnergySites dict={dict} />
+        <Projects dict={dict} />
         <Thesis dict={dict} />
         <About dict={dict} />
         <Team dict={dict} />
@@ -80,8 +80,8 @@ function Principle({ dict }: { dict: Dictionary }) {
     <section id="tesis" className="relative isolate min-h-[20rem] overflow-hidden md:min-h-[24rem]">
       <div className="absolute inset-0">
         <EditorialFrame
-          src="/editorial/energy-renewables.jpg"
-          alt={dict.media.renewablesAlt}
+          src="/editorial/mixed-use.jpg"
+          alt={dict.media.principleAlt}
           className="h-full w-full"
           sizes="100vw"
         />
@@ -97,37 +97,37 @@ function Principle({ dict }: { dict: Dictionary }) {
   );
 }
 
-function EnergySites({ dict }: { dict: Dictionary }) {
+function Projects({ dict }: { dict: Dictionary }) {
   const sites = [
     {
-      src: "/editorial/energy-refinery.jpg",
-      alt: dict.media.refineryAlt,
-      caption: dict.media.refineryCaption,
+      src: "/editorial/hospitality.jpg",
+      alt: dict.media.hospitalityAlt,
+      caption: dict.media.hospitalityCaption,
     },
     {
-      src: "/editorial/energy-thermal.jpg",
-      alt: dict.media.thermalAlt,
-      caption: dict.media.thermalCaption,
+      src: "/editorial/district.jpg",
+      alt: dict.media.districtAlt,
+      caption: dict.media.districtCaption,
     },
     {
-      src: "/editorial/energy-grid.jpg",
-      alt: dict.media.gridAlt,
-      caption: dict.media.gridCaption,
+      src: "/editorial/datacenter.jpg",
+      alt: dict.media.datacenterAlt,
+      caption: dict.media.datacenterCaption,
     },
   ];
 
   return (
-    <section aria-label={dict.media.energySitesTitle}>
+    <section aria-label={dict.media.projectsTitle}>
       <div className="wrap py-10 md:py-12">
         <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
           <div>
-            <p className="kicker mb-2">{dict.media.energySitesKicker}</p>
+            <p className="kicker mb-2">{dict.media.projectsKicker}</p>
             <h2 className="font-serif text-[clamp(1.45rem,2.2vw,2rem)] text-navy">
-              {dict.media.energySitesTitle}
+              {dict.media.projectsTitle}
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-navy/50">
-            {dict.media.energySitesLead}
+            {dict.media.projectsLead}
           </p>
         </div>
         <div className="grid gap-3 sm:grid-cols-3">
@@ -287,30 +287,30 @@ function Team({ dict }: { dict: Dictionary }) {
 function Portfolio({ dict }: { dict: Dictionary }) {
   const mosaic = [
     {
-      src: "/editorial/mining.jpg",
-      alt: dict.media.miningAlt,
-      caption: dict.media.miningCaption,
+      src: "/editorial/grand-projet.jpg",
+      alt: dict.media.grandprojetAlt,
+      caption: dict.media.grandprojetCaption,
       span: "md:col-span-2",
       frame: "aspect-[16/10] md:aspect-[2.2/1]",
     },
     {
-      src: "/editorial/industry.jpg",
-      alt: dict.media.industryAlt,
-      caption: dict.media.industryCaption,
+      src: "/editorial/hospitality-city.jpg",
+      alt: dict.media.cityHotelAlt,
+      caption: dict.media.cityHotelCaption,
       span: "",
       frame: "aspect-[4/3]",
     },
     {
-      src: "/editorial/infra.jpg",
-      alt: dict.media.infraAlt,
-      caption: dict.media.infraCaption,
+      src: "/editorial/data-hall.jpg",
+      alt: dict.media.datahallAlt,
+      caption: dict.media.datahallCaption,
       span: "",
       frame: "aspect-[4/3]",
     },
     {
-      src: "/editorial/realestate.jpg",
-      alt: dict.media.realestateAlt,
-      caption: dict.media.realestateCaption,
+      src: "/editorial/quartier-night.jpg",
+      alt: dict.media.quartierAlt,
+      caption: dict.media.quartierCaption,
       span: "md:col-span-2",
       frame: "aspect-[16/10] md:aspect-[2.2/1]",
     },
