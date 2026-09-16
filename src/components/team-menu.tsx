@@ -14,11 +14,11 @@ const profiles: Record<
     linkedin: "https://www.linkedin.com/in/anaalmeidalu/",
   },
   patrick: {
-    photo: "/team/patrick-diogo.jpg",
+    photo: "/team/patrick.jpg",
     linkedin: "https://www.linkedin.com/in/patrickdiogo/",
   },
   gregory: {
-    photo: "/team/gregory-prudhommeaux.jpg",
+    photo: "/team/gregory.jpg",
     linkedin: "https://www.linkedin.com/in/gregoryprudhommeaux/",
   },
 };
