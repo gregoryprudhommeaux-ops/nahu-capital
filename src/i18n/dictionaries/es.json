@@ -136,14 +136,35 @@
   "team": {
     "kicker": "Equipo",
     "title": "Quién toma el expediente.",
-    "body": "Corporate finance, auditoría, banca, M&A y activos reales — minería, energía, infraestructura, industria, inmobiliario. Plataforma mexicana; el trabajo, donde esté la transacción.",
+    "body": "Cuatro socios. Cada uno entra por el oficio que sostiene la operación.",
+    "listTitle": "Socios",
     "note": "Los montos publicados corresponden a la trayectoria de los socios fundadores.",
-    "contactLabel": "Contacto",
-    "person": {
-      "name": "Juan Balbontin",
-      "role": "Contacto",
-      "location": "México"
-    }
+    "people": [
+      {
+        "id": "juan",
+        "name": "Juan Balbontin",
+        "role": "Inmobiliario, infraestructura, capital privado",
+        "bio": "Trabaja con inversionistas, desarrolladores y operadores en México. Desarrollo comercial e inmobiliario en grupos grandes. Economía, University of Georgia."
+      },
+      {
+        "id": "ana",
+        "name": "Ana María Almeida Luján",
+        "role": "Finanzas corporativas, auditoría, minería",
+        "bio": "Estructura de capital, due diligence y lectura de activos reales: minería, industria, energía, inmobiliario. Banca, fondos y family offices. Preside la sección de servicios financieros de CANACO Chihuahua."
+      },
+      {
+        "id": "patrick",
+        "name": "Patrick Diogo",
+        "role": "M&A, valuación, energía",
+        "bio": "Corporate finance, auditoría y transacciones, también transfronterizas en petróleo y gas. Economía, Universidad de Lyon; máster en finanzas, emlyon. Francés, inglés, español, portugués e italiano."
+      },
+      {
+        "id": "gregory",
+        "name": "Gregory Prudhommeaux",
+        "role": "Market entry, alianzas, ejecución transfronteriza",
+        "bio": "Europa, Asia, Américas. Diecisiete años en China; en México desde 2023. Originación internacional, JVs y fondeo. Conseiller du Commerce Extérieur de la France; CCI France México en Jalisco. Francés, inglés, español y mandarín."
+      }
+    ]
   },
   "portfolio": {
     "kicker": "Sectores",

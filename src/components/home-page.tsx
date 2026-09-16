@@ -2,6 +2,7 @@ import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { EditorialFrame } from "./editorial-frame";
 import { SectorsMenu } from "./sectors-menu";
+import { TeamMenu } from "./team-menu";
 import { SiteFooter } from "./site-footer";
 import { SiteHeader } from "./site-header";
 import { WorldReach } from "./world-reach";
@@ -253,28 +254,20 @@ function About({ dict }: { dict: Dictionary }) {
 function Team({ dict }: { dict: Dictionary }) {
   return (
     <section id="equipo" className="border-t border-navy/8">
-      <div className="wrap grid items-end gap-8 py-12 md:grid-cols-[1.1fr_0.9fr] md:py-14">
-        <div>
-          <p className="kicker mb-3">{dict.team.kicker}</p>
-          <h2 className="font-serif text-[clamp(1.55rem,2.4vw,2.35rem)] leading-[1.15] text-navy">
-            {dict.team.title}
-          </h2>
-          <p className="mt-4 max-w-xl text-[0.98rem] leading-[1.7] text-navy/65">
-            {dict.team.body}
-          </p>
-          <p className="mt-3 max-w-xl text-sm leading-relaxed text-navy/40">
-            {dict.team.note}
-          </p>
+      <div className="wrap py-12 md:py-14">
+        <p className="kicker mb-3">{dict.team.kicker}</p>
+        <h2 className="font-serif text-[clamp(1.55rem,2.4vw,2.35rem)] leading-[1.15] text-navy">
+          {dict.team.title}
+        </h2>
+        <p className="mt-3 max-w-xl text-[0.98rem] leading-[1.7] text-navy/65">
+          {dict.team.body}
+        </p>
+        <div className="mt-8">
+          <TeamMenu dict={dict} />
         </div>
-        <div className="border-t border-navy/15 pt-6 md:border-t-0 md:border-l md:pt-0 md:pl-10">
-          <p className="font-serif text-2xl text-navy md:text-3xl">
-            {dict.team.person.name}
-          </p>
-          <p className="mt-3 text-[0.68rem] font-medium tracking-[0.18em] text-gold uppercase">
-            {dict.team.person.role}
-          </p>
-          <p className="mt-1.5 text-sm text-navy/50">{dict.team.person.location}</p>
-        </div>
+        <p className="mt-6 max-w-xl text-sm leading-relaxed text-navy/40">
+          {dict.team.note}
+        </p>
       </div>
     </section>
   );

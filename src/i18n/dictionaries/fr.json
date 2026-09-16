@@ -136,14 +136,35 @@
   "team": {
     "kicker": "Équipe",
     "title": "Qui tient le dossier.",
-    "body": "Finance d’entreprise, audit, banque, M&A et actifs réels — mines, énergie, infrastructures, industrie, immobilier. Plateforme mexicaine ; le travail, là où est la transaction.",
+    "body": "Quatre associés. Chacun entre par le métier qui porte l’opération.",
+    "listTitle": "Associés",
     "note": "Les montants publiés correspondent au parcours des associés fondateurs.",
-    "contactLabel": "Contact",
-    "person": {
-      "name": "Juan Balbontin",
-      "role": "Contact",
-      "location": "Mexique"
-    }
+    "people": [
+      {
+        "id": "juan",
+        "name": "Juan Balbontin",
+        "role": "Immobilier, infrastructures, private capital",
+        "bio": "Investisseurs, promoteurs, opérateurs au Mexique. Développement commercial et immobilier dans de grands groupes. Économie, University of Georgia."
+      },
+      {
+        "id": "ana",
+        "name": "Ana María Almeida Luján",
+        "role": "Finance d’entreprise, audit, mines",
+        "bio": "Structure de capital, due diligence, lecture d’actifs réels : mines, industrie, énergie, immobilier. Banques, fonds, family offices. Préside la section services financiers de la CANACO Chihuahua."
+      },
+      {
+        "id": "patrick",
+        "name": "Patrick Diogo",
+        "role": "M&A, valorisation, énergie",
+        "bio": "Finance d’entreprise, audit et transactions, y compris transfrontalières dans le pétrole et le gaz. Économie, Université de Lyon ; mastère spécialisé finance, emlyon. Français, anglais, espagnol, portugais, italien."
+      },
+      {
+        "id": "gregory",
+        "name": "Gregory Prudhommeaux",
+        "role": "Entrée de marché, alliances, exécution hors frontière",
+        "bio": "Europe, Asie, Amériques. Dix-sept ans en Chine ; au Mexique depuis 2023. Origination internationale, JV, levée. Conseiller du Commerce Extérieur de la France ; CCI France México au Jalisco. Français, anglais, espagnol, mandarin."
+      }
+    ]
   },
   "portfolio": {
     "kicker": "Métiers",

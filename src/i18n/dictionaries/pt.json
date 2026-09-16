@@ -136,14 +136,35 @@
   "team": {
     "kicker": "Equipa",
     "title": "Quem toma o dossier.",
-    "body": "Corporate finance, auditoria, banca, M&A e ativos reais — minas, energia, infraestruturas, indústria, imobiliário. Plataforma mexicana; o trabalho, onde estiver a transação.",
+    "body": "Quatro sócios. Cada um entra pelo ofício que sustenta a operação.",
+    "listTitle": "Sócios",
     "note": "Os montantes publicados correspondem ao percurso dos sócios fundadores.",
-    "contactLabel": "Contacto",
-    "person": {
-      "name": "Juan Balbontin",
-      "role": "Contacto",
-      "location": "México"
-    }
+    "people": [
+      {
+        "id": "juan",
+        "name": "Juan Balbontin",
+        "role": "Imobiliário, infraestruturas, capital privado",
+        "bio": "Trabalha com investidores, promotores e operadores no México. Desenvolvimento comercial e imobiliário em grandes grupos. Economia, University of Georgia."
+      },
+      {
+        "id": "ana",
+        "name": "Ana María Almeida Luján",
+        "role": "Finanças corporativas, auditoria, minas",
+        "bio": "Estrutura de capital, due diligence e leitura de ativos reais: minas, indústria, energia, imobiliário. Bancos, fundos, family offices. Preside a secção de serviços financeiros da CANACO Chihuahua."
+      },
+      {
+        "id": "patrick",
+        "name": "Patrick Diogo",
+        "role": "M&A, valorização, energia",
+        "bio": "Corporate finance, auditoria e transações, incluindo transfronteiriças em petróleo e gás. Economia, Universidade de Lyon; mestrado especializado em finanças, emlyon. Francês, inglês, espanhol, português e italiano."
+      },
+      {
+        "id": "gregory",
+        "name": "Gregory Prudhommeaux",
+        "role": "Entrada em mercado, alianças, execução transfronteiriça",
+        "bio": "Europa, Ásia, Américas. Dezassete anos na China; México desde 2023. Originação internacional, JVs e captação. Conseiller du Commerce Extérieur de la France; CCI France México em Jalisco. Francês, inglês, espanhol e mandarim."
+      }
+    ]
   },
   "portfolio": {
     "kicker": "Setores",

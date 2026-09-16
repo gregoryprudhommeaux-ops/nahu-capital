@@ -136,14 +136,35 @@
   "team": {
     "kicker": "Team",
     "title": "Who runs the file.",
-    "body": "Corporate finance, audit, banking, M&A and real assets — mining, energy, infrastructure, industry, real estate. Mexican platform; the work sits where the deal sits.",
+    "body": "Four partners. Each one comes in on the work that holds the deal.",
+    "listTitle": "Partners",
     "note": "Published amounts refer to the founding partners’ track record.",
-    "contactLabel": "Contact",
-    "person": {
-      "name": "Juan Balbontin",
-      "role": "Contact",
-      "location": "Mexico"
-    }
+    "people": [
+      {
+        "id": "juan",
+        "name": "Juan Balbontin",
+        "role": "Real estate, infrastructure, private capital",
+        "bio": "Works with investors, developers and operators in Mexico. Commercial and real-estate development inside large groups. Economics, University of Georgia."
+      },
+      {
+        "id": "ana",
+        "name": "Ana María Almeida Luján",
+        "role": "Corporate finance, audit, mining",
+        "bio": "Capital structure, due diligence and real-asset reading: mining, industry, energy, real estate. Banks, funds, family offices. Chairs the financial-services section of CANACO Chihuahua."
+      },
+      {
+        "id": "patrick",
+        "name": "Patrick Diogo",
+        "role": "M&A, valuation, energy",
+        "bio": "Corporate finance, audit and transactions, including cross-border oil and gas. Economics, University of Lyon; specialized master’s in finance, emlyon. French, English, Spanish, Portuguese and Italian."
+      },
+      {
+        "id": "gregory",
+        "name": "Gregory Prudhommeaux",
+        "role": "Market entry, alliances, cross-border execution",
+        "bio": "Europe, Asia, the Americas. Seventeen years in China; Mexico since 2023. International origination, JVs and fundraising. Conseiller du Commerce Extérieur de la France; CCI France México in Jalisco. French, English, Spanish and Mandarin."
+      }
+    ]
   },
   "portfolio": {
     "kicker": "Sectors",
