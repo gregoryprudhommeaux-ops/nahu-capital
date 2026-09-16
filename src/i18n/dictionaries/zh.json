@@ -218,8 +218,8 @@
   },
   "contact": {
     "kicker": "联络",
-    "title": "一封信。",
-    "lead": "姓名、WhatsApp、邮箱。公司或项目，有则填。",
+    "title": "跟我们说说您的项目。",
+    "lead": "",
     "open": "发消息",
     "close": "关闭",
     "formTitle": "写信给 NAHU。",

@@ -76,12 +76,14 @@ export function ContactPanel({ dict }: Props) {
     <div className="bg-navy text-cream">
       <div className="wrap py-12 md:py-16 lg:w-auto lg:max-w-none lg:pr-12 lg:pl-[max(2.5rem,calc((100vw-1220px)/2))]">
         <p className="kicker mb-4">{dict.kicker}</p>
-        <h2 className="max-w-md font-serif text-[clamp(1.85rem,3.4vw,2.85rem)] leading-[1.08] text-cream">
+        <h2 className="max-w-xl font-serif text-[clamp(1.85rem,3.4vw,2.85rem)] leading-[1.08] text-cream">
           {dict.title}
         </h2>
-        <p className="mt-4 max-w-sm text-[0.98rem] leading-[1.7] text-cream/65">
-          {dict.lead}
-        </p>
+        {dict.lead ? (
+          <p className="mt-4 max-w-sm text-[0.98rem] leading-[1.7] text-cream/65">
+            {dict.lead}
+          </p>
+        ) : null}
         <button
           type="button"
           onClick={openForm}

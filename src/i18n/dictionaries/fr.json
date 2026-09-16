@@ -218,8 +218,8 @@
   },
   "contact": {
     "kicker": "Contact",
-    "title": "Un message.",
-    "lead": "Nom, WhatsApp et e-mail. Entreprise ou projet, s’il y a lieu.",
+    "title": "Parlez-nous de vos projets.",
+    "lead": "",
     "open": "Envoyer un message",
     "close": "Fermer",
     "formTitle": "Écrire à NAHU.",
