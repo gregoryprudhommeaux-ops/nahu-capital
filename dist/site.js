@@ -2,16 +2,19 @@
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector("#mobile-nav");
   if (toggle && nav) {
+    const setOpen = (open) => {
+      nav.toggleAttribute("hidden", !open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    };
+    setOpen(false);
     toggle.addEventListener("click", () => {
-      const open = nav.hasAttribute("hidden") === false;
-      nav.toggleAttribute("hidden", open);
-      toggle.setAttribute("aria-expanded", open ? "false" : "true");
+      setOpen(nav.hasAttribute("hidden"));
     });
     nav.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        nav.setAttribute("hidden", "");
-        toggle.setAttribute("aria-expanded", "false");
-      });
+      link.addEventListener("click", () => setOpen(false));
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") setOpen(false);
     });
   }
 
