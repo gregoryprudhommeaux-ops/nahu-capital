@@ -11,6 +11,21 @@ import {
   type Locale,
 } from "@/lib/copy";
 import { ContactPanel } from "./contact-panel";
+import heroPhoto from "../../public/hero.jpg";
+import logoPhoto from "../../public/logo.png";
+import hospitalityPhoto from "../../public/shots/hospitality.jpg";
+import districtPhoto from "../../public/shots/district-city.jpg";
+import datacenterPhoto from "../../public/shots/datacenter.jpg";
+import juanPhoto from "../../public/team/juan.jpg";
+import anaPhoto from "../../public/team/ana.jpg";
+import patrickPhoto from "../../public/team/patrick.jpg";
+import gregoryPhoto from "../../public/team/gregory.jpg";
+
+type StaticSrc = string | { src: string };
+
+function mediaSrc(asset: StaticSrc) {
+  return typeof asset === "string" ? asset : asset.src;
+}
 
 type Props = {
   locale: Locale;
@@ -27,19 +42,19 @@ const sections = [
 
 const teamPhotos: Record<string, { photo: string; linkedin: string }> = {
   juan: {
-    photo: "/team/juan.jpg",
+    photo: mediaSrc(juanPhoto),
     linkedin: "https://www.linkedin.com/in/juan-balbontin-a95b717/",
   },
   ana: {
-    photo: "/team/ana.jpg",
+    photo: mediaSrc(anaPhoto),
     linkedin: "https://www.linkedin.com/in/anaalmeidalu/",
   },
   patrick: {
-    photo: "/team/patrick.jpg",
+    photo: mediaSrc(patrickPhoto),
     linkedin: "https://www.linkedin.com/in/patrickdiogo/",
   },
   gregory: {
-    photo: "/team/gregory.jpg",
+    photo: mediaSrc(gregoryPhoto),
     linkedin: "https://www.linkedin.com/in/gregoryprudhommeaux/",
   },
 };
@@ -71,7 +86,7 @@ export function Site({ locale, dict }: Props) {
 function BrandLogo({ className }: { className?: string }) {
   return (
     <img
-      src="/logo.png"
+      src={mediaSrc(logoPhoto)}
       alt="NAHU Capital"
       width={390}
       height={83}
@@ -324,7 +339,7 @@ function Hero({ dict }: { dict: Dictionary }) {
           </div>
         </div>
         <Frame
-          src="/hero.jpg"
+          src={mediaSrc(heroPhoto)}
           alt={dict.media.heroAlt}
           caption={dict.media.heroCaption}
           className="h-[min(58vw,22rem)] w-full md:h-[28rem] lg:h-[min(82svh,740px)]"
@@ -352,17 +367,17 @@ function Principle({ dict }: { dict: Dictionary }) {
 function Projects({ dict }: { dict: Dictionary }) {
   const sites = [
     {
-      src: "/shots/hospitality.jpg",
+      src: mediaSrc(hospitalityPhoto),
       alt: dict.media.hospitalityAlt,
       caption: dict.media.hospitalityCaption,
     },
     {
-      src: "/shots/district-city.jpg",
+      src: mediaSrc(districtPhoto),
       alt: dict.media.districtAlt,
       caption: dict.media.districtCaption,
     },
     {
-      src: "/shots/datacenter.jpg",
+      src: mediaSrc(datacenterPhoto),
       alt: dict.media.datacenterAlt,
       caption: dict.media.datacenterCaption,
     },
@@ -583,7 +598,7 @@ function Contact({ dict }: { dict: Dictionary }) {
       <div className="grid lg:grid-cols-[minmax(0,0.78fr)_minmax(0,1.22fr)] lg:items-stretch">
         <ContactPanel dict={dict.contact} />
         <Frame
-          src="/hero.jpg"
+          src={mediaSrc(heroPhoto)}
           alt={dict.media.contactAlt}
           caption={dict.media.heroCaption}
           className="h-[13.5rem] w-full md:h-[15.5rem] lg:h-[17.5rem]"
