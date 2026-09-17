@@ -273,7 +273,7 @@ def page_html(locale: str, dicts: dict, photos: dict[str, str]) -> str:
         </div>
         <div class="pillars">{pillars}</div>
       </div>
-      {frame("photo-hero", d["media"]["heroAlt"], d["media"]["heroCaption"], "hero-frame")}
+      {frame("photo-hero", d["media"]["heroAlt"], "", "hero-frame")}
     </div>
   </section>
 
@@ -500,6 +500,7 @@ h1 { max-width: 14.5em; margin: 0; font-size: clamp(1.9rem, 8vw, 3.05rem); line-
 .editorial-frame > figcaption span {
   font-size: 0.62rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: rgb(243 240 234 / 0.9);
 }
+.photo-hero > figcaption, .hero-frame > figcaption { display: none !important; }
 .hero-frame { height: min(78vw, 26rem); width: 100%; }
 .band-navy { background: var(--navy); color: var(--cream); }
 .principle { padding: 3.5rem 0; }
