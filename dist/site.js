@@ -3,12 +3,13 @@
   const nav = document.querySelector("#mobile-nav");
   if (toggle && nav) {
     const setOpen = (open) => {
+      nav.classList.toggle("is-open", open);
       nav.toggleAttribute("hidden", !open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     };
     setOpen(false);
     toggle.addEventListener("click", () => {
-      setOpen(nav.hasAttribute("hidden"));
+      setOpen(!nav.classList.contains("is-open"));
     });
     nav.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => setOpen(false));

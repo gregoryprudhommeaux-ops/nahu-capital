@@ -48,10 +48,12 @@ header { position: sticky; top: 0; z-index: 50; background: var(--cream); paddin
 .menu-toggle[aria-expanded="true"] span:before { top: 0; transform: rotate(45deg); }
 .menu-toggle[aria-expanded="true"] span:after { top: 0; transform: rotate(-45deg); }
 .mobile-nav {
-  display: flex; flex-direction: column; background: var(--cream);
+  display: none;
+  flex-direction: column; background: var(--cream);
   border-top: 1px solid color-mix(in srgb, var(--navy) 10%, transparent);
   padding: 0.2rem 0 0.55rem;
 }
+.mobile-nav.is-open { display: flex; }
 .mobile-nav[hidden] { display: none !important; }
 .mobile-nav a {
   display: flex; align-items: center; min-height: 2.75rem;

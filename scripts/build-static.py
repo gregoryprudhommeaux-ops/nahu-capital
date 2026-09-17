@@ -247,8 +247,8 @@ def page_html(locale: str, dicts: dict, photos: dict[str, str]) -> str:
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500&family=Montserrat:wght@400;500&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/styles.css" />
-<link rel="stylesheet" href="/media.css" />
+<link rel="stylesheet" href="/styles.css?v=5" />
+<link rel="stylesheet" href="/media.css?v=5" />
 </head>
 <body{ ' class="is-zh"' if locale == "zh" else "" }>
 <header>
@@ -398,7 +398,7 @@ def page_html(locale: str, dicts: dict, photos: dict[str, str]) -> str:
     </div>
   </div>
 </footer>
-<script src="/site.js"></script>
+<script src="/site.js?v=5"></script>
 </body>
 </html>
 """
@@ -455,10 +455,12 @@ header { position: sticky; top: 0; z-index: 50; background: var(--cream); paddin
 .menu-toggle[aria-expanded="true"] span:before { top: 0; transform: rotate(45deg); }
 .menu-toggle[aria-expanded="true"] span:after { top: 0; transform: rotate(-45deg); }
 .mobile-nav {
-  display: flex; flex-direction: column; background: var(--cream);
+  display: none;
+  flex-direction: column; background: var(--cream);
   border-top: 1px solid color-mix(in srgb, var(--navy) 10%, transparent);
   padding: 0.2rem 0 0.55rem;
 }
+.mobile-nav.is-open { display: flex; }
 .mobile-nav[hidden] { display: none !important; }
 .mobile-nav a {
   display: flex; align-items: center; min-height: 2.75rem;
@@ -644,12 +646,13 @@ SITE_JS = """
   const nav = document.querySelector("#mobile-nav");
   if (toggle && nav) {
     const setOpen = (open) => {
+      nav.classList.toggle("is-open", open);
       nav.toggleAttribute("hidden", !open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     };
     setOpen(false);
     toggle.addEventListener("click", () => {
-      setOpen(nav.hasAttribute("hidden"));
+      setOpen(!nav.classList.contains("is-open"));
     });
     nav.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => setOpen(false));
