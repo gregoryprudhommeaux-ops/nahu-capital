@@ -247,8 +247,8 @@ def page_html(locale: str, dicts: dict, photos: dict[str, str]) -> str:
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500&family=Montserrat:wght@400;500&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/styles.css?v=5" />
-<link rel="stylesheet" href="/media.css?v=5" />
+<link rel="stylesheet" href="/styles.css?v=6" />
+<link rel="stylesheet" href="/media.css?v=6" />
 </head>
 <body{ ' class="is-zh"' if locale == "zh" else "" }>
 <header>
@@ -257,7 +257,7 @@ def page_html(locale: str, dicts: dict, photos: dict[str, str]) -> str:
     <nav class="site-nav">{nav}</nav>
     <div class="header-tools">
       {lang_switcher(locale)}
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menu"><span></span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
   <div id="mobile-nav" class="mobile-nav" hidden>{mobile_nav}</div>
@@ -398,7 +398,7 @@ def page_html(locale: str, dicts: dict, photos: dict[str, str]) -> str:
     </div>
   </div>
 </footer>
-<script src="/site.js?v=5"></script>
+<script src="/site.js?v=6"></script>
 </body>
 </html>
 """
@@ -442,18 +442,17 @@ header { position: sticky; top: 0; z-index: 50; background: var(--cream); paddin
 .site-nav a:hover { color: var(--navy); }
 .header-tools, .footer-tools { display: flex; align-items: center; gap: 0.35rem; }
 .menu-toggle {
-  position: relative; width: 2.75rem; height: 2.75rem; border: 0; background: transparent; cursor: pointer; flex: 0 0 auto;
+  display: inline-flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+  width: 2.75rem; height: 2.75rem; margin: 0; padding: 0; border: 0; background: transparent;
+  cursor: pointer; flex: 0 0 auto; appearance: none; -webkit-appearance: none;
 }
-.menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
-  position: absolute; left: 0.75rem; width: 1.25rem; height: 1.5px; background: var(--navy); content: "";
-  transition: transform 0.18s ease, top 0.18s ease, background-color 0.18s ease;
+.menu-toggle span {
+  display: block; width: 1.15rem; height: 1.5px; background: var(--navy); border-radius: 1px;
+  transform-origin: center; transition: transform 0.18s ease, opacity 0.18s ease;
 }
-.menu-toggle span { top: 50%; margin-top: -0.75px; }
-.menu-toggle span:before { top: -6px; }
-.menu-toggle span:after { top: 6px; }
-.menu-toggle[aria-expanded="true"] span { background: transparent; }
-.menu-toggle[aria-expanded="true"] span:before { top: 0; transform: rotate(45deg); }
-.menu-toggle[aria-expanded="true"] span:after { top: 0; transform: rotate(-45deg); }
+.menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 .mobile-nav {
   display: none;
   flex-direction: column; background: var(--cream);
