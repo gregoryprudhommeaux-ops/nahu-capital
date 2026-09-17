@@ -784,7 +784,7 @@ def write_media_css(photos: dict[str, str]) -> str:
 }}
 .brand-logo {{ width: 9.6rem; height: 2rem; }}
 .brand-logo-footer {{ width: 12rem; height: 2.5rem; }}
-.photo-hero {{ background: #101722 url("{photos["hero"]}") 62% 38% / cover no-repeat; }}
+.photo-hero {{ background: #101722 url("{photos["hero"]}") center 30% / cover no-repeat; }}
 .photo-contact {{ background: #101722 url("{photos["contact"]}") center 50% / cover no-repeat; }}
 .photo-hospitality {{ background: #101722 url("{photos["hospitality"]}") center / cover no-repeat; }}
 .photo-district {{ background: #101722 url("{photos["district"]}") center / cover no-repeat; }}
