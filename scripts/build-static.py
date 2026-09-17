@@ -339,10 +339,10 @@ def page_html(locale: str, dicts: dict, photos: dict[str, str]) -> str:
         </div>
         <p class="lead">{esc(d["portfolio"]["intro"])}</p>
       </div>
-      <details class="sectors-menu">
-        <summary><span class="kicker">{esc(d["portfolio"]["sectorsTitle"])}</span><span class="count">{len(d["portfolio"]["sectors"])}</span></summary>
+      <div class="sectors-block">
+        <p class="kicker">{esc(d["portfolio"]["sectorsTitle"])}</p>
         <ul class="sectors">{sectors}</ul>
-      </details>
+      </div>
       <div class="reach">
         <p class="kicker">{esc(d["portfolio"]["reachTitle"])}</p>
         <p class="muted">{esc(d["portfolio"]["reachIntro"])}</p>
@@ -511,11 +511,9 @@ h2 { margin: 0; font-size: clamp(1.45rem, 2.4vw, 2.35rem); line-height: 1.15; }
 .linkedin { color: var(--gold); }
 .linkedin:hover { color: var(--navy); }
 .icon { width: 1rem; height: 1rem; display: block; }
-.sectors-menu { margin-top: 2.5rem; }
-.sectors-menu summary { display: flex; width: 100%; cursor: pointer; align-items: center; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid color-mix(in srgb, var(--navy) 10%, transparent); list-style: none; }
-.sectors-menu summary::-webkit-details-marker { display: none; }
-.count { margin-left: auto; font-size: 1.1rem; color: color-mix(in srgb, var(--navy) 35%, transparent); }
-.sectors { display: grid; margin: 0; padding: 0; list-style: none; border-bottom: 1px solid color-mix(in srgb, var(--navy) 10%, transparent); }
+.sectors-block { margin-top: 2.5rem; }
+.sectors-block .kicker { margin-bottom: 0.85rem; }
+.sectors { display: grid; margin: 0; padding: 0; list-style: none; border-top: 1px solid color-mix(in srgb, var(--navy) 10%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--navy) 10%, transparent); }
 .sectors li { padding: 0.65rem 0; border-bottom: 1px solid color-mix(in srgb, var(--navy) 8%, transparent); font-size: 0.92rem; color: color-mix(in srgb, var(--navy) 80%, transparent); }
 .reach { margin-top: 2.5rem; }
 .regions { display: grid; gap: 1.25rem; margin: 2rem 0 0; padding: 0; list-style: none; }
