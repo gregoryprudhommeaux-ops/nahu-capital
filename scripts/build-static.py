@@ -239,6 +239,7 @@ def page_html(locale: str, dicts: dict, photos: dict[str, str]) -> str:
 <meta property="og:url" content="{canonical}" />
 <meta property="og:site_name" content="NAHU Capital" />
 <meta property="og:type" content="website" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" href="/favicon.png" type="image/png" />
 <link rel="apple-touch-icon" href="/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -849,9 +850,12 @@ def main() -> None:
         dest.write_text(content, encoding="utf-8")
         files.append((name, content, "utf-8"))
 
-    favicon_bytes = (ROOT / "public" / "favicon.png").read_bytes()
-    (DIST / "favicon.png").write_bytes(favicon_bytes)
-    files.append(("favicon.png", base64.b64encode(favicon_bytes).decode("ascii"), "base64"))
+    favicon_png = (ROOT / "public" / "favicon.png").read_bytes()
+    (DIST / "favicon.png").write_bytes(favicon_png)
+    files.append(("favicon.png", base64.b64encode(favicon_png).decode("ascii"), "base64"))
+    favicon_ico = (ROOT / "public" / "favicon.ico").read_bytes()
+    (DIST / "favicon.ico").write_bytes(favicon_ico)
+    files.append(("favicon.ico", base64.b64encode(favicon_ico).decode("ascii"), "base64"))
 
     write_deploy_payload(files)
     print("READY", DIST)
