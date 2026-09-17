@@ -40,7 +40,7 @@ TEAM_LINKS = {
 PHOTO_SPECS = {
     "hero": ("public/hero.jpg", 900, 72, "webp"),
     "contact": ("public/contact.jpg", 900, 70, "webp"),
-    "hospitality": ("public/shots/hospitality.jpg", 420, 64, "webp"),
+    "hospitality": ("public/shots/hospitality.jpg", 540, 76, "webp"),
     "district": ("public/shots/district-city.jpg", 540, 78, "webp"),
     "datacenter": ("public/shots/datacenter.jpg", 420, 64, "webp"),
     "juan": ("public/team/juan.jpg", 200, 66, "webp"),
