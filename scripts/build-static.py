@@ -587,7 +587,7 @@ footer { border-top: 1px solid color-mix(in srgb, var(--navy) 10%, transparent);
 @media (min-width: 1024px) {
   .site-nav { display: flex; align-items: center; gap: 2.25rem; }
   .menu-toggle, .mobile-nav { display: none !important; }
-  .hero-grid { grid-template-columns: minmax(18rem,0.78fr) minmax(0,1.22fr); align-items: stretch; min-height: min(68svh, 620px); }
+  .hero-grid { grid-template-columns: minmax(0,2fr) minmax(14rem,1fr); align-items: stretch; min-height: min(68svh, 620px); }
   .hero-copy, .contact-copy {
     width: auto; max-width: none; margin: 0;
     padding-left: max(2.5rem, calc((100vw - 1220px) / 2));
@@ -785,8 +785,8 @@ def write_media_css(photos: dict[str, str]) -> str:
 }}
 .brand-logo {{ width: 9.6rem; height: 2rem; }}
 .brand-logo-footer {{ width: 12rem; height: 2.5rem; }}
-.photo-hero {{ background: #101722 url("{photos["hero"]}") 58% 42% / cover no-repeat; }}
-.photo-contact {{ background-position: 58% 38%; }}
+.photo-hero {{ background: #101722 url("{photos["hero"]}") 62% 38% / cover no-repeat; }}
+.photo-contact {{ background-position: 62% 36%; }}
 .photo-hospitality {{ background: #101722 url("{photos["hospitality"]}") center / cover no-repeat; }}
 .photo-district {{ background: #101722 url("{photos["district"]}") center / cover no-repeat; }}
 .photo-datacenter {{ background: #101722 url("{photos["datacenter"]}") center / cover no-repeat; }}
