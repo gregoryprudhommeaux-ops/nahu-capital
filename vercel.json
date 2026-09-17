@@ -1,0 +1,7 @@
+{
+  "buildCommand": "echo using-prebuilt-dist",
+  "outputDirectory": "dist",
+  "installCommand": "echo skip-install",
+  "framework": null,
+  "cleanUrls": true
+}
