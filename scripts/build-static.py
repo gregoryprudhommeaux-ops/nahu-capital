@@ -240,9 +240,10 @@ def page_html(locale: str, dicts: dict, photos: dict[str, str]) -> str:
 <meta property="og:url" content="{canonical}" />
 <meta property="og:site_name" content="NAHU Capital" />
 <meta property="og:type" content="website" />
-<link rel="icon" href="/favicon.ico" sizes="any" />
-<link rel="icon" href="/favicon.png" type="image/png" />
-<link rel="apple-touch-icon" href="/favicon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=3" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon.png?v=3" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3" />
+<link rel="shortcut icon" href="/favicon.ico?v=3" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500&family=Montserrat:wght@400;500&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet" />
@@ -850,12 +851,10 @@ def main() -> None:
         dest.write_text(content, encoding="utf-8")
         files.append((name, content, "utf-8"))
 
-    favicon_png = (ROOT / "public" / "favicon.png").read_bytes()
-    (DIST / "favicon.png").write_bytes(favicon_png)
-    files.append(("favicon.png", base64.b64encode(favicon_png).decode("ascii"), "base64"))
-    favicon_ico = (ROOT / "public" / "favicon.ico").read_bytes()
-    (DIST / "favicon.ico").write_bytes(favicon_ico)
-    files.append(("favicon.ico", base64.b64encode(favicon_ico).decode("ascii"), "base64"))
+    for name in ("favicon.png", "favicon.ico", "apple-touch-icon.png"):
+        payload = (ROOT / "public" / name).read_bytes()
+        (DIST / name).write_bytes(payload)
+        files.append((name, base64.b64encode(payload).decode("ascii"), "base64"))
 
     write_deploy_payload(files)
     print("READY", DIST)

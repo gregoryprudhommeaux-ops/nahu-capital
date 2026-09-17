@@ -24,10 +24,10 @@ export const metadata: Metadata = {
   description: es.meta.description,
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.png?v=3", type: "image/png", sizes: "32x32" },
+      { url: "/favicon.ico?v=3" },
     ],
-    apple: [{ url: "/apple-icon.png" }],
+    apple: [{ url: "/apple-touch-icon.png?v=3", sizes: "180x180" }],
   },
   alternates: {
     canonical: "/",
