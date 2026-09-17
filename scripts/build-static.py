@@ -41,7 +41,7 @@ PHOTO_SPECS = {
     "hero": ("public/hero.jpg", 900, 72, "webp"),
     "contact": ("public/contact.jpg", 900, 70, "webp"),
     "hospitality": ("public/shots/hospitality.jpg", 420, 64, "webp"),
-    "district": ("public/shots/district-city.jpg", 420, 64, "webp"),
+    "district": ("public/shots/district-city.jpg", 540, 78, "webp"),
     "datacenter": ("public/shots/datacenter.jpg", 420, 64, "webp"),
     "juan": ("public/team/juan.jpg", 200, 66, "webp"),
     "ana": ("public/team/ana.jpg", 200, 66, "webp"),
@@ -787,7 +787,7 @@ def write_media_css(photos: dict[str, str]) -> str:
 .photo-hero {{ background: #101722 url("{photos["hero"]}") center 30% / cover no-repeat; }}
 .photo-contact {{ background: #101722 url("{photos["contact"]}") center 50% / cover no-repeat; }}
 .photo-hospitality {{ background: #101722 url("{photos["hospitality"]}") center / cover no-repeat; }}
-.photo-district {{ background: #101722 url("{photos["district"]}") center / cover no-repeat; }}
+.photo-district {{ background: #101722 url("{photos["district"]}") center 55% / cover no-repeat; }}
 .photo-datacenter {{ background: #101722 url("{photos["datacenter"]}") center / cover no-repeat; }}
 .portrait-juan {{ background: #101722 url("{photos["juan"]}") center / cover no-repeat; }}
 .portrait-ana {{ background: #101722 url("{photos["ana"]}") center / cover no-repeat; }}
