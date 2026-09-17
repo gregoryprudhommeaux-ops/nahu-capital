@@ -4,35 +4,24 @@ Site institutionnel. Une page, cinq langues. Pas d’application, pas de compte,
 
 Langue par défaut : espagnol mexicain. Autres : `/en`, `/fr`, `/pt`, `/zh`.
 
-Production : [https://nahu-capital.vercel.app](https://nahu-capital.vercel.app)
+Production : [https://www.nahucapital.com](https://www.nahucapital.com) · [https://nahu-capital.vercel.app](https://nahu-capital.vercel.app)
+
+## Pourquoi ce site est statique
+
+Le one-pager Next.js se construisait bien en local. Il n’arrivait pas en production : le déploiement Vercel fichier par fichier omettait les photographies (payload trop lourd, arbre Next incomplet). Les pages live citaient `/editorial/hero-cdmx.jpg` et les portraits, tous en 404.
+
+Les photos sont donc **préparées d’abord** (redimensionnées, WebP), puis **intégrées dans `media.css`** en data URI. Plus de JPEG séparés à uploader. Vercel ne fait plus de build Next : il sert les fichiers de `dist/`.
 
 ## Local
 
 ```bash
-npm install
-npm run dev
+python3 scripts/build-static.py
+python3 -m http.server 4340 --bind 0.0.0.0 --directory dist
 ```
 
-Le serveur écoute sur le port 4321.
+Ou `npm run dev`. Le serveur écoute sur le port 4340.
 
-```bash
-npm run build
-npm start
-```
-
-## Structure
-
-Arbre volontairement court pour un déploiement Vercel fiable :
-
-- `src/app/page.tsx` — page d’accueil ES
-- `src/app/[locale]/page.tsx` — EN / FR / PT / ZH
-- `src/components/site.tsx` — une page
-- `src/components/contact-panel.tsx` — formulaire
-- `src/lib/copy.ts` — toutes les langues
-- `src/app/api/contact/route.ts` — envoi du message
-- `public/` — logo, hero CDMX, trois illustrations, portraits
-
-Pas de middleware, pas de CMS, pas de dossier `i18n` éclaté.
+Les textes restent dans `src/lib/copy.ts`. Relancer le script après toute modification de copie ou de photo.
 
 ## Contenu
 
@@ -40,12 +29,8 @@ Les textes viennent du profil institutionnel 2026. Les chiffres d’expérience 
 
 Le bandeau Contact ouvre un formulaire (nom, WhatsApp, e-mail, entreprise/projet, message). Destination : `gregory.prudhommeaux@gmail.com`.
 
-Pour l’envoi réel, copier `.env.example` vers `.env.local` et renseigner `RESEND_API_KEY`. Sans clé, en `next dev` le message est loggé ; en production sans clé, l’envoi échoue.
+Pour l’envoi réel sur Vercel, renseigner `RESEND_API_KEY` (et optionnellement `RESEND_FROM`) dans le projet. Sans clé, l’envoi échoue.
 
 Identité : fond `#F3F0EA`, marine `#101722`, or `#B08A57`. Titres : Libre Bodoni. Corps : Montserrat.
 
 La photographie d’ouverture est Mexico au soleil couchant (Bellas Artes, cathédrale, volcans). Les autres images sont des illustrations éditoriales, pas des actifs nominatifs.
-
-## Agents
-
-Les skills personnelles sont dans `.cursor/skills/`. Toute copie marketing passe par `/anti-linkedin-slop`.
