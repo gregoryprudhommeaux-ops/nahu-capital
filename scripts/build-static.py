@@ -38,7 +38,7 @@ TEAM_LINKS = {
     "gregory": "https://www.linkedin.com/in/gregoryprudhommeaux/",
 }
 PHOTO_SPECS = {
-    "hero": ("public/hero.jpg", 680, 62, "webp"),
+    "hero": ("public/hero.jpg", 900, 72, "webp"),
     "hospitality": ("public/shots/hospitality.jpg", 420, 64, "webp"),
     "district": ("public/shots/district-city.jpg", 420, 64, "webp"),
     "datacenter": ("public/shots/datacenter.jpg", 420, 64, "webp"),
@@ -784,8 +784,8 @@ def write_media_css(photos: dict[str, str]) -> str:
 }}
 .brand-logo {{ width: 9.6rem; height: 2rem; }}
 .brand-logo-footer {{ width: 12rem; height: 2.5rem; }}
-.photo-hero {{ background: #101722 url("{photos["hero"]}") center 46% / cover no-repeat; }}
-.photo-contact {{ background-position: center 42%; }}
+.photo-hero {{ background: #101722 url("{photos["hero"]}") center 32% / cover no-repeat; }}
+.photo-contact {{ background-position: center 28%; }}
 .photo-hospitality {{ background: #101722 url("{photos["hospitality"]}") center / cover no-repeat; }}
 .photo-district {{ background: #101722 url("{photos["district"]}") center / cover no-repeat; }}
 .photo-datacenter {{ background: #101722 url("{photos["datacenter"]}") center / cover no-repeat; }}
