@@ -40,22 +40,26 @@ const sections = [
   ["contacto", "contact"],
 ] as const;
 
-const teamPhotos: Record<string, { photo: string; linkedin: string }> = {
+const teamPhotos: Record<string, { photo: string; linkedin: string; email: string }> = {
   juan: {
     photo: mediaSrc(juanPhoto),
     linkedin: "https://www.linkedin.com/in/juan-balbontin-a95b717/",
+    email: "jbmtradingmx@gmail.com",
   },
   ana: {
     photo: mediaSrc(anaPhoto),
     linkedin: "https://www.linkedin.com/in/anaalmeidalu/",
+    email: "anam.almeida@gmail.com",
   },
   patrick: {
     photo: mediaSrc(patrickPhoto),
     linkedin: "https://www.linkedin.com/in/patrickdiogo/",
+    email: "pkdiogo@gmail.com",
   },
   gregory: {
     photo: mediaSrc(gregoryPhoto),
     linkedin: "https://www.linkedin.com/in/gregoryprudhommeaux/",
+    email: "gregory.prudhommeaux@gmail.com",
   },
 };
 
@@ -519,6 +523,13 @@ function Team({ dict }: { dict: Dictionary }) {
                     >
                       <LinkedInIcon />
                     </a>
+                    <a
+                      href={`mailto:${profile.email}`}
+                      aria-label={`${dict.team.emailLabel}, ${person.name}`}
+                      className="shrink-0 text-gold hover:text-navy"
+                    >
+                      <MailIcon />
+                    </a>
                   </div>
                   <p className="kicker mt-2 mb-0 text-[0.62rem]">{person.role}</p>
                   <p className="mt-2.5 text-[0.88rem] leading-[1.65] text-navy/65">
@@ -638,6 +649,28 @@ function LinkedInIcon() {
       <path
         fill="currentColor"
         d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.43v6.31ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0Z"
+      />
+    </svg>
+  );
+}
+
+function MailIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" aria-hidden>
+      <rect
+        x="3"
+        y="5"
+        width="18"
+        height="14"
+        rx="1.5"
+        stroke="currentColor"
+        strokeWidth="1.75"
+      />
+      <path
+        d="M4 7.2 12 13l8-5.8"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinejoin="round"
       />
     </svg>
   );
