@@ -37,6 +37,12 @@ TEAM_LINKS = {
     "patrick": "https://www.linkedin.com/in/patrickdiogo/",
     "gregory": "https://www.linkedin.com/in/gregoryprudhommeaux/",
 }
+TEAM_EMAILS = {
+    "juan": "jbmtradingmx@gmail.com",
+    "ana": "anam.almeida@gmail.com",
+    "patrick": "pkdiogo@gmail.com",
+    "gregory": "gregory.prudhommeaux@gmail.com",
+}
 PHOTO_SPECS = {
     "hero": ("public/hero.jpg", 900, 72, "webp"),
     "contact": ("public/contact.jpg", 900, 70, "webp"),
@@ -147,6 +153,15 @@ def linkedin_icon() -> str:
     )
 
 
+def mail_icon() -> str:
+    return (
+        '<svg viewBox="0 0 24 24" class="icon" fill="none" aria-hidden="true">'
+        '<rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.75"/>'
+        '<path d="M4 7.2 12 13l8-5.8" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>'
+        "</svg>"
+    )
+
+
 def lang_switcher(locale: str, align: str = "down") -> str:
     items = []
     for code in LOCALES:
@@ -205,6 +220,8 @@ def page_html(locale: str, dicts: dict, photos: dict[str, str]) -> str:
             f"<p class=\"person-name\">{esc(person['name'])}</p>"
             f'<a class="linkedin" href="{TEAM_LINKS[pid]}" target="_blank" rel="noopener noreferrer" '
             f'aria-label="{esc(d["team"]["linkedinLabel"])}, {esc(person["name"])}">{linkedin_icon()}</a>'
+            f'<a class="mail" href="mailto:{TEAM_EMAILS[pid]}" '
+            f'aria-label="{esc(d["team"]["emailLabel"])}, {esc(person["name"])}">{mail_icon()}</a>'
             "</div>"
             f'<p class="kicker person-role">{esc(person["role"])}</p>'
             f'<p class="person-bio">{esc(person["bio"])}</p>'
@@ -531,8 +548,8 @@ h2 { margin: 0; font-size: clamp(1.45rem, 2.4vw, 2.35rem); line-height: 1.15; }
 .person-name { margin: 0; font-size: 1.15rem; line-height: 1.15; }
 .person-role { margin: 0.5rem 0 0; font-size: 0.62rem; }
 .person-bio { margin: 0.65rem 0 0; font-size: 0.88rem; line-height: 1.65; color: color-mix(in srgb, var(--navy) 65%, transparent); }
-.linkedin { color: var(--gold); }
-.linkedin:hover { color: var(--navy); }
+.linkedin, .mail { color: var(--gold); }
+.linkedin:hover, .mail:hover { color: var(--navy); }
 .icon { width: 1rem; height: 1rem; display: block; }
 .sectors-block { margin-top: 2.5rem; }
 .sectors-block .kicker { margin-bottom: 0.85rem; }
